@@ -1,23 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   cub3d.h                                            :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/26 13:32:41 by mathias.mrs       #+#    #+#             */
-/*   Updated: 2022/02/26 16:20:50 by mamaurai         ###   ########.fr       */
+/*   Created: 2022/02/26 14:05:34 by mamaurai          #+#    #+#             */
+/*   Updated: 2022/02/26 16:41:23 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CUB3D_H
-# define CUB3D_H
+#include "cub3d.h"
 
-#include "libft.h"
-#include "libc.h"
-#include <errno.h>
-#include "cub3d_d.h"
-#include "cub3d_s.h"
-#include "cub3d_f.h"
+int
+	main(int ac, char **av)
+{
+	t_cub *cub = s();
 
-#endif
+	(void)cub;
+	if (__FAILURE == __check_args__(ac, av, cub))
+		__exit(EXIT_FAILURE);
+	if (__FAILURE == parsing(cub))
+		__exit(EXIT_FAILURE);
+}

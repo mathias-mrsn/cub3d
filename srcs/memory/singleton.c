@@ -1,23 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   cub3d.h                                            :+:      :+:    :+:   */
+/*   singleton.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/26 13:32:41 by mathias.mrs       #+#    #+#             */
-/*   Updated: 2022/02/26 16:20:50 by mamaurai         ###   ########.fr       */
+/*   Created: 2022/02/26 14:05:24 by mamaurai          #+#    #+#             */
+/*   Updated: 2022/02/26 14:25:07 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CUB3D_H
-# define CUB3D_H
+#include "cub3d.h"
 
-#include "libft.h"
-#include "libc.h"
-#include <errno.h>
-#include "cub3d_d.h"
-#include "cub3d_s.h"
-#include "cub3d_f.h"
+t_cub
+	*s(void)
+{
+	static t_cub	*s;
 
-#endif
+	if (!s)
+	{
+		s = __malloc(sizeof(t_cub), SINGLETON_STACK);
+		s->parser = __malloc(sizeof(t_parser), SINGLETON_STACK);
+		s->textures = __malloc(sizeof(t_textures), SINGLETON_STACK);
+		s->player = __malloc(sizeof(t_player), SINGLETON_STACK);
+	}
+	return (s);
+}
