@@ -1,14 +1,11 @@
-NAME =		cub3d
+NAME	:=	cub3d
 
-SRCS = 		${shell find ./srcs -name "*.c"}
+SRCS	=	${shell find ./srcs -name "*.c"}
 
-OBJS = ${SRCS:.c=.o}
-INCS	=	-I ./includes -I ./libft/includes
-LIBC	=	libft/libft.a
+OBJS	=	${SRCS:.c=.o}
 CC		=	clang
-CFLAGS	=	-Wall -Wextra -Werror
-RM		=	rm -rf
-SYSTEM	=	${shell uname}
+FLAGS	=	-Wall -Wextra -Werror
+SYSTEM = $(shell uname)
 
 ifeq (${SYSTEM}, Darwin)
 _END=$'\x1b[0m
@@ -37,31 +34,50 @@ _WHITE=	$'\033[37m
 _END= $'\033[37m
 endif
 
-.c.o:
-			@printf "%-15s ${_YELLOW}${_BOLD}$<${_END}...\n" "Compiling"
-			@${CC} ${CFLAGS} ${INCS} -c $< -o $@
+ifeq (${SYSTEM}, Darwin)
+INCS = -I ./includes -I ./libft/includes -I ./mlx_mac
+LIBC = -L ./mlx_mac -lmlx ./libft/libft.a
+MLX_FLAGS = -Ofast -framework OpenGL -framework AppKit
+MLX_USED = mlx_mac
+endif
+
+ifeq (${SYSTEM}, Linux)
+INCS = -I ./includes -I ./libft/includes -I ./mlx
+LIBC = ./mlx/libmlx.a ./libft/libft.a
+MLX_FLAGS	=	-L./mlx -lmlx -lX11 -lbsd -lXext -lm
+MLX_USED = mlx
+endif
 
 all:		${NAME}
 
+.c.o:
+			@printf "%-15s ${_YELLOW}${_BOLD}$<${_END}...\n" "Compiling"
+			@${CC} ${FLAGS} ${INCS} -c $< -o $@
+
 ${NAME}:	${OBJS}
 			@printf "%-15s ${_CYAN}${_BOLD}libft${_END}...\n" "Compiling"
-			@${MAKE} -C libft > /dev/null
+			@${MAKE} -C libft >/dev/null
+			@printf "%-15s ${_CYAN}${_BOLD}${MLX_USED}${_END}...\n" "Compiling"
+			@${MAKE} -C ${MLX_USED} >/dev/null 2>&1
 			@printf "%-15s ${_PURPLE}${_BOLD}${NAME}${_END}...\n" "Compiling"
-			@${CC} ${CFLAGS} -fsanitize=address -g3 ${INCS} ${OBJS} -o ${NAME} ${LIBC}
+			@${CC} -fsanitize=address ${FLAGS} ${INCS} ${MLX_FLAGS} -o ${NAME} ${OBJS} ${LIBC}
 			@printf "\n${_GREEN}${_BOLD}Compilation done !${_END}\n"
 
-clean:
+clean:		
 			@printf "%-15s ${_RED}${_BOLD}libft binary files${_END}...\n" "Deleting"
-			@${MAKE} -C libft clean > /dev/null
+			@${MAKE} -C libft clean >/dev/null
+			@printf "%-15s ${_RED}${_BOLD}mlx binary files${_END}...\n" "Deleting"
+			@${MAKE} -C ${MLX_USED} clean >/dev/null
 			@printf "%-15s ${_RED}${_BOLD}${NAME} binary files${_END}...\n" "Deleting"
-			@${RM} ${OBJS}
+			@rm -f ${OBJS}
+
 
 fclean:		clean
 			@printf "%-15s ${_RED}${_BOLD}libft librairy${_END}...\n" "Deleting"
-			@${MAKE} -C libft fclean > /dev/null
+			@${MAKE} -C libft fclean >/dev/null
 			@printf "%-15s ${_RED}${_BOLD}${NAME}${_END}...\n" "Deleting"
-			@${RM} ${NAME}
+			@rm -f ${NAME}
 
 re:			fclean all
 
-.PHONY:		all clean fclean re
+.PHONY:		all fclean clean all bonus

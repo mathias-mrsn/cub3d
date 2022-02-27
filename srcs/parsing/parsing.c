@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 16:40:50 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/02/26 17:17:25 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/02/27 19:04:17 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,19 +28,43 @@ char
 	return (strs);
 }
 
-void
-	__get_map__(t_cub *s, ssize_t *idx)
+static t_boolean
+	__find_every_values__(t_cub *s)
 {
-	s->parser->map = __malloc(sizeof(char *), PARSER_STACK);
-	while((*idx) > -1 && 0 == __strcmp(s->parser->file[(*idx)], "\0"))
-		(*idx)--;
-	while((*idx) > -1 && 0 != __strcmp(s->parser->file[(*idx)], "\0"))
+	uint8_t	idx;
+
+	idx = 0;
+	while (idx < NBR_ARGS)
 	{
-		__mstrs_add_front(&s->parser->map, s->parser->file[(*idx)], PARSER_STACK);
-		(*idx)--;
+		if (s->parser->check[idx] == 0)
+			return (__FALSE);
+		idx++;
 	}
-	while((*idx) > -1 && 0 == __strcmp(s->parser->file[(*idx)], "\0"))
-		(*idx)--;
+	return (__TRUE);
+}
+
+void  
+	check_game_data(t_cub *s, ssize_t *idx)
+{
+	const char 	*types[NBR_ARGS] = {"R ", "C ", "F ", "S ", "NO ",
+		"EA ", "SO ", "WE "};
+	uint8_t		type_nbr;
+
+	while (s->parser->file[++(*idx)] && !__find_every_values__(s))
+	{
+		type_nbr = -1;
+		while (++type_nbr < NBR_ARGS)
+			if (0 == __strncmp(s->parser->file[(*idx)], types[type_nbr], __strlen(types[type_nbr])))
+				break ;
+		if (0 == __strcmp(s->parser->file[(*idx)], "\0"))
+			continue;
+		if (type_nbr == NBR_ARGS)
+			__invalid_info__(s, (*idx));
+		else
+			args_data_is_good(s, __mstrtrim(s->parser->file[(*idx)] + __strlen(types[type_nbr]), " ", PARSER_STACK), type_nbr, (*idx));
+	}
+	if (__FALSE == __find_every_values__(s))
+		__data_missing_error__(s);
 }
 
 t_boolean
@@ -48,9 +72,10 @@ t_boolean
 {
 	ssize_t	idx;
 	
-	s->parser->file = __fd_to_strs__(s->parser->fd);
-	idx = __strslen(s->parser->file) - 1;
-	__get_map__(s, &idx);
-	__putstrs("file", s->parser->map, 1);
+	idx = -1;
+	s->parser->file = __fd_to_strs__(s->parser->fd);;
+	check_game_data(s, &idx);
+	// open_textures(s);
+
 	return (__SUCCESS);
 }

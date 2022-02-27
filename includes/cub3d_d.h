@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:13 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/02/26 16:13:15 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/02/27 13:44:57 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 # define PROGRAM_NAME "cub3d"
 
 # define NBR_WALL_SIDES	4
+# define NBR_ARGS 8
+
 # define NORTH_SIDE 0
 # define EST_SIDE 1
 # define SOUTH_SIDE 2
@@ -27,7 +29,15 @@
 **	MEMORY STACKS
 */
 
-# define PARSER_STACK 2
-# define SINGLETON_STACK 42
+# define PARSER_STACK		2
+# define SINGLETON_STACK	42
+# define TRASH_STACK		127
+
+/*
+**	WINDOW
+*/
+
+# define WIN_X_MAX			2000
+# define WIN_Y_MAX			1500
 
 #endif

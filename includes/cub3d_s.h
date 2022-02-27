@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:49:56 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/02/26 17:03:04 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/02/27 18:51:21 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ typedef struct s_player
 
 typedef struct s_textures
 {
-	char	*walls_path[NBR_WALL_SIDES];
 	t_img	walls[NBR_WALL_SIDES];
 	int		floor;
 	int		ceil;
@@ -32,18 +31,20 @@ typedef struct s_parser
 {
 	t_boolean		error;
 	char			*walls_path[NBR_WALL_SIDES];
-	t_boolean		is_walls[NBR_WALL_SIDES];
+	t_boolean		check[NBR_ARGS];
 	int				floor;
-	t_boolean		is_floor;
 	int				ceil;
-	t_boolean		is_ceil;
 	char			**file;
 	char			**map;
 	int				fd;
+	int				win_x;
+	int				win_y;
 }			t_parser;
 
 typedef struct s_cub
 {
+	void			*mlx;
+	void			*win;
 	char			**map;
 	t_boolean		save;
 	t_parser		*parser;

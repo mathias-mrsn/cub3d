@@ -1,0 +1,9 @@
+R  720      720       
+C      234,87,43
+NO ./textures/wall.xpm
+WE ./textures/wall.xpm
+EA ./textures/wall.xpm
+SO ./textures/wall.xpm
+S ./textures/wall.xpm
+F    123,23,0
+
