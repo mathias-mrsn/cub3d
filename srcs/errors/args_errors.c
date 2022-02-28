@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 14:14:23 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/02/27 18:20:45 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/02/28 14:25:48 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void
 	__wrong_arg_nbr__(int ac)
 {
 	__putstr(PROGRAM_NAME, STDERR_FILENO);
-	__putstr(": argc -> ", STDERR_FILENO);
+	__putstr(": argc = ", STDERR_FILENO);
 	__putnbr(ac, STDERR_FILENO);
 	__putstr(" : incorrect number of arguments\n", STDERR_FILENO);
 }

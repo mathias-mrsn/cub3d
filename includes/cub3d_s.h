@@ -6,12 +6,19 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:49:56 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/02/27 18:51:21 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/02/28 14:28:12 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CUB3D_S_H
 # define CUB3D_S_H
+
+enum {
+	NORTH_SIDE,
+	EST_SIDE,
+	SOUTH_SIDE,
+	WEST_SIDE
+};
 
 typedef struct s_player
 {

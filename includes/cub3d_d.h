@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:13 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/02/27 13:44:57 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/02/28 15:24:16 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,8 @@
 # define NBR_WALL_SIDES	4
 # define NBR_ARGS 8
 
-# define NORTH_SIDE 0
-# define EST_SIDE 1
-# define SOUTH_SIDE 2
-# define WEST_SIDE 3
-
 # define SAVE_OPTION "--save"
+# define MAP_CHARSET ""
 
 /*
 **	MEMORY STACKS

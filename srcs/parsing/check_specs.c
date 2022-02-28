@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:32:17 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/02/27 18:33:08 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/02/28 14:30:42 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,9 +57,9 @@ static void
 	__check_file__(t_cub *s, char *str, ssize_t idx, uint8_t type_nbr)
 {
 	if (__FALSE == __file_exist(str))
-		__texture_error__(s, idx, 1);
+		__texture_error__(s, idx, 1, str);
 	if (__FALSE == __file_extention(str, ".xpm"))
-		__texture_error__(s, idx, 0);
+		__texture_error__(s, idx, 0, str);
 	s->parser->walls_path[type_nbr - 4] = __mstrdup(str, PARSER_STACK);
 }
 

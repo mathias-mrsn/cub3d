@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 16:40:50 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/02/27 19:04:17 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/02/28 15:15:20 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ void
 		"EA ", "SO ", "WE "};
 	uint8_t		type_nbr;
 
-	while (s->parser->file[++(*idx)] && !__find_every_values__(s))
+	while (s->parser->file[++(*idx)] && (!__find_every_values__(s) || !__strcmp(s->parser->file[(*idx)], "\0")))
 	{
 		type_nbr = -1;
 		while (++type_nbr < NBR_ARGS)
@@ -75,7 +75,10 @@ t_boolean
 	idx = -1;
 	s->parser->file = __fd_to_strs__(s->parser->fd);;
 	check_game_data(s, &idx);
-	// open_textures(s);
+	open_textures(s);
+	get_map(s, &idx);
+	check_map_charset();
+	__putstrs("map", s->parser->map, 1);
 
 	return (__SUCCESS);
 }

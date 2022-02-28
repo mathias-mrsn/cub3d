@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:03:23 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/02/27 18:19:35 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/02/28 14:32:11 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,14 @@ void
 }
 
 void
-	__texture_error__(t_cub *s, ssize_t idx, t_boolean error_type)
+	__texture_error__(t_cub *s, ssize_t idx, t_boolean error_type, char *str)
 {
 	__print_error_line__(s, idx);
 	__putstr(PROGRAM_NAME, STDERR_FILENO);
 	if (error_type == 1)
 	{
+		__putstr(": ", STDERR_FILENO);
+		__putstr(str, STDERR_FILENO);
 		if (errno == 13)
 			__putstr(": permission denied\n", STDERR_FILENO);
 		else
