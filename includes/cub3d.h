@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 13:32:41 by mathias.mrs       #+#    #+#             */
-/*   Updated: 2022/02/27 18:40:51 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/01 10:56:26 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define CUB3D_H
 
 #include "libft.h"
-#include "libc.h"
+#include <stdio.h>
 #include "mlx.h"
 #include <errno.h>
 #include "cub3d_d.h"

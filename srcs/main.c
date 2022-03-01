@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 14:05:34 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/02/28 15:13:19 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/01 11:46:09 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,5 @@ int
 		__exit(EXIT_FAILURE);
 	if (__FAILURE == parsing(cub))
 		__exit(EXIT_FAILURE);
+	__clean_all();
 }
