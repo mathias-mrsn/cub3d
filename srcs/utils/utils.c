@@ -1,30 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/26 14:05:34 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/01 14:14:15 by mamaurai         ###   ########.fr       */
+/*   Created: 2022/03/01 14:58:50 by mamaurai          #+#    #+#             */
+/*   Updated: 2022/03/01 15:01:18 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
-int
-	main(int ac, char **av)
+double
+	__pythagore__(double x1, double y1, double x2, double y2)
 {
-	t_cub *cub = s();
-
-	(void)cub;
-	cub->mlx = mlx_init();
-	if (NULL == cub->mlx)
-		return (EXIT_FAILURE); //mlx start error
-	if (__FAILURE == __check_args__(ac, av, cub))
-		__exit(EXIT_FAILURE);
-	if (__FAILURE == parsing(cub))
-		__exit(EXIT_FAILURE);
-	__clean(PARSER_STACK);
-	__clean_all();
+	return (sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1)));
 }

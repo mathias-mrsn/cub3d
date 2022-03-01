@@ -1,0 +1,11 @@
+R 720 720
+NO ./textures/wall.xpm
+SO ./textures/wall.xpm
+WE ./textures/wall.xpm
+EA ./textures/wall.xpm
+
+S ./textures/wall.xpm
+C 200,200,200
+F 30,30,30
+
+111111111101111

@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 16:40:50 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/01 11:37:23 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/01 16:18:58 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ char
 	char	**strs;
 	char	*str;
 
+	printf("%d\n", fd);
 	str = __gnl(fd);
 	strs = __malloc(sizeof(char *) * 1, PARSER_STACK);
 	while (str)
@@ -25,6 +26,7 @@ char
 		__mstrs_add_back(&strs, str, PARSER_STACK);
 		str = __gnl(fd);
 	}
+	close(fd);
 	return (strs);
 }
 
@@ -73,13 +75,12 @@ t_boolean
 	ssize_t	idx;
 	
 	idx = -1;
-	s->parser->file = __fd_to_strs__(s->parser->fd);;
+	s->parser->file = __fd_to_strs__(s->parser->fd);
 	check_game_data(s, &idx);
 	open_textures(s);
 	get_map(s, &idx);
 	check_map_charset(s);
 	check_map_walls(s);
-	// __putstrs("map", s->parser->map, 1);
-
+	is_player_in(s);
 	return (__SUCCESS);
 }

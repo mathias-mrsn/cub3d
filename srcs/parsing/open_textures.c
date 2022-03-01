@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:36:07 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/02/28 15:13:32 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/01 14:56:20 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ void
 	while (idx < NBR_WALL_SIDES)
 	{
 		__memset(&s->textures->walls[idx], 0, sizeof(t_img));
-		printf("%s\n", s->parser->walls_path[idx]);
 		s->textures->walls[idx].ptr = mlx_xpm_file_to_image(s->mlx, s->parser->walls_path[idx], &s->textures->walls[idx].x, &s->textures->walls[idx].y);
 		if (NULL == s->textures->walls[idx].ptr)
 			__unable_to_open_xpm__(__LINE__, __FILE__);

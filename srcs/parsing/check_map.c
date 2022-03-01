@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 11:03:09 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/01 12:11:44 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/01 14:53:04 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char
 	char	*str;
 	size_t	idx;
 
-	str = __malloc(sizeof(char) * len + 3, TRASH_STACK);
+	str = __malloc(sizeof(char) * len + 3, RAYCASTING_STACK);
 	idx = 0;
 	while (idx < len + 2)
 		str[idx++] = 'x';
@@ -50,7 +50,7 @@ char
 	size_t	idx;
 	size_t	str_idx;	
 
-	new_str = __malloc(sizeof(char) * len + 3, TRASH_STACK);
+	new_str = __malloc(sizeof(char) * len + 3, RAYCASTING_STACK);
 	str_idx = 0;
 	idx = 0;
 	new_str[idx++] = 'x';
@@ -108,7 +108,7 @@ void
 	const size_t	_size_max = __strs_maxlen__(s->parser->map);
 	size_t			idx;
 
-	strs = __malloc(sizeof(char *) * (_size + 3), TRASH_STACK);
+	strs = __malloc(sizeof(char *) * (_size + 3), RAYCASTING_STACK);
 	idx = 0;
 	strs[idx++] = __full_cross_line__(_size_max);
 	while (idx < _size + 1)
@@ -118,5 +118,5 @@ void
 	}
 	strs[idx] = __full_cross_line__(_size_max);
 	check_cross(strs);
-	// __putstrs("map", strs, 1);
+	s->map = strs;
 }

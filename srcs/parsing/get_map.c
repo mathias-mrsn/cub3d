@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/28 14:35:14 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/01 11:02:55 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/01 14:56:28 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,6 @@ void
 		j = 0;
 		while (s->parser->map[i][j])
 		{
-			// printf("%c", s->parser->map[i][j]);
 			if (__FALSE == __is_charset(s->parser->map[i][j], MAP_CHARSET))
 				__error__(); //Invalid argument in map --------------------------------
 			j++;

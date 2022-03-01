@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:32:17 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/02/28 14:30:42 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/01 14:41:07 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ static void
 		__resolution_error__(s, idx);
 	if (10 < __strlen(strs[0]) || 10 < __strlen(strs[1]))
 		__resolution_error__(s, idx);
-	s->parser->win_x = __atol(strs[0]);
-	s->parser->win_y = __atol(strs[1]);
-	if (s->parser->win_x > WIN_X_MAX || s->parser->win_y > WIN_Y_MAX)
+	s->win_x = __atol(strs[0]);
+	s->win_y = __atol(strs[1]);
+	if (s->win_x > WIN_X_MAX || s->win_y > WIN_Y_MAX)
 		__resolution_error__(s, idx);
 }
 
@@ -60,7 +60,7 @@ static void
 		__texture_error__(s, idx, 1, str);
 	if (__FALSE == __file_extention(str, ".xpm"))
 		__texture_error__(s, idx, 0, str);
-	s->parser->walls_path[type_nbr - 4] = __mstrdup(str, PARSER_STACK);
+	s->parser->walls_path[type_nbr - 4] = __mstrdup(str, RAYCASTING_STACK);
 }
 
 void
