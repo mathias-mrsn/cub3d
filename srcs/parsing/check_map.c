@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 11:03:09 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/01 14:53:04 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/02 15:15:37 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,4 +119,6 @@ void
 	strs[idx] = __full_cross_line__(_size_max);
 	check_cross(strs);
 	s->map = strs;
+	s->map_height = _size;
+	s->map_width = _size_max; 
 }

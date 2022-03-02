@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:49:56 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/01 16:25:27 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/02 15:14:31 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,19 +46,39 @@ typedef struct s_parser
 	int				fd;
 }			t_parser;
 
-typedef struct s_raycasting
+typedef struct s_ray
 {
-	uint8_t			is_up : 2;
-	uint8_t			is_left : 2;
+	t_boolean		vert : 2;
+	double			distance;
+	double			angle;
+	double			x;
+	double			y;
+	double			cos_angle;
+	double			x_to_add;
+	double			y_to_add;
+	double			sin;
+	t_boolean		is_hit;	
+}			t_ray;
+
+typedef struct __attribute__((packed)) s_raycasting
+{
+	t_boolean		is_up : 2;
+	t_boolean		is_left : 2;
 	double			dirx;
 	double			distance;
+	double			init_angle;
 	uint8_t			wall_type;
-}			t_raycasting
+	t_ray			vertical;
+	t_ray			horizontal;
+}			t_raycasting;
 
 typedef struct s_cub
 {
 	void			*mlx;
 	void			*win;
+	t_img			img;
+	size_t			map_width;
+	size_t			map_height;
 	int				win_x;
 	int				win_y;
 	char			**map;

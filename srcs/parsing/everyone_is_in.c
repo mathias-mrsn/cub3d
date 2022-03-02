@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 13:53:27 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/01 14:55:53 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/02 12:55:23 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void
 	size_t	pos_x;
 
 	pos_x = 0;
-	while(s->parser->map[idx][pos_x])
+	while (s->parser->map[idx][pos_x])
 	{
 		if (true == __is_charset(s->parser->map[idx][pos_x], "NSEW"))
 		{
@@ -46,7 +46,9 @@ void
 	while (s->parser->map[i])
 	{
 		nbr_players += __str_count_cs(s->parser->map[i++], "NSEW");
-		if (__str_count_cs(s->parser->map[i++], "NSEW"))
-			__set_player__(s, i);
-	}	
+		if (__str_count_cs(s->parser->map[i], "NSEW"))
+			__set_player__(s, i++);
+	}
+	// if (!nbr_players)
+	// 	__error__(); //error no player
 }
