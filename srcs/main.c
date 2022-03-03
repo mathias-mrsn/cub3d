@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 14:05:34 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/02 09:51:49 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/03 11:28:33 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int
 	// cub->img.ptr = mlx_new_image(cub->mlx, cub->win_x, cub->win_y);
 	// cub->img.addr = mlx_get_data_addr(cub->img.ptr, &cub->img.bpp, &cub->img.size_line, &cub->img.endian);
 	engine(cub);
+	// mlx_loop(cub->mlx);
 	__clean(PARSER_STACK);
 	__clean_all();
 }

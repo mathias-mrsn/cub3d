@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 13:53:27 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/02 12:55:23 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/03 12:21:27 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,10 @@ void
 		{
 			s->player->p_x = (double)(pos_x + 1) + 0.5;
 			s->player->p_y = (double)(idx + 1) + 0.5;
-			if (true == __is_charset(s->parser->map[idx][pos_x], "EW"))
-				__trnd((s->parser->map[idx][pos_x] == 'N'), T_PI_2, T_3PI_2);
+			if (true == __is_charset(s->parser->map[idx][pos_x], "NS"))
+				s->player->angle = __trnd((s->parser->map[idx][pos_x] == 'N'), T_PI_2, T_3PI_2);
 			else if (true == __is_charset(s->parser->map[idx][pos_x], "EW"))
-				__trnd((s->parser->map[idx][pos_x] == 'E'), 0.0, T_PI);
+				s->player->angle = __trnd((s->parser->map[idx][pos_x] == 'E'), 0.0, T_PI);
 		}
 		pos_x++;
 	}

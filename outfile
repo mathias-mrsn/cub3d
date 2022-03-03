@@ -1,5293 +1,1004 @@
-4
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.000000
-degree = 0.000000
-
-distance = inf
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.002182
-degree = 0.125000
-
-distance = 16959.564189
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.004363
-degree = 0.250000
-
-distance = 8479.802275
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.006545
-degree = 0.375000
-
-distance = 5653.223940
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.008727
-degree = 0.500000
-
-distance = 4239.941499
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.010908
-degree = 0.625000
-
-distance = 3391.977416
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.013090
-degree = 0.750000
-
-distance = 2826.672512
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.015271
-degree = 0.875000
-
-distance = 2291.920267
-
-mur
-mur
-mur
-mur
-mur
-sin = 0.017452
-degree = 1.000000
-
-distance = 1547.064589
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.019634
-degree = 1.125000
-
-distance = 1018.657089
-
-mur
-mur
-mur
-sin = 0.021815
-degree = 1.250000
-
-distance = 641.763639
-
-mur
-mur
-sin = 0.023996
-degree = 1.375000
-
-distance = 375.062920
-
-sin = 0.026177
-degree = 1.500000
-
-distance = 114.604650
-
-sin = 0.028358
-degree = 1.625000
-
-distance = 35.263669
-
-sin = 0.030539
-degree = 1.750000
-
-distance = 32.745537
-
-sin = 0.032719
-degree = 1.875000
-
-distance = 30.563204
-
-sin = 0.034899
-degree = 2.000000
-
-distance = 57.307417
-
-sin = 0.037080
-degree = 2.125000
-
-distance = 53.937804
-
-mur
-sin = 0.039260
-degree = 2.250000
-
-distance = 76.414011
-
-mur
-sin = 0.041440
-degree = 2.375000
-
-distance = 72.394346
-
-mur
-mur
-sin = 0.043619
-degree = 2.500000
-
-distance = 91.702343
-
-mur
-mur
-sin = 0.045799
-degree = 2.625000
-
-distance = 109.173007
-
-mur
-mur
-sin = 0.047978
-degree = 2.750000
-
-distance = 145.899813
-
-mur
-mur
-mur
-sin = 0.050157
-degree = 2.875000
-
-distance = 199.373323
-
-mur
-mur
-mur
-sin = 0.052336
-degree = 3.000000
-
-distance = 343.931807
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.054515
-degree = 3.125000
-
-distance = 678.718486
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.056693
-degree = 3.250000
-
-distance = 652.640337
-
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.058871
-degree = 3.375000
-
-distance = 628.494902
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.061049
-degree = 3.500000
-
-distance = 606.075105
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.063226
-degree = 3.625000
-
-distance = 585.202430
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.065403
-degree = 3.750000
-
-distance = 565.722167
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.067580
-degree = 3.875000
-
-distance = 547.499565
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.069756
-degree = 4.000000
-
-distance = 516.081133
-
-mur
-mur
-mur
-mur
-mur
-sin = 0.071933
-degree = 4.125000
-
-distance = 389.252986
-
-mur
-mur
-mur
-mur
-mur
-sin = 0.074108
-degree = 4.250000
-
-distance = 283.368342
-
-mur
-mur
-mur
-mur
-sin = 0.076284
-degree = 4.375000
-
-distance = 196.633698
-
-mur
-sin = 0.078459
-degree = 4.500000
-
-distance = 114.709454
-
-sin = 0.080634
-degree = 4.625000
-
-distance = 49.606962
-
-sin = 0.082808
-degree = 4.750000
-
-distance = 12.076098
-
-sin = 0.084982
-degree = 4.875000
-
-distance = 11.767173
-
-sin = 0.087156
-degree = 5.000000
-
-distance = 11.473713
-
-sin = 0.089329
-degree = 5.125000
-
-distance = 22.389172
-
-sin = 0.091502
-degree = 5.250000
-
-distance = 21.857537
-
-mur
-sin = 0.093674
-degree = 5.375000
-
-distance = 21.350662
-
-mur
-sin = 0.095846
-degree = 5.500000
-
-distance = 31.300292
-
-mur
-sin = 0.098017
-degree = 5.625000
-
-distance = 40.809189
-
-mur
-mur
-sin = 0.100188
-degree = 5.750000
-
-distance = 49.906146
-
-mur
-mur
-sin = 0.102359
-degree = 5.875000
-
-distance = 58.617503
-
-mur
-mur
-mur
-sin = 0.104528
-degree = 6.000000
-
-distance = 86.100950
-
-mur
-mur
-sin = 0.106698
-degree = 6.125000
-
-distance = 149.956059
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.108867
-degree = 6.250000
-
-distance = 339.864629
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.111035
-degree = 6.375000
-
-distance = 333.227335
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.113203
-degree = 6.500000
-
-distance = 326.845844
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.115371
-degree = 6.625000
-
-distance = 320.705677
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.117537
-degree = 6.750000
-
-distance = 314.793426
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.119704
-degree = 6.875000
-
-distance = 309.096660
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.121869
-degree = 7.000000
-
-distance = 303.603835
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.124034
-degree = 7.125000
-
-distance = 298.304218
-
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.126199
-degree = 7.250000
-
-distance = 229.795855
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.128363
-degree = 7.375000
-
-distance = 171.389104
-
-mur
-mur
-mur
-sin = 0.130526
-degree = 7.500000
-
-distance = 122.580761
-
-mur
-sin = 0.132689
-degree = 7.625000
-
-distance = 75.364267
-
-mur
-sin = 0.134851
-degree = 7.750000
-
-distance = 37.077979
-
-sin = 0.137012
-degree = 7.875000
-
-distance = 7.298613
-
-sin = 0.139173
-degree = 8.000000
-
-distance = 7.185297
-
-sin = 0.141333
-degree = 8.125000
-
-distance = 7.075478
-
-sin = 0.143493
-degree = 8.250000
-
-distance = 13.937999
-
-sin = 0.145651
-degree = 8.375000
-
-distance = 13.731420
-
-mur
-sin = 0.147809
-degree = 8.500000
-
-distance = 13.530938
-
-mur
-sin = 0.149967
-degree = 8.625000
-
-distance = 20.004434
-
-mur
-sin = 0.152123
-degree = 8.750000
-
-distance = 26.294445
-
-mur
-mur
-sin = 0.154279
-degree = 8.875000
-
-distance = 32.408756
-
-mur
-mur
-sin = 0.156434
-degree = 9.000000
-
-distance = 38.354719
-
-mur
-mur
-mur
-sin = 0.158589
-degree = 9.125000
-
-distance = 56.750507
-
-mur
-mur
-sin = 0.160743
-degree = 9.250000
-
-distance = 93.316913
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.162895
-degree = 9.375000
-
-distance = 227.139522
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.165048
-degree = 9.500000
-
-distance = 224.177744
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.167199
-degree = 9.625000
-
-distance = 221.293252
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.169350
-degree = 9.750000
-
-distance = 218.483073
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.171499
-degree = 9.875000
-
-distance = 215.744385
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.173648
-degree = 10.000000
-
-distance = 213.074508
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.175796
-degree = 10.125000
-
-distance = 210.470893
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.177944
-degree = 10.250000
-
-distance = 207.931116
-
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.180090
-degree = 10.375000
-
-distance = 166.583408
-
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.182236
-degree = 10.500000
-
-distance = 126.210298
-
-mur
-mur
-mur
-mur
-sin = 0.184380
-degree = 10.625000
-
-distance = 92.200780
-
-mur
-sin = 0.186524
-degree = 10.750000
-
-distance = 58.973633
-
-mur
-sin = 0.188667
-degree = 10.875000
-
-distance = 31.802070
-
-sin = 0.190809
-degree = 11.000000
-
-distance = 5.240843
-
-sin = 0.192950
-degree = 11.125000
-
-distance = 5.182687
-
-sin = 0.195090
-degree = 11.250000
-
-distance = 5.125831
-
-sin = 0.197230
-degree = 11.375000
-
-distance = 5.070233
-
-sin = 0.199368
-degree = 11.500000
-
-distance = 10.031703
-
-mur
-sin = 0.201505
-degree = 11.625000
-
-distance = 9.925296
-
-mur
-sin = 0.203642
-degree = 11.750000
-
-distance = 14.731753
-
-mur
-sin = 0.205777
-degree = 11.875000
-
-distance = 19.438498
-
-mur
-mur
-sin = 0.207912
-degree = 12.000000
-
-distance = 19.238937
-
-mur
-mur
-sin = 0.210045
-degree = 12.125000
-
-distance = 28.565283
-
-mur
-mur
-mur
-sin = 0.212178
-degree = 12.250000
-
-distance = 37.704250
-
-mur
-mur
-sin = 0.214309
-degree = 12.375000
-
-distance = 60.660032
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.216440
-degree = 12.500000
-
-distance = 170.948374
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.218569
-degree = 12.625000
-
-distance = 169.282892
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.220697
-degree = 12.750000
-
-distance = 167.650340
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.222825
-degree = 12.875000
-
-distance = 166.049758
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.224951
-degree = 13.000000
-
-distance = 164.480225
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.227076
-degree = 13.125000
-
-distance = 162.940853
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.229200
-degree = 13.250000
-
-distance = 161.430789
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.231323
-degree = 13.375000
-
-distance = 159.949212
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.233445
-degree = 13.500000
-
-distance = 132.793385
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.235566
-degree = 13.625000
-
-distance = 101.882193
-
-mur
-mur
-mur
-sin = 0.237686
-degree = 13.750000
-
-distance = 71.522966
-
-mur
-sin = 0.239804
-degree = 13.875000
-
-distance = 50.040770
-
-mur
-mur
-sin = 0.241922
-degree = 14.000000
-
-distance = 24.801393
-
-sin = 0.244038
-degree = 14.125000
-
-distance = 4.097720
-
-sin = 0.246153
-degree = 14.250000
-
-distance = 4.062509
-
-sin = 0.248267
-degree = 14.375000
-
-distance = 4.027918
-
-sin = 0.250380
-degree = 14.500000
-
-distance = 3.993929
-
-sin = 0.252492
-degree = 14.625000
-
-distance = 7.921056
-
-mur
-sin = 0.254602
-degree = 14.750000
-
-distance = 7.855399
-
-mur
-sin = 0.256711
-degree = 14.875000
-
-distance = 11.686288
-
-mur
-sin = 0.258819
-degree = 15.000000
-
-distance = 11.591110
-
-mur
-mur
-sin = 0.260926
-degree = 15.125000
-
-distance = 15.330032
-
-mur
-mur
-sin = 0.263031
-degree = 15.250000
-
-distance = 22.810981
-
-mur
-mur
-mur
-sin = 0.265135
-degree = 15.375000
-
-distance = 30.173259
-
-mur
-mur
-sin = 0.267238
-degree = 15.500000
-
-distance = 44.903730
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.269340
-degree = 15.625000
-
-distance = 115.096138
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.271440
-degree = 15.750000
-
-distance = 136.309824
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.273540
-degree = 15.875000
-
-distance = 135.263802
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.275637
-degree = 16.000000
-
-distance = 134.234345
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.277734
-degree = 16.125000
-
-distance = 133.221070
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.279829
-degree = 16.250000
-
-distance = 132.223601
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.281923
-degree = 16.375000
-
-distance = 131.241579
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.284015
-degree = 16.500000
-
-distance = 130.274651
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.286106
-degree = 16.625000
-
-distance = 111.846468
-
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.288196
-degree = 16.750000
-
-distance = 86.746439
-
-mur
-mur
-mur
-sin = 0.290285
-degree = 16.875000
-
-distance = 62.008096
-
-mur
-mur
-sin = 0.292372
-degree = 17.000000
-
-distance = 41.043643
-
-mur
-sin = 0.294457
-degree = 17.125000
-
-distance = 23.772544
-
-sin = 0.296542
-degree = 17.250000
-
-distance = 6.744417
-
-sin = 0.298624
-degree = 17.375000
-
-distance = 3.348688
-
-sin = 0.300706
-degree = 17.500000
-
-distance = 3.325510
-
-sin = 0.302786
-degree = 17.625000
-
-distance = 3.302665
-
-sin = 0.304864
-degree = 17.750000
-
-distance = 6.560296
-
-mur
-sin = 0.306941
-degree = 17.875000
-
-distance = 6.515902
-
-mur
-sin = 0.309017
-degree = 18.000000
-
-distance = 9.708204
-
-mur
-sin = 0.311091
-degree = 18.125000
-
-distance = 9.643476
-
-mur
-mur
-sin = 0.313164
-degree = 18.250000
-
-distance = 12.772868
-
-mur
-mur
-sin = 0.315235
-degree = 18.375000
-
-distance = 15.861184
-
-mur
-mur
-mur
-sin = 0.317305
-degree = 18.500000
-
-distance = 22.060817
-
-mur
-mur
-sin = 0.319373
-degree = 18.625000
-
-distance = 34.442505
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.321439
-degree = 18.750000
-
-distance = 80.886147
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.323505
-degree = 18.875000
-
-distance = 114.372415
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.325568
-degree = 19.000000
-
-distance = 113.647479
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.327630
-degree = 19.125000
-
-distance = 112.932209
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.329691
-degree = 19.250000
-
-distance = 112.226417
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.331750
-degree = 19.375000
-
-distance = 111.529920
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.333807
-degree = 19.500000
-
-distance = 110.842540
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.335863
-degree = 19.625000
-
-distance = 110.164101
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.337917
-degree = 19.750000
-
-distance = 97.657198
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.339969
-degree = 19.875000
-
-distance = 76.477507
-
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.342020
-degree = 20.000000
-
-distance = 55.552284
-
-mur
-mur
-sin = 0.344069
-degree = 20.125000
-
-distance = 37.783073
-
-mur
-sin = 0.346117
-degree = 20.250000
-
-distance = 23.113568
-
-mur
-sin = 0.348163
-degree = 20.375000
-
-distance = 5.744435
-
-sin = 0.350207
-degree = 20.500000
-
-distance = 2.855451
-
-sin = 0.352250
-degree = 20.625000
-
-distance = 2.838892
-
-sin = 0.354291
-degree = 20.750000
-
-distance = 2.822538
-
-sin = 0.356330
-degree = 20.875000
-
-distance = 5.612769
-
-sin = 0.358368
-degree = 21.000000
-
-distance = 5.580856
-
-mur
-sin = 0.360404
-degree = 21.125000
-
-distance = 8.323995
-
-mur
-sin = 0.362438
-degree = 21.250000
-
-distance = 8.277277
-
-mur
-mur
-sin = 0.364470
-degree = 21.375000
-
-distance = 10.974825
-
-mur
-mur
-sin = 0.366501
-degree = 21.500000
-
-distance = 13.642519
-
-mur
-mur
-sin = 0.368530
-degree = 21.625000
-
-distance = 18.994372
-
-mur
-mur
-sin = 0.370557
-degree = 21.750000
-
-distance = 29.685007
-
-mur
-mur
-mur
-mur
-mur
-sin = 0.372583
-degree = 21.875000
-
-distance = 59.047261
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.374607
-degree = 22.000000
-
-distance = 98.770285
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.376629
-degree = 22.125000
-
-distance = 98.240042
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.378649
-degree = 22.250000
-
-distance = 97.715925
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.380667
-degree = 22.375000
-
-distance = 97.197831
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.382683
-degree = 22.500000
-
-distance = 96.685659
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.384698
-degree = 22.625000
-
-distance = 96.179313
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.386711
-degree = 22.750000
-
-distance = 95.678695
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.388722
-degree = 22.875000
-
-distance = 90.038646
-
-mur
-mur
-mur
-mur
-mur
-sin = 0.390731
-degree = 23.000000
-
-distance = 69.101226
-
-mur
-mur
-mur
-mur
-sin = 0.392738
-degree = 23.125000
-
-distance = 50.924480
-
-mur
-mur
-sin = 0.394744
-degree = 23.250000
-
-distance = 35.466036
-
-mur
-sin = 0.396747
-degree = 23.375000
-
-distance = 20.163963
-
-sin = 0.398749
-degree = 23.500000
-
-distance = 7.523529
-
-sin = 0.400749
-degree = 23.625000
-
-distance = 2.495329
-
-sin = 0.402747
-degree = 23.750000
-
-distance = 2.482950
-
-sin = 0.404743
-degree = 23.875000
-
-distance = 2.470706
-
-sin = 0.406737
-degree = 24.000000
-
-distance = 4.917187
-
-sin = 0.408729
-degree = 24.125000
-
-distance = 4.893221
-
-mur
-sin = 0.410719
-degree = 24.250000
-
-distance = 7.304267
-
-mur
-sin = 0.412707
-degree = 24.375000
-
-distance = 7.269079
-
-mur
-mur
-sin = 0.414693
-degree = 24.500000
-
-distance = 9.645684
-
-mur
-mur
-sin = 0.416677
-degree = 24.625000
-
-distance = 11.999689
-
-mur
-mur
-sin = 0.418660
-degree = 24.750000
-
-distance = 16.720022
-
-mur
-mur
-mur
-sin = 0.420640
-degree = 24.875000
-
-distance = 23.773298
-
-mur
-mur
-mur
-mur
-sin = 0.422618
-degree = 25.000000
-
-distance = 44.957830
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.424595
-degree = 25.125000
-
-distance = 87.141965
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.426569
-degree = 25.250000
-
-distance = 86.738658
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.428541
-degree = 25.375000
-
-distance = 86.339476
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.430511
-degree = 25.500000
-
-distance = 85.944358
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.432479
-degree = 25.625000
-
-distance = 85.553246
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.434445
-degree = 25.750000
-
-distance = 85.166081
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.436409
-degree = 25.875000
-
-distance = 84.782806
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.438371
-degree = 26.000000
-
-distance = 82.122193
-
-mur
-mur
-mur
-mur
-mur
-sin = 0.440331
-degree = 26.125000
-
-distance = 63.588533
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.442289
-degree = 26.250000
-
-distance = 47.480301
-
-mur
-mur
-mur
-sin = 0.444244
-degree = 26.375000
-
-distance = 33.765205
-
-mur
-sin = 0.446198
-degree = 26.500000
-
-distance = 20.170426
-
-sin = 0.448149
-degree = 26.625000
-
-distance = 8.925599
-
-sin = 0.450098
-degree = 26.750000
-
-distance = 2.221736
-
-sin = 0.452046
-degree = 26.875000
-
-distance = 2.212166
-
-sin = 0.453990
-degree = 27.000000
-
-distance = 2.202689
-
-sin = 0.455933
-degree = 27.125000
-
-distance = 4.386607
-
-sin = 0.457874
-degree = 27.250000
-
-distance = 4.368015
-
-mur
-sin = 0.459812
-degree = 27.375000
-
-distance = 4.349600
-
-mur
-sin = 0.461749
-degree = 27.500000
-
-distance = 6.497042
-
-mur
-sin = 0.463683
-degree = 27.625000
-
-distance = 8.626589
-
-mur
-mur
-sin = 0.465615
-degree = 27.750000
-
-distance = 10.738497
-
-mur
-mur
-sin = 0.467544
-degree = 27.875000
-
-distance = 12.833013
-
-mur
-mur
-mur
-sin = 0.469472
-degree = 28.000000
-
-distance = 19.170490
-
-mur
-mur
-sin = 0.471397
-degree = 28.125000
-
-distance = 36.063041
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.473320
-degree = 28.250000
-
-distance = 78.171271
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.475240
-degree = 28.375000
-
-distance = 77.855343
-
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.477159
-degree = 28.500000
-
-distance = 77.542326
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.479075
-degree = 28.625000
-
-distance = 77.232182
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.480989
-degree = 28.750000
-
-distance = 76.924873
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.482900
-degree = 28.875000
-
-distance = 76.620364
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.484810
-degree = 29.000000
-
-distance = 76.318618
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.486717
-degree = 29.125000
-
-distance = 76.019599
-
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.488621
-degree = 29.250000
-
-distance = 59.350674
-
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.490524
-degree = 29.375000
-
-distance = 44.850037
-
-mur
-mur
-mur
-mur
-sin = 0.492424
-degree = 29.500000
-
-distance = 30.461581
-
-mur
-mur
-mur
-sin = 0.494321
-degree = 29.625000
-
-distance = 20.229761
-
-sin = 0.496217
-degree = 29.750000
-
-distance = 8.060998
-
-sin = 0.498109
-degree = 29.875000
-
-distance = 2.007591
-
-sin = 0.500000
-degree = 30.000000
-
-distance = 2.000000
-
-sin = 0.501888
-degree = 30.125000
-
-distance = 1.992476
-
-sin = 0.503774
-degree = 30.250000
-
-distance = 3.970034
-
-sin = 0.505657
-degree = 30.375000
-
-distance = 3.955247
-
-mur
-sin = 0.507538
-degree = 30.500000
-
-distance = 3.940589
-
-mur
-sin = 0.509417
-degree = 30.625000
-
-distance = 5.889086
-
-mur
-sin = 0.511293
-degree = 30.750000
-
-distance = 7.823302
-
-mur
-mur
-sin = 0.513167
-degree = 30.875000
-
-distance = 9.743421
-
-mur
-mur
-sin = 0.515038
-degree = 31.000000
-
-distance = 11.649624
-
-mur
-mur
-mur
-sin = 0.516907
-degree = 31.125000
-
-distance = 17.411259
-
-mur
-mur
-sin = 0.518773
-degree = 31.250000
-
-distance = 28.914366
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.520637
-degree = 31.375000
-
-distance = 71.066769
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.522499
-degree = 31.500000
-
-distance = 70.813592
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.524357
-degree = 31.625000
-
-distance = 70.562547
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.526214
-degree = 31.750000
-
-distance = 70.313609
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.528068
-degree = 31.875000
-
-distance = 70.066754
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.529919
-degree = 32.000000
-
-distance = 69.821957
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.531768
-degree = 32.125000
-
-distance = 69.579195
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.533615
-degree = 32.250000
-
-distance = 69.338444
-
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.535458
-degree = 32.375000
-
-distance = 56.026768
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.537300
-degree = 32.500000
-
-distance = 40.945498
-
-mur
-mur
-mur
-sin = 0.539138
-degree = 32.625000
-
-distance = 29.676985
-
-sin = 0.540974
-degree = 32.750000
-
-distance = 20.333677
-
-mur
-sin = 0.542808
-degree = 32.875000
-
-distance = 9.211359
-
-sin = 0.544639
-degree = 33.000000
-
-distance = 1.836078
-
-sin = 0.546467
-degree = 33.125000
-
-distance = 1.829935
-
-sin = 0.548293
-degree = 33.250000
-
-distance = 1.823842
-
-sin = 0.550116
-degree = 33.375000
-
-distance = 3.635594
-
-sin = 0.551937
-degree = 33.500000
-
-distance = 3.623602
-
-mur
-sin = 0.553755
-degree = 33.625000
-
-distance = 3.611706
-
-mur
-sin = 0.555570
-degree = 33.750000
-
-distance = 5.399857
-
-mur
-sin = 0.557383
-degree = 33.875000
-
-distance = 7.176395
-
-mur
-mur
-sin = 0.559193
-degree = 34.000000
-
-distance = 8.941458
-
-mur
-mur
-sin = 0.561000
-degree = 34.125000
-
-distance = 10.695182
-
-mur
-mur
-mur
-sin = 0.562805
-degree = 34.250000
-
-distance = 14.214517
-
-mur
-mur
-sin = 0.564607
-degree = 34.375000
-
-distance = 24.796012
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.566406
-degree = 34.500000
-
-distance = 65.324139
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.568203
-degree = 34.625000
-
-distance = 65.117589
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.569997
-degree = 34.750000
-
-distance = 64.912649
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.571788
-degree = 34.875000
-
-distance = 64.709302
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.573576
-degree = 35.000000
-
-distance = 64.507531
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.575362
-degree = 35.125000
-
-distance = 64.307320
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.577145
-degree = 35.250000
-
-distance = 64.108652
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.578925
-degree = 35.375000
-
-distance = 63.911510
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.580703
-degree = 35.500000
-
-distance = 53.383575
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.582478
-degree = 35.625000
-
-distance = 39.486490
-
-mur
-mur
-mur
-sin = 0.584250
-degree = 35.750000
-
-distance = 29.097150
-
-mur
-mur
-sin = 0.586019
-degree = 35.875000
-
-distance = 18.770727
-
-mur
-sin = 0.587785
-degree = 36.000000
-
-distance = 10.207810
-
-sin = 0.589549
-degree = 36.125000
-
-distance = 1.696212
-
-sin = 0.591310
-degree = 36.250000
-
-distance = 1.691161
-
-sin = 0.593068
-degree = 36.375000
-
-distance = 1.686148
-
-sin = 0.594823
-degree = 36.500000
-
-distance = 1.681173
-
-sin = 0.596575
-degree = 36.625000
-
-distance = 3.352470
-
-mur
-sin = 0.598325
-degree = 36.750000
-
-distance = 3.342667
-
-mur
-sin = 0.600071
-degree = 36.875000
-
-distance = 4.999406
-
-mur
-sin = 0.601815
-degree = 37.000000
-
-distance = 4.984920
-
-mur
-mur
-sin = 0.603556
-degree = 37.125000
-
-distance = 6.627389
-
-mur
-mur
-sin = 0.605294
-degree = 37.250000
-
-distance = 9.912539
-
-mur
-mur
-mur
-sin = 0.607029
-degree = 37.375000
-
-distance = 13.178939
-
-mur
-mur
-sin = 0.608761
-degree = 37.500000
-
-distance = 21.354835
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.610491
-degree = 37.625000
-
-distance = 55.692894
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.612217
-degree = 37.750000
-
-distance = 60.436060
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.613941
-degree = 37.875000
-
-distance = 60.266393
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.615661
-degree = 38.000000
-
-distance = 60.097962
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.617379
-degree = 38.125000
-
-distance = 59.930754
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.619094
-degree = 38.250000
-
-distance = 59.764758
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.620806
-degree = 38.375000
-
-distance = 59.599961
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.622515
-degree = 38.500000
-
-distance = 59.436353
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.624221
-degree = 38.625000
-
-distance = 51.263933
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.625923
-degree = 38.750000
-
-distance = 38.343346
-
-mur
-mur
-mur
-sin = 0.627623
-degree = 38.875000
-
-distance = 28.679618
-
-mur
-sin = 0.629320
-degree = 39.000000
-
-distance = 19.068189
-
-mur
-sin = 0.631014
-degree = 39.125000
-
-distance = 11.093250
-
-sin = 0.632705
-degree = 39.250000
-
-distance = 1.580515
-
-sin = 0.634393
-degree = 39.375000
-
-distance = 1.576309
-
-sin = 0.636078
-degree = 39.500000
-
-distance = 1.572134
-
-sin = 0.637760
-degree = 39.625000
-
-distance = 1.567988
-
-sin = 0.639439
-degree = 39.750000
-
-distance = 3.127742
-
-mur
-sin = 0.641115
-degree = 39.875000
-
-distance = 3.119566
-
-mur
-sin = 0.642788
-degree = 40.000000
-
-distance = 4.667171
-
-mur
-sin = 0.644457
-degree = 40.125000
-
-distance = 4.655079
-
-mur
-mur
-sin = 0.646124
-degree = 40.250000
-
-distance = 6.190762
-
-mur
-mur
-sin = 0.647788
-degree = 40.375000
-
-distance = 7.718580
-
-mur
-mur
-mur
-sin = 0.649448
-degree = 40.500000
-
-distance = 12.318152
-
-mur
-mur
-sin = 0.651105
-degree = 40.625000
-
-distance = 18.430194
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.652760
-degree = 40.750000
-
-distance = 42.894801
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.654411
-degree = 40.875000
-
-distance = 56.539396
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.656059
-degree = 41.000000
-
-distance = 56.397364
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.657704
-degree = 41.125000
-
-distance = 56.256311
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.659346
-degree = 41.250000
-
-distance = 56.116228
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.660985
-degree = 41.375000
-
-distance = 55.977106
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.662620
-degree = 41.500000
-
-distance = 55.838938
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.664252
-degree = 41.625000
-
-distance = 55.701715
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.665882
-degree = 41.750000
-
-distance = 49.558355
-
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.667508
-degree = 41.875000
-
-distance = 37.452750
-
-mur
-mur
-mur
-mur
-mur
-sin = 0.669131
-degree = 42.000000
-
-distance = 28.395054
-
-mur
-mur
-sin = 0.670750
-degree = 42.125000
-
-distance = 19.381281
-
-mur
-sin = 0.672367
-degree = 42.250000
-
-distance = 10.410984
-
-sin = 0.673980
-degree = 42.375000
-
-distance = 2.967447
-
-sin = 0.675590
-degree = 42.500000
-
-distance = 1.480187
-
-sin = 0.677197
-degree = 42.625000
-
-distance = 1.476675
-
-sin = 0.678801
-degree = 42.750000
-
-distance = 1.473186
-
-sin = 0.680401
-degree = 42.875000
-
-distance = 2.939442
-
-mur
-sin = 0.681998
-degree = 43.000000
-
-distance = 2.932558
-
-mur
-sin = 0.683592
-degree = 43.125000
-
-distance = 4.388581
-
-mur
-sin = 0.685183
-degree = 43.250000
-
-distance = 4.378392
-
-mur
-mur
-sin = 0.686770
-degree = 43.375000
-
-distance = 5.824363
-
-mur
-mur
-sin = 0.688355
-degree = 43.500000
-
-distance = 7.263698
-
-mur
-mur
-mur
-sin = 0.689935
-degree = 43.625000
-
-distance = 10.145877
-
-mur
-mur
-sin = 0.691513
-degree = 43.750000
-
-distance = 15.907147
-
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.693087
-degree = 43.875000
-
-distance = 34.627669
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.694658
-degree = 44.000000
-
-distance = 53.263592
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.696226
-degree = 44.125000
-
-distance = 53.143658
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.697790
-degree = 44.250000
-
-distance = 53.024514
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.699352
-degree = 44.375000
-
-distance = 52.906155
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.700909
-degree = 44.500000
-
-distance = 52.788573
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.702464
-degree = 44.625000
-
-distance = 52.671763
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.704015
-degree = 44.750000
-
-distance = 52.555719
-
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-mur
-sin = 0.705562
-degree = 44.875000
-
-distance = 48.188507
-
+3
+x = 2.500000
+y = 3.500000
+angle = 90.000000
+char = Nd_x = 0.707107 | d_y = 0.707107 --- p_x = 2.000000 | p_y = 2.000000
+d_x = 0.708220 | d_y = 0.708220 --- p_x = 2.001573 | p_y = 2.000000
+d_x = 0.709339 | d_y = 0.709339 --- p_x = 2.003152 | p_y = 2.000000
+d_x = 0.710463 | d_y = 0.710463 --- p_x = 2.004735 | p_y = 2.000000
+d_x = 0.711592 | d_y = 0.711592 --- p_x = 2.006323 | p_y = 2.000000
+d_x = 0.712726 | d_y = 0.712726 --- p_x = 2.007916 | p_y = 2.000000
+d_x = 0.713866 | d_y = 0.713866 --- p_x = 2.009515 | p_y = 2.000000
+d_x = 0.715012 | d_y = 0.715012 --- p_x = 2.011118 | p_y = 2.000000
+d_x = 0.716163 | d_y = 0.716163 --- p_x = 2.012727 | p_y = 2.000000
+d_x = 0.717319 | d_y = 0.717319 --- p_x = 2.014341 | p_y = 2.000000
+d_x = 0.718481 | d_y = 0.718481 --- p_x = 2.015960 | p_y = 2.000000
+d_x = 0.719648 | d_y = 0.719648 --- p_x = 2.017584 | p_y = 2.000000
+d_x = 0.720821 | d_y = 0.720821 --- p_x = 2.019214 | p_y = 2.000000
+d_x = 0.722000 | d_y = 0.722000 --- p_x = 2.020849 | p_y = 2.000000
+d_x = 0.723184 | d_y = 0.723184 --- p_x = 2.022489 | p_y = 2.000000
+d_x = 0.724374 | d_y = 0.724374 --- p_x = 2.024135 | p_y = 2.000000
+d_x = 0.725570 | d_y = 0.725570 --- p_x = 2.025786 | p_y = 2.000000
+d_x = 0.726771 | d_y = 0.726771 --- p_x = 2.027443 | p_y = 2.000000
+d_x = 0.727978 | d_y = 0.727978 --- p_x = 2.029105 | p_y = 2.000000
+d_x = 0.729191 | d_y = 0.729191 --- p_x = 2.030773 | p_y = 2.000000
+d_x = 0.730410 | d_y = 0.730410 --- p_x = 2.032446 | p_y = 2.000000
+d_x = 0.731635 | d_y = 0.731635 --- p_x = 2.034125 | p_y = 2.000000
+d_x = 0.732865 | d_y = 0.732865 --- p_x = 2.035809 | p_y = 2.000000
+d_x = 0.734102 | d_y = 0.734102 --- p_x = 2.037499 | p_y = 2.000000
+d_x = 0.735345 | d_y = 0.735345 --- p_x = 2.039195 | p_y = 2.000000
+d_x = 0.736593 | d_y = 0.736593 --- p_x = 2.040897 | p_y = 2.000000
+d_x = 0.737848 | d_y = 0.737848 --- p_x = 2.042604 | p_y = 2.000000
+d_x = 0.739109 | d_y = 0.739109 --- p_x = 2.044318 | p_y = 2.000000
+d_x = 0.740376 | d_y = 0.740376 --- p_x = 2.046037 | p_y = 2.000000
+d_x = 0.741649 | d_y = 0.741649 --- p_x = 2.047762 | p_y = 2.000000
+d_x = 0.742928 | d_y = 0.742928 --- p_x = 2.049493 | p_y = 2.000000
+d_x = 0.744214 | d_y = 0.744214 --- p_x = 2.051230 | p_y = 2.000000
+d_x = 0.745506 | d_y = 0.745506 --- p_x = 2.052973 | p_y = 2.000000
+d_x = 0.746804 | d_y = 0.746804 --- p_x = 2.054722 | p_y = 2.000000
+d_x = 0.748109 | d_y = 0.748109 --- p_x = 2.056477 | p_y = 2.000000
+d_x = 0.749420 | d_y = 0.749420 --- p_x = 2.058238 | p_y = 2.000000
+d_x = 0.750737 | d_y = 0.750737 --- p_x = 2.060006 | p_y = 2.000000
+d_x = 0.752061 | d_y = 0.752061 --- p_x = 2.061780 | p_y = 2.000000
+d_x = 0.753392 | d_y = 0.753392 --- p_x = 2.063560 | p_y = 2.000000
+d_x = 0.754729 | d_y = 0.754729 --- p_x = 2.065346 | p_y = 2.000000
+d_x = 0.756073 | d_y = 0.756073 --- p_x = 2.067139 | p_y = 2.000000
+d_x = 0.757423 | d_y = 0.757423 --- p_x = 2.068938 | p_y = 2.000000
+d_x = 0.758781 | d_y = 0.758781 --- p_x = 2.070743 | p_y = 2.000000
+d_x = 0.760144 | d_y = 0.760144 --- p_x = 2.072555 | p_y = 2.000000
+d_x = 0.761515 | d_y = 0.761515 --- p_x = 2.074374 | p_y = 2.000000
+d_x = 0.762893 | d_y = 0.762893 --- p_x = 2.076199 | p_y = 2.000000
+d_x = 0.764277 | d_y = 0.764277 --- p_x = 2.078031 | p_y = 2.000000
+d_x = 0.765668 | d_y = 0.765668 --- p_x = 2.079869 | p_y = 2.000000
+d_x = 0.767067 | d_y = 0.767067 --- p_x = 2.081714 | p_y = 2.000000
+d_x = 0.768472 | d_y = 0.768472 --- p_x = 2.083566 | p_y = 2.000000
+d_x = 0.769885 | d_y = 0.769885 --- p_x = 2.085425 | p_y = 2.000000
+d_x = 0.771304 | d_y = 0.771304 --- p_x = 2.087290 | p_y = 2.000000
+d_x = 0.772731 | d_y = 0.772731 --- p_x = 2.089163 | p_y = 2.000000
+d_x = 0.774165 | d_y = 0.774165 --- p_x = 2.091042 | p_y = 2.000000
+d_x = 0.775606 | d_y = 0.775606 --- p_x = 2.092928 | p_y = 2.000000
+d_x = 0.777054 | d_y = 0.777054 --- p_x = 2.094822 | p_y = 2.000000
+d_x = 0.778510 | d_y = 0.778510 --- p_x = 2.096722 | p_y = 2.000000
+d_x = 0.779973 | d_y = 0.779973 --- p_x = 2.098630 | p_y = 2.000000
+d_x = 0.781444 | d_y = 0.781444 --- p_x = 2.100545 | p_y = 2.000000
+d_x = 0.782922 | d_y = 0.782922 --- p_x = 2.102467 | p_y = 2.000000
+d_x = 0.784407 | d_y = 0.784407 --- p_x = 2.104396 | p_y = 2.000000
+d_x = 0.785900 | d_y = 0.785900 --- p_x = 2.106333 | p_y = 2.000000
+d_x = 0.787401 | d_y = 0.787401 --- p_x = 2.108277 | p_y = 2.000000
+d_x = 0.788910 | d_y = 0.788910 --- p_x = 2.110228 | p_y = 2.000000
+d_x = 0.790426 | d_y = 0.790426 --- p_x = 2.112187 | p_y = 2.000000
+d_x = 0.791950 | d_y = 0.791950 --- p_x = 2.114154 | p_y = 2.000000
+d_x = 0.793482 | d_y = 0.793482 --- p_x = 2.116128 | p_y = 2.000000
+d_x = 0.795022 | d_y = 0.795022 --- p_x = 2.118110 | p_y = 2.000000
+d_x = 0.796570 | d_y = 0.796570 --- p_x = 2.120100 | p_y = 2.000000
+d_x = 0.798126 | d_y = 0.798126 --- p_x = 2.122097 | p_y = 2.000000
+d_x = 0.799690 | d_y = 0.799690 --- p_x = 2.124102 | p_y = 2.000000
+d_x = 0.801262 | d_y = 0.801262 --- p_x = 2.126115 | p_y = 2.000000
+d_x = 0.802842 | d_y = 0.802842 --- p_x = 2.128136 | p_y = 2.000000
+d_x = 0.804430 | d_y = 0.804430 --- p_x = 2.130165 | p_y = 2.000000
+d_x = 0.806027 | d_y = 0.806027 --- p_x = 2.132202 | p_y = 2.000000
+d_x = 0.807632 | d_y = 0.807632 --- p_x = 2.134247 | p_y = 2.000000
+d_x = 0.809245 | d_y = 0.809245 --- p_x = 2.136300 | p_y = 2.000000
+d_x = 0.810867 | d_y = 0.810867 --- p_x = 2.138362 | p_y = 2.000000
+d_x = 0.812498 | d_y = 0.812498 --- p_x = 2.140431 | p_y = 2.000000
+d_x = 0.814137 | d_y = 0.814137 --- p_x = 2.142510 | p_y = 2.000000
+d_x = 0.815784 | d_y = 0.815784 --- p_x = 2.144596 | p_y = 2.000000
+d_x = 0.817441 | d_y = 0.817441 --- p_x = 2.146691 | p_y = 2.000000
+d_x = 0.819106 | d_y = 0.819106 --- p_x = 2.148795 | p_y = 2.000000
+d_x = 0.820780 | d_y = 0.820780 --- p_x = 2.150907 | p_y = 2.000000
+d_x = 0.822463 | d_y = 0.822463 --- p_x = 2.153027 | p_y = 2.000000
+d_x = 0.824155 | d_y = 0.824155 --- p_x = 2.155157 | p_y = 2.000000
+d_x = 0.825855 | d_y = 0.825855 --- p_x = 2.157295 | p_y = 2.000000
+d_x = 0.827565 | d_y = 0.827565 --- p_x = 2.159442 | p_y = 2.000000
+d_x = 0.829284 | d_y = 0.829284 --- p_x = 2.161598 | p_y = 2.000000
+d_x = 0.831013 | d_y = 0.831013 --- p_x = 2.163763 | p_y = 2.000000
+d_x = 0.832750 | d_y = 0.832750 --- p_x = 2.165937 | p_y = 2.000000
+d_x = 0.834497 | d_y = 0.834497 --- p_x = 2.168121 | p_y = 2.000000
+d_x = 0.836253 | d_y = 0.836253 --- p_x = 2.170313 | p_y = 2.000000
+d_x = 0.838019 | d_y = 0.838019 --- p_x = 2.172515 | p_y = 2.000000
+d_x = 0.839794 | d_y = 0.839794 --- p_x = 2.174726 | p_y = 2.000000
+d_x = 0.841579 | d_y = 0.841579 --- p_x = 2.176946 | p_y = 2.000000
+d_x = 0.843374 | d_y = 0.843374 --- p_x = 2.179176 | p_y = 2.000000
+d_x = 0.845178 | d_y = 0.845178 --- p_x = 2.181415 | p_y = 2.000000
+d_x = 0.846993 | d_y = 0.846993 --- p_x = 2.183664 | p_y = 2.000000
+d_x = 0.848817 | d_y = 0.848817 --- p_x = 2.185923 | p_y = 2.000000
+d_x = 0.850651 | d_y = 0.850651 --- p_x = 2.188191 | p_y = 2.000000
+d_x = 0.852495 | d_y = 0.852495 --- p_x = 2.190469 | p_y = 2.000000
+d_x = 0.854349 | d_y = 0.854349 --- p_x = 2.192757 | p_y = 2.000000
+d_x = 0.856214 | d_y = 0.856214 --- p_x = 2.195055 | p_y = 2.000000
+d_x = 0.858089 | d_y = 0.858089 --- p_x = 2.197364 | p_y = 2.000000
+d_x = 0.859974 | d_y = 0.859974 --- p_x = 2.199682 | p_y = 2.000000
+d_x = 0.861869 | d_y = 0.861869 --- p_x = 2.202010 | p_y = 2.000000
+d_x = 0.863775 | d_y = 0.863775 --- p_x = 2.204349 | p_y = 2.000000
+d_x = 0.865692 | d_y = 0.865692 --- p_x = 2.206698 | p_y = 2.000000
+d_x = 0.867619 | d_y = 0.867619 --- p_x = 2.209058 | p_y = 2.000000
+d_x = 0.869557 | d_y = 0.869557 --- p_x = 2.211428 | p_y = 2.000000
+d_x = 0.871506 | d_y = 0.871506 --- p_x = 2.213809 | p_y = 2.000000
+d_x = 0.873466 | d_y = 0.873466 --- p_x = 2.216200 | p_y = 2.000000
+d_x = 0.875437 | d_y = 0.875437 --- p_x = 2.218603 | p_y = 2.000000
+d_x = 0.877419 | d_y = 0.877419 --- p_x = 2.221016 | p_y = 2.000000
+d_x = 0.879412 | d_y = 0.879412 --- p_x = 2.223440 | p_y = 2.000000
+d_x = 0.881416 | d_y = 0.881416 --- p_x = 2.225875 | p_y = 2.000000
+d_x = 0.883432 | d_y = 0.883432 --- p_x = 2.228321 | p_y = 2.000000
+d_x = 0.885459 | d_y = 0.885459 --- p_x = 2.230779 | p_y = 2.000000
+d_x = 0.887498 | d_y = 0.887498 --- p_x = 2.233247 | p_y = 2.000000
+d_x = 0.889548 | d_y = 0.889548 --- p_x = 2.235728 | p_y = 2.000000
+d_x = 0.891610 | d_y = 0.891610 --- p_x = 2.238219 | p_y = 2.000000
+d_x = 0.893683 | d_y = 0.893683 --- p_x = 2.240723 | p_y = 2.000000
+d_x = 0.895769 | d_y = 0.895769 --- p_x = 2.243238 | p_y = 2.000000
+d_x = 0.897867 | d_y = 0.897867 --- p_x = 2.245764 | p_y = 2.000000
+d_x = 0.899976 | d_y = 0.899976 --- p_x = 2.248303 | p_y = 2.000000
+d_x = 0.902098 | d_y = 0.902098 --- p_x = 2.250853 | p_y = 2.000000
+d_x = 0.904232 | d_y = 0.904232 --- p_x = 2.253416 | p_y = 2.000000
+d_x = 0.906379 | d_y = 0.906379 --- p_x = 2.255991 | p_y = 2.000000
+d_x = 0.908537 | d_y = 0.908537 --- p_x = 2.258578 | p_y = 2.000000
+d_x = 0.910709 | d_y = 0.910709 --- p_x = 2.261177 | p_y = 2.000000
+d_x = 0.912893 | d_y = 0.912893 --- p_x = 2.263789 | p_y = 2.000000
+d_x = 0.915090 | d_y = 0.915090 --- p_x = 2.266414 | p_y = 2.000000
+d_x = 0.917300 | d_y = 0.917300 --- p_x = 2.269051 | p_y = 2.000000
+d_x = 0.919523 | d_y = 0.919523 --- p_x = 2.271700 | p_y = 2.000000
+d_x = 0.921758 | d_y = 0.921758 --- p_x = 2.274363 | p_y = 2.000000
+d_x = 0.924007 | d_y = 0.924007 --- p_x = 2.277039 | p_y = 2.000000
+d_x = 0.926270 | d_y = 0.926270 --- p_x = 2.279728 | p_y = 2.000000
+d_x = 0.928545 | d_y = 0.928545 --- p_x = 2.282430 | p_y = 2.000000
+d_x = 0.930835 | d_y = 0.930835 --- p_x = 2.285145 | p_y = 2.000000
+d_x = 0.933137 | d_y = 0.933137 --- p_x = 2.287874 | p_y = 2.000000
+d_x = 0.935454 | d_y = 0.935454 --- p_x = 2.290616 | p_y = 2.000000
+d_x = 0.937784 | d_y = 0.937784 --- p_x = 2.293372 | p_y = 2.000000
+d_x = 0.940129 | d_y = 0.940129 --- p_x = 2.296142 | p_y = 2.000000
+d_x = 0.942487 | d_y = 0.942487 --- p_x = 2.298926 | p_y = 2.000000
+d_x = 0.944860 | d_y = 0.944860 --- p_x = 2.301723 | p_y = 2.000000
+d_x = 0.947247 | d_y = 0.947247 --- p_x = 2.304535 | p_y = 2.000000
+d_x = 0.949648 | d_y = 0.949648 --- p_x = 2.307361 | p_y = 2.000000
+d_x = 0.952064 | d_y = 0.952064 --- p_x = 2.310201 | p_y = 2.000000
+d_x = 0.954495 | d_y = 0.954495 --- p_x = 2.313056 | p_y = 2.000000
+d_x = 0.956940 | d_y = 0.956940 --- p_x = 2.315926 | p_y = 2.000000
+d_x = 0.959401 | d_y = 0.959401 --- p_x = 2.318810 | p_y = 2.000000
+d_x = 0.961876 | d_y = 0.961876 --- p_x = 2.321709 | p_y = 2.000000
+d_x = 0.964367 | d_y = 0.964367 --- p_x = 2.324623 | p_y = 2.000000
+d_x = 0.966873 | d_y = 0.966873 --- p_x = 2.327553 | p_y = 2.000000
+d_x = 0.969394 | d_y = 0.969394 --- p_x = 2.330497 | p_y = 2.000000
+d_x = 0.971932 | d_y = 0.971932 --- p_x = 2.333457 | p_y = 2.000000
+d_x = 0.974484 | d_y = 0.974484 --- p_x = 2.336433 | p_y = 2.000000
+d_x = 0.977053 | d_y = 0.977053 --- p_x = 2.339424 | p_y = 2.000000
+d_x = 0.979638 | d_y = 0.979638 --- p_x = 2.342431 | p_y = 2.000000
+d_x = 0.982238 | d_y = 0.982238 --- p_x = 2.345454 | p_y = 2.000000
+d_x = 0.984855 | d_y = 0.984855 --- p_x = 2.348493 | p_y = 2.000000
+d_x = 0.987489 | d_y = 0.987489 --- p_x = 2.351548 | p_y = 2.000000
+d_x = 0.990139 | d_y = 0.990139 --- p_x = 2.354620 | p_y = 2.000000
+d_x = 0.992806 | d_y = 0.992806 --- p_x = 2.357708 | p_y = 2.000000
+d_x = 0.995489 | d_y = 0.995489 --- p_x = 2.360813 | p_y = 2.000000
+d_x = 0.998190 | d_y = 0.998190 --- p_x = 2.363935 | p_y = 2.000000
+d_x = 1.000908 | d_y = 1.000908 --- p_x = 2.367074 | p_y = 2.000000
+d_x = 1.003643 | d_y = 1.003643 --- p_x = 2.370229 | p_y = 2.000000
+d_x = 1.006396 | d_y = 1.006396 --- p_x = 2.373403 | p_y = 2.000000
+d_x = 1.009166 | d_y = 1.009166 --- p_x = 2.376593 | p_y = 2.000000
+d_x = 1.011954 | d_y = 1.011954 --- p_x = 2.379802 | p_y = 2.000000
+d_x = 1.014760 | d_y = 1.014760 --- p_x = 2.383028 | p_y = 2.000000
+d_x = 1.017584 | d_y = 1.017584 --- p_x = 2.386272 | p_y = 2.000000
+d_x = 1.020427 | d_y = 1.020427 --- p_x = 2.389534 | p_y = 2.000000
+d_x = 1.023287 | d_y = 1.023287 --- p_x = 2.392814 | p_y = 2.000000
+d_x = 1.026167 | d_y = 1.026167 --- p_x = 2.396113 | p_y = 2.000000
+d_x = 1.029065 | d_y = 1.029065 --- p_x = 2.399431 | p_y = 2.000000
+d_x = 1.031983 | d_y = 1.031983 --- p_x = 2.402767 | p_y = 2.000000
+d_x = 1.034919 | d_y = 1.034919 --- p_x = 2.406122 | p_y = 2.000000
+d_x = 1.037875 | d_y = 1.037875 --- p_x = 2.409497 | p_y = 2.000000
+d_x = 1.040850 | d_y = 1.040850 --- p_x = 2.412890 | p_y = 2.000000
+d_x = 1.043845 | d_y = 1.043845 --- p_x = 2.416304 | p_y = 2.000000
+d_x = 1.046860 | d_y = 1.046860 --- p_x = 2.419737 | p_y = 2.000000
+d_x = 1.049895 | d_y = 1.049895 --- p_x = 2.423190 | p_y = 2.000000
+d_x = 1.052950 | d_y = 1.052950 --- p_x = 2.426663 | p_y = 2.000000
+d_x = 1.056026 | d_y = 1.056026 --- p_x = 2.430156 | p_y = 2.000000
+d_x = 1.059122 | d_y = 1.059122 --- p_x = 2.433670 | p_y = 2.000000
+d_x = 1.062239 | d_y = 1.062239 --- p_x = 2.437204 | p_y = 2.000000
+d_x = 1.065377 | d_y = 1.065377 --- p_x = 2.440759 | p_y = 2.000000
+d_x = 1.068536 | d_y = 1.068536 --- p_x = 2.444336 | p_y = 2.000000
+d_x = 1.071717 | d_y = 1.071717 --- p_x = 2.447933 | p_y = 2.000000
+d_x = 1.074920 | d_y = 1.074920 --- p_x = 2.451552 | p_y = 2.000000
+d_x = 1.078144 | d_y = 1.078144 --- p_x = 2.455193 | p_y = 2.000000
+d_x = 1.081390 | d_y = 1.081390 --- p_x = 2.458856 | p_y = 2.000000
+d_x = 1.084659 | d_y = 1.084659 --- p_x = 2.462541 | p_y = 2.000000
+d_x = 1.087950 | d_y = 1.087950 --- p_x = 2.466248 | p_y = 2.000000
+d_x = 1.091264 | d_y = 1.091264 --- p_x = 2.469978 | p_y = 2.000000
+d_x = 1.094601 | d_y = 1.094601 --- p_x = 2.473731 | p_y = 2.000000
+d_x = 1.097961 | d_y = 1.097961 --- p_x = 2.477506 | p_y = 2.000000
+d_x = 1.101345 | d_y = 1.101345 --- p_x = 2.481305 | p_y = 2.000000
+d_x = 1.104752 | d_y = 1.104752 --- p_x = 2.485128 | p_y = 2.000000
+d_x = 1.108183 | d_y = 1.108183 --- p_x = 2.488974 | p_y = 2.000000
+d_x = 1.111638 | d_y = 1.111638 --- p_x = 2.492844 | p_y = 2.000000
+d_x = 1.115118 | d_y = 1.115118 --- p_x = 2.496738 | p_y = 2.000000
+d_x = 1.118622 | d_y = 1.118622 --- p_x = 2.500657 | p_y = 2.000000
+d_x = 1.122151 | d_y = 1.122151 --- p_x = 2.504601 | p_y = 2.000000
+d_x = 1.125705 | d_y = 1.125705 --- p_x = 2.508569 | p_y = 2.000000
+d_x = 1.129284 | d_y = 1.129284 --- p_x = 2.512563 | p_y = 2.000000
+d_x = 1.132890 | d_y = 1.132890 --- p_x = 2.516582 | p_y = 2.000000
+d_x = 1.136521 | d_y = 1.136521 --- p_x = 2.520627 | p_y = 2.000000
+d_x = 1.140178 | d_y = 1.140178 --- p_x = 2.524698 | p_y = 2.000000
+d_x = 1.143862 | d_y = 1.143862 --- p_x = 2.528795 | p_y = 2.000000
+d_x = 1.147572 | d_y = 1.147572 --- p_x = 2.532919 | p_y = 2.000000
+d_x = 1.151310 | d_y = 1.151310 --- p_x = 2.537070 | p_y = 2.000000
+d_x = 1.155074 | d_y = 1.155074 --- p_x = 2.541248 | p_y = 2.000000
+d_x = 1.158867 | d_y = 1.158867 --- p_x = 2.545453 | p_y = 2.000000
+d_x = 1.162687 | d_y = 1.162687 --- p_x = 2.549686 | p_y = 2.000000
+d_x = 1.166535 | d_y = 1.166535 --- p_x = 2.553947 | p_y = 2.000000
+d_x = 1.170412 | d_y = 1.170412 --- p_x = 2.558236 | p_y = 2.000000
+d_x = 1.174317 | d_y = 1.174317 --- p_x = 2.562554 | p_y = 2.000000
+d_x = 1.178252 | d_y = 1.178252 --- p_x = 2.566901 | p_y = 2.000000
+d_x = 1.182216 | d_y = 1.182216 --- p_x = 2.571277 | p_y = 2.000000
+d_x = 1.186210 | d_y = 1.186210 --- p_x = 2.575683 | p_y = 2.000000
+d_x = 1.190233 | d_y = 1.190233 --- p_x = 2.580118 | p_y = 2.000000
+d_x = 1.194287 | d_y = 1.194287 --- p_x = 2.584584 | p_y = 2.000000
+d_x = 1.198372 | d_y = 1.198372 --- p_x = 2.589080 | p_y = 2.000000
+d_x = 1.202488 | d_y = 1.202488 --- p_x = 2.593607 | p_y = 2.000000
+d_x = 1.206635 | d_y = 1.206635 --- p_x = 2.598166 | p_y = 2.000000
+d_x = 1.210814 | d_y = 1.210814 --- p_x = 2.602755 | p_y = 2.000000
+d_x = 1.215024 | d_y = 1.215024 --- p_x = 2.607377 | p_y = 2.000000
+d_x = 1.219268 | d_y = 1.219268 --- p_x = 2.612031 | p_y = 2.000000
+d_x = 1.223544 | d_y = 1.223544 --- p_x = 2.616718 | p_y = 2.000000
+d_x = 1.227853 | d_y = 1.227853 --- p_x = 2.621438 | p_y = 2.000000
+d_x = 1.232196 | d_y = 1.232196 --- p_x = 2.626191 | p_y = 2.000000
+d_x = 1.236572 | d_y = 1.236572 --- p_x = 2.630978 | p_y = 2.000000
+d_x = 1.240983 | d_y = 1.240983 --- p_x = 2.635799 | p_y = 2.000000
+d_x = 1.245428 | d_y = 1.245428 --- p_x = 2.640654 | p_y = 2.000000
+d_x = 1.249909 | d_y = 1.249909 --- p_x = 2.645545 | p_y = 2.000000
+d_x = 1.254425 | d_y = 1.254425 --- p_x = 2.650470 | p_y = 2.000000
+d_x = 1.258977 | d_y = 1.258977 --- p_x = 2.655432 | p_y = 2.000000
+d_x = 1.263565 | d_y = 1.263565 --- p_x = 2.660429 | p_y = 2.000000
+d_x = 1.268190 | d_y = 1.268190 --- p_x = 2.665464 | p_y = 2.000000
+d_x = 1.272852 | d_y = 1.272852 --- p_x = 2.670535 | p_y = 2.000000
+d_x = 1.277551 | d_y = 1.277551 --- p_x = 2.675644 | p_y = 2.000000
+d_x = 1.282289 | d_y = 1.282289 --- p_x = 2.680790 | p_y = 2.000000
+d_x = 1.287065 | d_y = 1.287065 --- p_x = 2.685975 | p_y = 2.000000
+d_x = 1.291880 | d_y = 1.291880 --- p_x = 2.691199 | p_y = 2.000000
+d_x = 1.296734 | d_y = 1.296734 --- p_x = 2.696461 | p_y = 2.000000
+d_x = 1.301628 | d_y = 1.301628 --- p_x = 2.701764 | p_y = 2.000000
+d_x = 1.306563 | d_y = 1.306563 --- p_x = 2.707107 | p_y = 2.000000
+d_x = 1.311538 | d_y = 1.311538 --- p_x = 2.712490 | p_y = 2.000000
+d_x = 1.316555 | d_y = 1.316555 --- p_x = 2.717915 | p_y = 2.000000
+d_x = 1.321613 | d_y = 1.321613 --- p_x = 2.723381 | p_y = 2.000000
+d_x = 1.326714 | d_y = 1.326714 --- p_x = 2.728890 | p_y = 2.000000
+d_x = 1.331857 | d_y = 1.331857 --- p_x = 2.734441 | p_y = 2.000000
+d_x = 1.337044 | d_y = 1.337044 --- p_x = 2.740035 | p_y = 2.000000
+d_x = 1.342275 | d_y = 1.342275 --- p_x = 2.745673 | p_y = 2.000000
+d_x = 1.347550 | d_y = 1.347550 --- p_x = 2.751356 | p_y = 2.000000
+d_x = 1.352870 | d_y = 1.352870 --- p_x = 2.757083 | p_y = 2.000000
+d_x = 1.358236 | d_y = 1.358236 --- p_x = 2.762856 | p_y = 2.000000
+d_x = 1.363648 | d_y = 1.363648 --- p_x = 2.768675 | p_y = 2.000000
+d_x = 1.369106 | d_y = 1.369106 --- p_x = 2.774540 | p_y = 2.000000
+d_x = 1.374612 | d_y = 1.374612 --- p_x = 2.780452 | p_y = 2.000000
+d_x = 1.380166 | d_y = 1.380166 --- p_x = 2.786412 | p_y = 2.000000
+d_x = 1.385768 | d_y = 1.385768 --- p_x = 2.792421 | p_y = 2.000000
+d_x = 1.391419 | d_y = 1.391419 --- p_x = 2.798479 | p_y = 2.000000
+d_x = 1.397120 | d_y = 1.397120 --- p_x = 2.804586 | p_y = 2.000000
+d_x = 1.402871 | d_y = 1.402871 --- p_x = 2.810743 | p_y = 2.000000
+d_x = 1.408674 | d_y = 1.408674 --- p_x = 2.816952 | p_y = 2.000000
+d_x = 1.414528 | d_y = 1.414528 --- p_x = 2.823212 | p_y = 2.000000
+d_x = 1.420434 | d_y = 1.420434 --- p_x = 2.829524 | p_y = 2.000000
+d_x = 1.426394 | d_y = 1.426394 --- p_x = 2.835889 | p_y = 2.000000
+d_x = 1.432407 | d_y = 1.432407 --- p_x = 2.842308 | p_y = 2.000000
+d_x = 1.438475 | d_y = 1.438475 --- p_x = 2.848781 | p_y = 2.000000
+d_x = 1.444598 | d_y = 1.444598 --- p_x = 2.855309 | p_y = 2.000000
+d_x = 1.450777 | d_y = 1.450777 --- p_x = 2.861893 | p_y = 2.000000
+d_x = 1.457013 | d_y = 1.457013 --- p_x = 2.868534 | p_y = 2.000000
+d_x = 1.463306 | d_y = 1.463306 --- p_x = 2.875232 | p_y = 2.000000
+d_x = 1.469657 | d_y = 1.469657 --- p_x = 2.881988 | p_y = 2.000000
+d_x = 1.476067 | d_y = 1.476067 --- p_x = 2.888803 | p_y = 2.000000
+d_x = 1.482538 | d_y = 1.482538 --- p_x = 2.895678 | p_y = 2.000000
+d_x = 1.489068 | d_y = 1.489068 --- p_x = 2.902614 | p_y = 2.000000
+d_x = 1.495661 | d_y = 1.495661 --- p_x = 2.909610 | p_y = 2.000000
+d_x = 1.502316 | d_y = 1.502316 --- p_x = 2.916669 | p_y = 2.000000
+d_x = 1.509034 | d_y = 1.509034 --- p_x = 2.923792 | p_y = 2.000000
+d_x = 1.515816 | d_y = 1.515816 --- p_x = 2.930978 | p_y = 2.000000
+d_x = 1.522663 | d_y = 1.522663 --- p_x = 2.938229 | p_y = 2.000000
+d_x = 1.529576 | d_y = 1.529576 --- p_x = 2.945546 | p_y = 2.000000
+d_x = 1.536556 | d_y = 1.536556 --- p_x = 2.952929 | p_y = 2.000000
+d_x = 1.543603 | d_y = 1.543603 --- p_x = 2.960380 | p_y = 2.000000
+d_x = 1.550720 | d_y = 1.550720 --- p_x = 2.967901 | p_y = 2.000000
+d_x = 1.557906 | d_y = 1.557906 --- p_x = 2.975490 | p_y = 2.000000
+d_x = 1.565163 | d_y = 1.565163 --- p_x = 2.983151 | p_y = 2.000000
+d_x = 1.572492 | d_y = 1.572492 --- p_x = 2.990883 | p_y = 2.000000
+d_x = 1.579894 | d_y = 1.579894 --- p_x = 2.998688 | p_y = 2.000000
+d_x = 1.587370 | d_y = 1.587370 --- p_x = 3.006566 | p_y = 2.000000
+d_x = 1.594920 | d_y = 1.594920 --- p_x = 3.014520 | p_y = 2.000000
+d_x = 1.602547 | d_y = 1.602547 --- p_x = 3.022550 | p_y = 2.000000
+d_x = 1.610251 | d_y = 1.610251 --- p_x = 3.030657 | p_y = 2.000000
+d_x = 1.618034 | d_y = 1.618034 --- p_x = 3.038842 | p_y = 2.000000
+d_x = 1.625896 | d_y = 1.625896 --- p_x = 3.047107 | p_y = 2.000000
+d_x = 1.633839 | d_y = 1.633839 --- p_x = 3.055452 | p_y = 2.000000
+d_x = 1.641864 | d_y = 1.641864 --- p_x = 3.063879 | p_y = 2.000000
+d_x = 1.649973 | d_y = 1.649973 --- p_x = 3.072390 | p_y = 2.000000
+d_x = 1.658166 | d_y = 1.658166 --- p_x = 3.080985 | p_y = 2.000000
+d_x = 1.666445 | d_y = 1.666445 --- p_x = 3.089666 | p_y = 2.000000
+d_x = 1.674811 | d_y = 1.674811 --- p_x = 3.098434 | p_y = 2.000000
+d_x = 1.683266 | d_y = 1.683266 --- p_x = 3.107291 | p_y = 2.000000
+d_x = 1.691811 | d_y = 1.691811 --- p_x = 3.116238 | p_y = 2.000000
+d_x = 1.700447 | d_y = 1.700447 --- p_x = 3.125275 | p_y = 2.000000
+d_x = 1.709176 | d_y = 1.709176 --- p_x = 3.134406 | p_y = 2.000000
+d_x = 1.718000 | d_y = 1.718000 --- p_x = 3.143631 | p_y = 2.000000
+d_x = 1.726919 | d_y = 1.726919 --- p_x = 3.152951 | p_y = 2.000000
+d_x = 1.735935 | d_y = 1.735935 --- p_x = 3.162369 | p_y = 2.000000
+d_x = 1.745051 | d_y = 1.745051 --- p_x = 3.171886 | p_y = 2.000000
+d_x = 1.754267 | d_y = 1.754267 --- p_x = 3.181504 | p_y = 2.000000
+d_x = 1.763586 | d_y = 1.763586 --- p_x = 3.191223 | p_y = 2.000000
+d_x = 1.773008 | d_y = 1.773008 --- p_x = 3.201046 | p_y = 2.000000
+d_x = 1.782536 | d_y = 1.782536 --- p_x = 3.210975 | p_y = 2.000000
+d_x = 1.792172 | d_y = 1.792172 --- p_x = 3.221011 | p_y = 2.000000
+d_x = 1.801916 | d_y = 1.801916 --- p_x = 3.231157 | p_y = 2.000000
+d_x = 1.811772 | d_y = 1.811772 --- p_x = 3.241413 | p_y = 2.000000
+d_x = 1.821741 | d_y = 1.821741 --- p_x = 3.251782 | p_y = 2.000000
+d_x = 1.831824 | d_y = 1.831824 --- p_x = 3.262266 | p_y = 2.000000
+d_x = 1.842025 | d_y = 1.842025 --- p_x = 3.272866 | p_y = 2.000000
+d_x = 1.852344 | d_y = 1.852344 --- p_x = 3.283586 | p_y = 2.000000
+d_x = 1.862784 | d_y = 1.862784 --- p_x = 3.294426 | p_y = 2.000000
+d_x = 1.873347 | d_y = 1.873347 --- p_x = 3.305389 | p_y = 2.000000
+d_x = 1.884035 | d_y = 1.884035 --- p_x = 3.316477 | p_y = 2.000000
+d_x = 1.894851 | d_y = 1.894851 --- p_x = 3.327692 | p_y = 2.000000
+d_x = 1.905796 | d_y = 1.905796 --- p_x = 3.339037 | p_y = 2.000000
+d_x = 1.916873 | d_y = 1.916873 --- p_x = 3.350514 | p_y = 2.000000
+d_x = 1.928084 | d_y = 1.928084 --- p_x = 3.362125 | p_y = 2.000000
+d_x = 1.939432 | d_y = 1.939432 --- p_x = 3.373872 | p_y = 2.000000
+d_x = 1.950920 | d_y = 1.950920 --- p_x = 3.385759 | p_y = 2.000000
+d_x = 1.962549 | d_y = 1.962549 --- p_x = 3.397788 | p_y = 2.000000
+d_x = 1.974322 | d_y = 1.974322 --- p_x = 3.409960 | p_y = 2.000000
+d_x = 1.986243 | d_y = 1.986243 --- p_x = 3.422280 | p_y = 2.000000
+d_x = 1.998313 | d_y = 1.998313 --- p_x = 3.434750 | p_y = 2.000000
+d_x = 2.010536 | d_y = 2.010536 --- p_x = 3.447371 | p_y = 2.000000
+d_x = 2.022914 | d_y = 2.022914 --- p_x = 3.460149 | p_y = 2.000000
+d_x = 2.035451 | d_y = 2.035451 --- p_x = 3.473084 | p_y = 2.000000
+d_x = 2.048150 | d_y = 2.048150 --- p_x = 3.486181 | p_y = 2.000000
+d_x = 2.061012 | d_y = 2.061012 --- p_x = 3.499443 | p_y = 2.000000
+d_x = 2.074043 | d_y = 2.074043 --- p_x = 3.512872 | p_y = 2.000000
+d_x = 2.087244 | d_y = 2.087244 --- p_x = 3.526472 | p_y = 2.000000
+d_x = 2.100620 | d_y = 2.100620 --- p_x = 3.540246 | p_y = 2.000000
+d_x = 2.114174 | d_y = 2.114174 --- p_x = 3.554198 | p_y = 2.000000
+d_x = 2.127909 | d_y = 2.127909 --- p_x = 3.568332 | p_y = 2.000000
+d_x = 2.141829 | d_y = 2.141829 --- p_x = 3.582650 | p_y = 2.000000
+d_x = 2.155937 | d_y = 2.155937 --- p_x = 3.597157 | p_y = 2.000000
+d_x = 2.170238 | d_y = 2.170238 --- p_x = 3.611856 | p_y = 2.000000
+d_x = 2.184736 | d_y = 2.184736 --- p_x = 3.626751 | p_y = 2.000000
+d_x = 2.199434 | d_y = 2.199434 --- p_x = 3.641847 | p_y = 2.000000
+d_x = 2.214337 | d_y = 2.214337 --- p_x = 3.657148 | p_y = 2.000000
+d_x = 2.229448 | d_y = 2.229448 --- p_x = 3.672657 | p_y = 2.000000
+d_x = 2.244773 | d_y = 2.244773 --- p_x = 3.688379 | p_y = 2.000000
+d_x = 2.260315 | d_y = 2.260315 --- p_x = 3.704320 | p_y = 2.000000
+d_x = 2.276080 | d_y = 2.276080 --- p_x = 3.720482 | p_y = 2.000000
+d_x = 2.292072 | d_y = 2.292072 --- p_x = 3.736871 | p_y = 2.000000
+d_x = 2.308296 | d_y = 2.308296 --- p_x = 3.753493 | p_y = 2.000000
+d_x = 2.324757 | d_y = 2.324757 --- p_x = 3.770351 | p_y = 2.000000
+d_x = 2.341460 | d_y = 2.341460 --- p_x = 3.787452 | p_y = 2.000000
+d_x = 2.358411 | d_y = 2.358411 --- p_x = 3.804800 | p_y = 2.000000
+d_x = 2.375616 | d_y = 2.375616 --- p_x = 3.822402 | p_y = 2.000000
+d_x = 2.393079 | d_y = 2.393079 --- p_x = 3.840262 | p_y = 2.000000
+d_x = 2.410806 | d_y = 2.410806 --- p_x = 3.858386 | p_y = 2.000000
+d_x = 2.428804 | d_y = 2.428804 --- p_x = 3.876782 | p_y = 2.000000
+d_x = 2.447079 | d_y = 2.447079 --- p_x = 3.895454 | p_y = 2.000000
+d_x = 2.465638 | d_y = 2.465638 --- p_x = 3.914409 | p_y = 2.000000
+d_x = 2.484486 | d_y = 2.484486 --- p_x = 3.933654 | p_y = 2.000000
+d_x = 2.503631 | d_y = 2.503631 --- p_x = 3.953195 | p_y = 2.000000
+d_x = 2.523079 | d_y = 2.523079 --- p_x = 3.973040 | p_y = 2.000000
+d_x = 2.542838 | d_y = 2.542838 --- p_x = 3.993196 | p_y = 2.000000
+d_x = 2.562915 | d_y = 2.562915 --- p_x = 4.013670 | p_y = 2.000000
+d_x = 2.583319 | d_y = 2.583319 --- p_x = 4.034470 | p_y = 2.000000
+d_x = 2.604056 | d_y = 2.604056 --- p_x = 4.055604 | p_y = 2.000000
+d_x = 2.625136 | d_y = 2.625136 --- p_x = 4.077079 | p_y = 2.000000
+d_x = 2.646566 | d_y = 2.646566 --- p_x = 4.098906 | p_y = 2.000000
+d_x = 2.668356 | d_y = 2.668356 --- p_x = 4.121092 | p_y = 2.000000
+d_x = 2.690514 | d_y = 2.690514 --- p_x = 4.143646 | p_y = 2.000000
+d_x = 2.713050 | d_y = 2.713050 --- p_x = 4.166578 | p_y = 2.000000
+d_x = 2.735973 | d_y = 2.735973 --- p_x = 4.189898 | p_y = 2.000000
+d_x = 2.759294 | d_y = 2.759294 --- p_x = 4.213615 | p_y = 2.000000
+d_x = 2.783023 | d_y = 2.783023 --- p_x = 4.237739 | p_y = 2.000000
+d_x = 2.807171 | d_y = 2.807171 --- p_x = 4.262283 | p_y = 2.000000
+d_x = 2.831748 | d_y = 2.831748 --- p_x = 4.287256 | p_y = 2.000000
+d_x = 2.856766 | d_y = 2.856766 --- p_x = 4.312670 | p_y = 2.000000
+d_x = 2.882238 | d_y = 2.882238 --- p_x = 4.338538 | p_y = 2.000000
+d_x = 2.908176 | d_y = 2.908176 --- p_x = 4.364871 | p_y = 2.000000
+d_x = 2.934591 | d_y = 2.934591 --- p_x = 4.391682 | p_y = 2.000000
+d_x = 2.961499 | d_y = 2.961499 --- p_x = 4.418985 | p_y = 2.000000
+d_x = 2.988911 | d_y = 2.988911 --- p_x = 4.446793 | p_y = 2.000000
+d_x = 3.016844 | d_y = 3.016844 --- p_x = 4.475121 | p_y = 2.000000
+d_x = 3.045311 | d_y = 3.045311 --- p_x = 4.503984 | p_y = 2.000000
+d_x = 3.074328 | d_y = 3.074328 --- p_x = 4.533396 | p_y = 2.000000
+d_x = 3.103911 | d_y = 3.103911 --- p_x = 4.563375 | p_y = 2.000000
+d_x = 3.134077 | d_y = 3.134077 --- p_x = 4.593936 | p_y = 2.000000
+d_x = 3.164843 | d_y = 3.164843 --- p_x = 4.625097 | p_y = 2.000000
+d_x = 3.196227 | d_y = 3.196227 --- p_x = 4.656876 | p_y = 2.000000
+d_x = 3.228247 | d_y = 3.228247 --- p_x = 4.689291 | p_y = 2.000000
+d_x = 3.260924 | d_y = 3.260924 --- p_x = 4.722363 | p_y = 2.000000
+d_x = 3.294277 | d_y = 3.294277 --- p_x = 4.756111 | p_y = 2.000000
+d_x = 3.328328 | d_y = 3.328328 --- p_x = 4.790557 | p_y = 2.000000
+d_x = 3.363098 | d_y = 3.363098 --- p_x = 4.825722 | p_y = 2.000000
+d_x = 3.398611 | d_y = 3.398611 --- p_x = 4.861630 | p_y = 2.000000
+d_x = 3.434891 | d_y = 3.434891 --- p_x = 4.898305 | p_y = 2.000000
+d_x = 3.471962 | d_y = 3.471962 --- p_x = 4.935771 | p_y = 2.000000
+d_x = 3.509851 | d_y = 3.509851 --- p_x = 4.974055 | p_y = 2.000000
+d_x = 3.548585 | d_y = 3.548585 --- p_x = 5.013183 | p_y = 2.000000
+d_x = 3.588192 | d_y = 3.588192 --- p_x = 5.053185 | p_y = 2.000000
+d_x = 3.628703 | d_y = 3.628703 --- p_x = 5.094090 | p_y = 2.000000
+d_x = 3.670147 | d_y = 3.670147 --- p_x = 5.135929 | p_y = 2.000000
+d_x = 3.712559 | d_y = 3.712559 --- p_x = 5.178736 | p_y = 2.000000
+d_x = 3.755972 | d_y = 3.755972 --- p_x = 5.222543 | p_y = 2.000000
+d_x = 3.800421 | d_y = 3.800421 --- p_x = 5.267387 | p_y = 2.000000
+d_x = 3.845945 | d_y = 3.845945 --- p_x = 5.313305 | p_y = 2.000000
+d_x = 3.892582 | d_y = 3.892582 --- p_x = 5.360337 | p_y = 2.000000
+d_x = 3.940375 | d_y = 3.940375 --- p_x = 5.408523 | p_y = 2.000000
+d_x = 3.989365 | d_y = 3.989365 --- p_x = 5.457908 | p_y = 2.000000
+d_x = 4.039599 | d_y = 4.039599 --- p_x = 5.508536 | p_y = 2.000000
+d_x = 4.091124 | d_y = 4.091124 --- p_x = 5.560455 | p_y = 2.000000
+d_x = 4.143991 | d_y = 4.143991 --- p_x = 5.613716 | p_y = 2.000000
+d_x = 4.198253 | d_y = 4.198253 --- p_x = 5.668372 | p_y = 2.000000
+d_x = 4.253965 | d_y = 4.253965 --- p_x = 5.724479 | p_y = 2.000000
+d_x = 4.311187 | d_y = 4.311187 --- p_x = 5.782094 | p_y = 2.000000
+d_x = 4.369980 | d_y = 4.369980 --- p_x = 5.841281 | p_y = 2.000000
+d_x = 4.430410 | d_y = 4.430410 --- p_x = 5.902105 | p_y = 2.000000
+d_x = 4.492545 | d_y = 4.492545 --- p_x = 5.964635 | p_y = 2.000000
+d_x = 4.556460 | d_y = 4.556460 --- p_x = 6.028943 | p_y = 2.000000
+d_x = 4.622231 | d_y = 4.622231 --- p_x = 6.095108 | p_y = 2.000000
+d_x = 4.689941 | d_y = 4.689941 --- p_x = 6.163212 | p_y = 2.000000
+d_x = 4.759675 | d_y = 4.759675 --- p_x = 6.233340 | p_y = 2.000000
+d_x = 4.831527 | d_y = 4.831527 --- p_x = 6.305586 | p_y = 2.000000
+d_x = 4.905594 | d_y = 4.905594 --- p_x = 6.380046 | p_y = 2.000000
+d_x = 4.981979 | d_y = 4.981979 --- p_x = 6.456826 | p_y = 2.000000
+d_x = 5.060794 | d_y = 5.060794 --- p_x = 6.536034 | p_y = 2.000000
+d_x = 5.142155 | d_y = 5.142155 --- p_x = 6.617789 | p_y = 2.000000
+d_x = 5.226188 | d_y = 5.226188 --- p_x = 6.702215 | p_y = 2.000000
+d_x = 5.313027 | d_y = 5.313027 --- p_x = 6.789447 | p_y = 2.000000
+d_x = 5.402814 | d_y = 5.402814 --- p_x = 6.879628 | p_y = 2.000000
+d_x = 5.495701 | d_y = 5.495701 --- p_x = 6.972909 | p_y = 2.000000
+d_x = 5.591852 | d_y = 5.591852 --- p_x = 7.069453 | p_y = 2.000000
+d_x = 5.691442 | d_y = 5.691442 --- p_x = 7.169437 | p_y = 2.000000
+d_x = 5.794658 | d_y = 5.794658 --- p_x = 7.273046 | p_y = 2.000000
+d_x = 5.901702 | d_y = 5.901702 --- p_x = 7.380484 | p_y = 2.000000
+d_x = 6.012790 | d_y = 6.012790 --- p_x = 7.491965 | p_y = 2.000000
+d_x = 6.128156 | d_y = 6.128156 --- p_x = 7.607724 | p_y = 2.000000
+d_x = 6.248051 | d_y = 6.248051 --- p_x = 7.728013 | p_y = 2.000000
+d_x = 6.372747 | d_y = 6.372747 --- p_x = 7.853102 | p_y = 2.000000
+d_x = 6.502539 | d_y = 6.502539 --- p_x = 7.983287 | p_y = 2.000000
+d_x = 6.637743 | d_y = 6.637743 --- p_x = 8.118885 | p_y = 2.000000
+d_x = 6.778707 | d_y = 6.778707 --- p_x = 8.260242 | p_y = 2.000000
+d_x = 6.925805 | d_y = 6.925805 --- p_x = 8.407733 | p_y = 2.000000
+d_x = 7.079447 | d_y = 7.079447 --- p_x = 8.561768 | p_y = 2.000000
+d_x = 7.240078 | d_y = 7.240078 --- p_x = 8.722793 | p_y = 2.000000
+d_x = 7.408187 | d_y = 7.408187 --- p_x = 8.891295 | p_y = 2.000000
+d_x = 7.584307 | d_y = 7.584307 --- p_x = 9.067808 | p_y = 2.000000
+d_x = 7.769025 | d_y = 7.769025 --- p_x = 9.252919 | p_y = 2.000000
+d_x = 7.962986 | d_y = 7.962986 --- p_x = 9.447272 | p_y = 2.000000
+d_x = 8.166899 | d_y = 8.166899 --- p_x = 9.651579 | p_y = 2.000000
+d_x = 8.381552 | d_y = 8.381552 --- p_x = 9.866625 | p_y = 2.000000
+d_x = 8.607815 | d_y = 8.607815 --- p_x = 10.093281 | p_y = 2.000000
+d_x = 8.846655 | d_y = 8.846655 --- p_x = 10.332514 | p_y = 2.000000
+d_x = 9.099151 | d_y = 9.099151 --- p_x = 10.585403 | p_y = 2.000000
+d_x = 9.366508 | d_y = 9.366508 --- p_x = 10.853153 | p_y = 2.000000
+d_x = 9.650075 | d_y = 9.650075 --- p_x = 11.137113 | p_y = 2.000000
+d_x = 9.951374 | d_y = 9.951374 --- p_x = 11.438805 | p_y = 2.000000
+d_x = 10.272120 | d_y = 10.272120 --- p_x = 11.759944 | p_y = 2.000000
+d_x = 10.614258 | d_y = 10.614258 --- p_x = 12.102474 | p_y = 2.000000
+d_x = 10.980000 | d_y = 10.980000 --- p_x = 12.468610 | p_y = 2.000000
+d_x = 11.371876 | d_y = 11.371876 --- p_x = 12.860879 | p_y = 2.000000
+d_x = 11.792790 | d_y = 11.792790 --- p_x = 13.282186 | p_y = 2.000000
+d_x = 12.246092 | d_y = 12.246092 --- p_x = 13.735880 | p_y = 2.000000
+d_x = 12.735669 | d_y = 12.735669 --- p_x = 14.225850 | p_y = 2.000000
+d_x = 13.266054 | d_y = 13.266054 --- p_x = 14.756628 | p_y = 2.000000
+d_x = 13.842571 | d_y = 13.842571 --- p_x = 15.333538 | p_y = 2.000000
+d_x = 14.471511 | d_y = 14.471511 --- p_x = 15.962871 | p_y = 2.000000
+d_x = 15.160363 | d_y = 15.160363 --- p_x = 16.652115 | p_y = 2.000000
+d_x = 15.918113 | d_y = 15.918113 --- p_x = 17.410258 | p_y = 2.000000
+d_x = 16.755639 | d_y = 16.755639 --- p_x = 18.248177 | p_y = 2.000000
+d_x = 17.686239 | d_y = 17.686239 --- p_x = 19.179170 | p_y = 2.000000
+d_x = 18.726336 | d_y = 18.726336 --- p_x = 20.219660 | p_y = 2.000000
+d_x = 19.896462 | d_y = 19.896462 --- p_x = 21.390179 | p_y = 2.000000
+d_x = 21.222623 | d_y = 21.222623 --- p_x = 22.716732 | p_y = 2.000000
+d_x = 22.738253 | d_y = 22.738253 --- p_x = 24.232755 | p_y = 2.000000
+d_x = 24.487078 | d_y = 24.487078 --- p_x = 25.981972 | p_y = 2.000000
+d_x = 26.527395 | d_y = 26.527395 --- p_x = 28.022682 | p_y = 2.000000
+d_x = 28.938702 | d_y = 28.938702 --- p_x = 30.434383 | p_y = 2.000000
+d_x = 31.832298 | d_y = 31.832298 --- p_x = 33.328371 | p_y = 2.000000
+d_x = 35.368943 | d_y = 35.368943 --- p_x = 36.865409 | p_y = 2.000000
+d_x = 39.789783 | d_y = 39.789783 --- p_x = 41.286641 | p_y = 2.000000
+d_x = 45.473757 | d_y = 45.473757 --- p_x = 46.971008 | p_y = 2.000000
+d_x = 53.052433 | d_y = 53.052433 --- p_x = 54.550077 | p_y = 2.000000
+d_x = 63.662632 | d_y = 63.662632 --- p_x = 65.160668 | p_y = 2.000000
+d_x = 79.577995 | d_y = 79.577995 --- p_x = 81.076424 | p_y = 2.000000
+d_x = 106.103688 | d_y = 106.103688 --- p_x = 107.602510 | p_y = 2.000000
+d_x = 159.155205 | d_y = 159.155205 --- p_x = 160.654419 | p_y = 2.000000
+d_x = 318.310017 | d_y = 318.310017 --- p_x = 319.809624 | p_y = 2.000000
+d_x = 8165619676597684.000000 | d_y = 8165619676597684.000000 --- p_x = -8165619676597683.000000 | p_y = 2.000000
+d_x = 318.310017 | d_y = 318.310017 --- p_x = -316.809624 | p_y = 2.000000
+d_x = 159.155205 | d_y = 159.155205 --- p_x = -157.654419 | p_y = 2.000000
+d_x = 106.103688 | d_y = 106.103688 --- p_x = -104.602510 | p_y = 2.000000
+d_x = 79.577995 | d_y = 79.577995 --- p_x = -78.076424 | p_y = 2.000000
+d_x = 63.662632 | d_y = 63.662632 --- p_x = -62.160668 | p_y = 2.000000
+d_x = 53.052433 | d_y = 53.052433 --- p_x = -51.550077 | p_y = 2.000000
+d_x = 45.473757 | d_y = 45.473757 --- p_x = -43.971008 | p_y = 2.000000
+d_x = 39.789783 | d_y = 39.789783 --- p_x = -38.286641 | p_y = 2.000000
+d_x = 35.368943 | d_y = 35.368943 --- p_x = -33.865409 | p_y = 2.000000
+d_x = 31.832298 | d_y = 31.832298 --- p_x = -30.328371 | p_y = 2.000000
+d_x = 28.938702 | d_y = 28.938702 --- p_x = -27.434383 | p_y = 2.000000
+d_x = 26.527395 | d_y = 26.527395 --- p_x = -25.022682 | p_y = 2.000000
+d_x = 24.487078 | d_y = 24.487078 --- p_x = -22.981972 | p_y = 2.000000
+d_x = 22.738253 | d_y = 22.738253 --- p_x = -21.232755 | p_y = 2.000000
+d_x = 21.222623 | d_y = 21.222623 --- p_x = -19.716732 | p_y = 2.000000
+d_x = 19.896462 | d_y = 19.896462 --- p_x = -18.390179 | p_y = 2.000000
+d_x = 18.726336 | d_y = 18.726336 --- p_x = -17.219660 | p_y = 2.000000
+d_x = 17.686239 | d_y = 17.686239 --- p_x = -16.179170 | p_y = 2.000000
+d_x = 16.755639 | d_y = 16.755639 --- p_x = -15.248177 | p_y = 2.000000
+d_x = 15.918113 | d_y = 15.918113 --- p_x = -14.410258 | p_y = 2.000000
+d_x = 15.160363 | d_y = 15.160363 --- p_x = -13.652115 | p_y = 2.000000
+d_x = 14.471511 | d_y = 14.471511 --- p_x = -12.962871 | p_y = 2.000000
+d_x = 13.842571 | d_y = 13.842571 --- p_x = -12.333538 | p_y = 2.000000
+d_x = 13.266054 | d_y = 13.266054 --- p_x = -11.756628 | p_y = 2.000000
+d_x = 12.735669 | d_y = 12.735669 --- p_x = -11.225850 | p_y = 2.000000
+d_x = 12.246092 | d_y = 12.246092 --- p_x = -10.735880 | p_y = 2.000000
+d_x = 11.792790 | d_y = 11.792790 --- p_x = -10.282186 | p_y = 2.000000
+d_x = 11.371876 | d_y = 11.371876 --- p_x = -9.860879 | p_y = 2.000000
+d_x = 10.980000 | d_y = 10.980000 --- p_x = -9.468610 | p_y = 2.000000
+d_x = 10.614258 | d_y = 10.614258 --- p_x = -9.102474 | p_y = 2.000000
+d_x = 10.272120 | d_y = 10.272120 --- p_x = -8.759944 | p_y = 2.000000
+d_x = 9.951374 | d_y = 9.951374 --- p_x = -8.438805 | p_y = 2.000000
+d_x = 9.650075 | d_y = 9.650075 --- p_x = -8.137113 | p_y = 2.000000
+d_x = 9.366508 | d_y = 9.366508 --- p_x = -7.853153 | p_y = 2.000000
+d_x = 9.099151 | d_y = 9.099151 --- p_x = -7.585403 | p_y = 2.000000
+d_x = 8.846655 | d_y = 8.846655 --- p_x = -7.332514 | p_y = 2.000000
+d_x = 8.607815 | d_y = 8.607815 --- p_x = -7.093281 | p_y = 2.000000
+d_x = 8.381552 | d_y = 8.381552 --- p_x = -6.866625 | p_y = 2.000000
+d_x = 8.166899 | d_y = 8.166899 --- p_x = -6.651579 | p_y = 2.000000
+d_x = 7.962986 | d_y = 7.962986 --- p_x = -6.447272 | p_y = 2.000000
+d_x = 7.769025 | d_y = 7.769025 --- p_x = -6.252919 | p_y = 2.000000
+d_x = 7.584307 | d_y = 7.584307 --- p_x = -6.067808 | p_y = 2.000000
+d_x = 7.408187 | d_y = 7.408187 --- p_x = -5.891295 | p_y = 2.000000
+d_x = 7.240078 | d_y = 7.240078 --- p_x = -5.722793 | p_y = 2.000000
+d_x = 7.079447 | d_y = 7.079447 --- p_x = -5.561768 | p_y = 2.000000
+d_x = 6.925805 | d_y = 6.925805 --- p_x = -5.407733 | p_y = 2.000000
+d_x = 6.778707 | d_y = 6.778707 --- p_x = -5.260242 | p_y = 2.000000
+d_x = 6.637743 | d_y = 6.637743 --- p_x = -5.118885 | p_y = 2.000000
+d_x = 6.502539 | d_y = 6.502539 --- p_x = -4.983287 | p_y = 2.000000
+d_x = 6.372747 | d_y = 6.372747 --- p_x = -4.853102 | p_y = 2.000000
+d_x = 6.248051 | d_y = 6.248051 --- p_x = -4.728013 | p_y = 2.000000
+d_x = 6.128156 | d_y = 6.128156 --- p_x = -4.607724 | p_y = 2.000000
+d_x = 6.012790 | d_y = 6.012790 --- p_x = -4.491965 | p_y = 2.000000
+d_x = 5.901702 | d_y = 5.901702 --- p_x = -4.380484 | p_y = 2.000000
+d_x = 5.794658 | d_y = 5.794658 --- p_x = -4.273046 | p_y = 2.000000
+d_x = 5.691442 | d_y = 5.691442 --- p_x = -4.169437 | p_y = 2.000000
+d_x = 5.591852 | d_y = 5.591852 --- p_x = -4.069453 | p_y = 2.000000
+d_x = 5.495701 | d_y = 5.495701 --- p_x = -3.972909 | p_y = 2.000000
+d_x = 5.402814 | d_y = 5.402814 --- p_x = -3.879628 | p_y = 2.000000
+d_x = 5.313027 | d_y = 5.313027 --- p_x = -3.789447 | p_y = 2.000000
+d_x = 5.226188 | d_y = 5.226188 --- p_x = -3.702215 | p_y = 2.000000
+d_x = 5.142155 | d_y = 5.142155 --- p_x = -3.617789 | p_y = 2.000000
+d_x = 5.060794 | d_y = 5.060794 --- p_x = -3.536034 | p_y = 2.000000
+d_x = 4.981979 | d_y = 4.981979 --- p_x = -3.456826 | p_y = 2.000000
+d_x = 4.905594 | d_y = 4.905594 --- p_x = -3.380046 | p_y = 2.000000
+d_x = 4.831527 | d_y = 4.831527 --- p_x = -3.305586 | p_y = 2.000000
+d_x = 4.759675 | d_y = 4.759675 --- p_x = -3.233340 | p_y = 2.000000
+d_x = 4.689941 | d_y = 4.689941 --- p_x = -3.163212 | p_y = 2.000000
+d_x = 4.622231 | d_y = 4.622231 --- p_x = -3.095108 | p_y = 2.000000
+d_x = 4.556460 | d_y = 4.556460 --- p_x = -3.028943 | p_y = 2.000000
+d_x = 4.492545 | d_y = 4.492545 --- p_x = -2.964635 | p_y = 2.000000
+d_x = 4.430410 | d_y = 4.430410 --- p_x = -2.902105 | p_y = 2.000000
+d_x = 4.369980 | d_y = 4.369980 --- p_x = -2.841281 | p_y = 2.000000
+d_x = 4.311187 | d_y = 4.311187 --- p_x = -2.782094 | p_y = 2.000000
+d_x = 4.253965 | d_y = 4.253965 --- p_x = -2.724479 | p_y = 2.000000
+d_x = 4.198253 | d_y = 4.198253 --- p_x = -2.668372 | p_y = 2.000000
+d_x = 4.143991 | d_y = 4.143991 --- p_x = -2.613716 | p_y = 2.000000
+d_x = 4.091124 | d_y = 4.091124 --- p_x = -2.560455 | p_y = 2.000000
+d_x = 4.039599 | d_y = 4.039599 --- p_x = -2.508536 | p_y = 2.000000
+d_x = 3.989365 | d_y = 3.989365 --- p_x = -2.457908 | p_y = 2.000000
+d_x = 3.940375 | d_y = 3.940375 --- p_x = -2.408523 | p_y = 2.000000
+d_x = 3.892582 | d_y = 3.892582 --- p_x = -2.360337 | p_y = 2.000000
+d_x = 3.845945 | d_y = 3.845945 --- p_x = -2.313305 | p_y = 2.000000
+d_x = 3.800421 | d_y = 3.800421 --- p_x = -2.267387 | p_y = 2.000000
+d_x = 3.755972 | d_y = 3.755972 --- p_x = -2.222543 | p_y = 2.000000
+d_x = 3.712559 | d_y = 3.712559 --- p_x = -2.178736 | p_y = 2.000000
+d_x = 3.670147 | d_y = 3.670147 --- p_x = -2.135929 | p_y = 2.000000
+d_x = 3.628703 | d_y = 3.628703 --- p_x = -2.094090 | p_y = 2.000000
+d_x = 3.588192 | d_y = 3.588192 --- p_x = -2.053185 | p_y = 2.000000
+d_x = 3.548585 | d_y = 3.548585 --- p_x = -2.013183 | p_y = 2.000000
+d_x = 3.509851 | d_y = 3.509851 --- p_x = -1.974055 | p_y = 2.000000
+d_x = 3.471962 | d_y = 3.471962 --- p_x = -1.935771 | p_y = 2.000000
+d_x = 3.434891 | d_y = 3.434891 --- p_x = -1.898305 | p_y = 2.000000
+d_x = 3.398611 | d_y = 3.398611 --- p_x = -1.861630 | p_y = 2.000000
+d_x = 3.363098 | d_y = 3.363098 --- p_x = -1.825722 | p_y = 2.000000
+d_x = 3.328328 | d_y = 3.328328 --- p_x = -1.790557 | p_y = 2.000000
+d_x = 3.294277 | d_y = 3.294277 --- p_x = -1.756111 | p_y = 2.000000
+d_x = 3.260924 | d_y = 3.260924 --- p_x = -1.722363 | p_y = 2.000000
+d_x = 3.228247 | d_y = 3.228247 --- p_x = -1.689291 | p_y = 2.000000
+d_x = 3.196227 | d_y = 3.196227 --- p_x = -1.656876 | p_y = 2.000000
+d_x = 3.164843 | d_y = 3.164843 --- p_x = -1.625097 | p_y = 2.000000
+d_x = 3.134077 | d_y = 3.134077 --- p_x = -1.593936 | p_y = 2.000000
+d_x = 3.103911 | d_y = 3.103911 --- p_x = -1.563375 | p_y = 2.000000
+d_x = 3.074328 | d_y = 3.074328 --- p_x = -1.533396 | p_y = 2.000000
+d_x = 3.045311 | d_y = 3.045311 --- p_x = -1.503984 | p_y = 2.000000
+d_x = 3.016844 | d_y = 3.016844 --- p_x = -1.475121 | p_y = 2.000000
+d_x = 2.988911 | d_y = 2.988911 --- p_x = -1.446793 | p_y = 2.000000
+d_x = 2.961499 | d_y = 2.961499 --- p_x = -1.418985 | p_y = 2.000000
+d_x = 2.934591 | d_y = 2.934591 --- p_x = -1.391682 | p_y = 2.000000
+d_x = 2.908176 | d_y = 2.908176 --- p_x = -1.364871 | p_y = 2.000000
+d_x = 2.882238 | d_y = 2.882238 --- p_x = -1.338538 | p_y = 2.000000
+d_x = 2.856766 | d_y = 2.856766 --- p_x = -1.312670 | p_y = 2.000000
+d_x = 2.831748 | d_y = 2.831748 --- p_x = -1.287256 | p_y = 2.000000
+d_x = 2.807171 | d_y = 2.807171 --- p_x = -1.262283 | p_y = 2.000000
+d_x = 2.783023 | d_y = 2.783023 --- p_x = -1.237739 | p_y = 2.000000
+d_x = 2.759294 | d_y = 2.759294 --- p_x = -1.213615 | p_y = 2.000000
+d_x = 2.735973 | d_y = 2.735973 --- p_x = -1.189898 | p_y = 2.000000
+d_x = 2.713050 | d_y = 2.713050 --- p_x = -1.166578 | p_y = 2.000000
+d_x = 2.690514 | d_y = 2.690514 --- p_x = -1.143646 | p_y = 2.000000
+d_x = 2.668356 | d_y = 2.668356 --- p_x = -1.121092 | p_y = 2.000000
+d_x = 2.646566 | d_y = 2.646566 --- p_x = -1.098906 | p_y = 2.000000
+d_x = 2.625136 | d_y = 2.625136 --- p_x = -1.077079 | p_y = 2.000000
+d_x = 2.604056 | d_y = 2.604056 --- p_x = -1.055604 | p_y = 2.000000
+d_x = 2.583319 | d_y = 2.583319 --- p_x = -1.034470 | p_y = 2.000000
+d_x = 2.562915 | d_y = 2.562915 --- p_x = -1.013670 | p_y = 2.000000
+d_x = 2.542838 | d_y = 2.542838 --- p_x = -0.993196 | p_y = 2.000000
+d_x = 2.523079 | d_y = 2.523079 --- p_x = -0.973040 | p_y = 2.000000
+d_x = 2.503631 | d_y = 2.503631 --- p_x = -0.953195 | p_y = 2.000000
+d_x = 2.484486 | d_y = 2.484486 --- p_x = -0.933654 | p_y = 2.000000
+d_x = 2.465638 | d_y = 2.465638 --- p_x = -0.914409 | p_y = 2.000000
+d_x = 2.447079 | d_y = 2.447079 --- p_x = -0.895454 | p_y = 2.000000
+d_x = 2.428804 | d_y = 2.428804 --- p_x = -0.876782 | p_y = 2.000000
+d_x = 2.410806 | d_y = 2.410806 --- p_x = -0.858386 | p_y = 2.000000
+d_x = 2.393079 | d_y = 2.393079 --- p_x = -0.840262 | p_y = 2.000000
+d_x = 2.375616 | d_y = 2.375616 --- p_x = -0.822402 | p_y = 2.000000
+d_x = 2.358411 | d_y = 2.358411 --- p_x = -0.804800 | p_y = 2.000000
+d_x = 2.341460 | d_y = 2.341460 --- p_x = -0.787452 | p_y = 2.000000
+d_x = 2.324757 | d_y = 2.324757 --- p_x = -0.770351 | p_y = 2.000000
+d_x = 2.308296 | d_y = 2.308296 --- p_x = -0.753493 | p_y = 2.000000
+d_x = 2.292072 | d_y = 2.292072 --- p_x = -0.736871 | p_y = 2.000000
+d_x = 2.276080 | d_y = 2.276080 --- p_x = -0.720482 | p_y = 2.000000
+d_x = 2.260315 | d_y = 2.260315 --- p_x = -0.704320 | p_y = 2.000000
+d_x = 2.244773 | d_y = 2.244773 --- p_x = -0.688379 | p_y = 2.000000
+d_x = 2.229448 | d_y = 2.229448 --- p_x = -0.672657 | p_y = 2.000000
+d_x = 2.214337 | d_y = 2.214337 --- p_x = -0.657148 | p_y = 2.000000
+d_x = 2.199434 | d_y = 2.199434 --- p_x = -0.641847 | p_y = 2.000000
+d_x = 2.184736 | d_y = 2.184736 --- p_x = -0.626751 | p_y = 2.000000
+d_x = 2.170238 | d_y = 2.170238 --- p_x = -0.611856 | p_y = 2.000000
+d_x = 2.155937 | d_y = 2.155937 --- p_x = -0.597157 | p_y = 2.000000
+d_x = 2.141829 | d_y = 2.141829 --- p_x = -0.582650 | p_y = 2.000000
+d_x = 2.127909 | d_y = 2.127909 --- p_x = -0.568332 | p_y = 2.000000
+d_x = 2.114174 | d_y = 2.114174 --- p_x = -0.554198 | p_y = 2.000000
+d_x = 2.100620 | d_y = 2.100620 --- p_x = -0.540246 | p_y = 2.000000
+d_x = 2.087244 | d_y = 2.087244 --- p_x = -0.526472 | p_y = 2.000000
+d_x = 2.074043 | d_y = 2.074043 --- p_x = -0.512872 | p_y = 2.000000
+d_x = 2.061012 | d_y = 2.061012 --- p_x = -0.499443 | p_y = 2.000000
+d_x = 2.048150 | d_y = 2.048150 --- p_x = -0.486181 | p_y = 2.000000
+d_x = 2.035451 | d_y = 2.035451 --- p_x = -0.473084 | p_y = 2.000000
+d_x = 2.022914 | d_y = 2.022914 --- p_x = -0.460149 | p_y = 2.000000
+d_x = 2.010536 | d_y = 2.010536 --- p_x = -0.447371 | p_y = 2.000000
+d_x = 1.998313 | d_y = 1.998313 --- p_x = -0.434750 | p_y = 2.000000
+d_x = 1.986243 | d_y = 1.986243 --- p_x = -0.422280 | p_y = 2.000000
+d_x = 1.974322 | d_y = 1.974322 --- p_x = -0.409960 | p_y = 2.000000
+d_x = 1.962549 | d_y = 1.962549 --- p_x = -0.397788 | p_y = 2.000000
+d_x = 1.950920 | d_y = 1.950920 --- p_x = -0.385759 | p_y = 2.000000
+d_x = 1.939432 | d_y = 1.939432 --- p_x = -0.373872 | p_y = 2.000000
+d_x = 1.928084 | d_y = 1.928084 --- p_x = -0.362125 | p_y = 2.000000
+d_x = 1.916873 | d_y = 1.916873 --- p_x = -0.350514 | p_y = 2.000000
+d_x = 1.905796 | d_y = 1.905796 --- p_x = -0.339037 | p_y = 2.000000
+d_x = 1.894851 | d_y = 1.894851 --- p_x = -0.327692 | p_y = 2.000000
+d_x = 1.884035 | d_y = 1.884035 --- p_x = -0.316477 | p_y = 2.000000
+d_x = 1.873347 | d_y = 1.873347 --- p_x = -0.305389 | p_y = 2.000000
+d_x = 1.862784 | d_y = 1.862784 --- p_x = -0.294426 | p_y = 2.000000
+d_x = 1.852344 | d_y = 1.852344 --- p_x = -0.283586 | p_y = 2.000000
+d_x = 1.842025 | d_y = 1.842025 --- p_x = -0.272866 | p_y = 2.000000
+d_x = 1.831824 | d_y = 1.831824 --- p_x = -0.262266 | p_y = 2.000000
+d_x = 1.821741 | d_y = 1.821741 --- p_x = -0.251782 | p_y = 2.000000
+d_x = 1.811772 | d_y = 1.811772 --- p_x = -0.241413 | p_y = 2.000000
+d_x = 1.801916 | d_y = 1.801916 --- p_x = -0.231157 | p_y = 2.000000
+d_x = 1.792172 | d_y = 1.792172 --- p_x = -0.221011 | p_y = 2.000000
+d_x = 1.782536 | d_y = 1.782536 --- p_x = -0.210975 | p_y = 2.000000
+d_x = 1.773008 | d_y = 1.773008 --- p_x = -0.201046 | p_y = 2.000000
+d_x = 1.763586 | d_y = 1.763586 --- p_x = -0.191223 | p_y = 2.000000
+d_x = 1.754267 | d_y = 1.754267 --- p_x = -0.181504 | p_y = 2.000000
+d_x = 1.745051 | d_y = 1.745051 --- p_x = -0.171886 | p_y = 2.000000
+d_x = 1.735935 | d_y = 1.735935 --- p_x = -0.162369 | p_y = 2.000000
+d_x = 1.726919 | d_y = 1.726919 --- p_x = -0.152951 | p_y = 2.000000
+d_x = 1.718000 | d_y = 1.718000 --- p_x = -0.143631 | p_y = 2.000000
+d_x = 1.709176 | d_y = 1.709176 --- p_x = -0.134406 | p_y = 2.000000
+d_x = 1.700447 | d_y = 1.700447 --- p_x = -0.125275 | p_y = 2.000000
+d_x = 1.691811 | d_y = 1.691811 --- p_x = -0.116238 | p_y = 2.000000
+d_x = 1.683266 | d_y = 1.683266 --- p_x = -0.107291 | p_y = 2.000000
+d_x = 1.674811 | d_y = 1.674811 --- p_x = -0.098434 | p_y = 2.000000
+d_x = 1.666445 | d_y = 1.666445 --- p_x = -0.089666 | p_y = 2.000000
+d_x = 1.658166 | d_y = 1.658166 --- p_x = -0.080985 | p_y = 2.000000
+d_x = 1.649973 | d_y = 1.649973 --- p_x = -0.072390 | p_y = 2.000000
+d_x = 1.641864 | d_y = 1.641864 --- p_x = -0.063879 | p_y = 2.000000
+d_x = 1.633839 | d_y = 1.633839 --- p_x = -0.055452 | p_y = 2.000000
+d_x = 1.625896 | d_y = 1.625896 --- p_x = -0.047107 | p_y = 2.000000
+d_x = 1.618034 | d_y = 1.618034 --- p_x = -0.038842 | p_y = 2.000000
+d_x = 1.610251 | d_y = 1.610251 --- p_x = -0.030657 | p_y = 2.000000
+d_x = 1.602547 | d_y = 1.602547 --- p_x = -0.022550 | p_y = 2.000000
+d_x = 1.594920 | d_y = 1.594920 --- p_x = -0.014520 | p_y = 2.000000
+d_x = 1.587370 | d_y = 1.587370 --- p_x = -0.006566 | p_y = 2.000000
+d_x = 1.579894 | d_y = 1.579894 --- p_x = 0.001312 | p_y = 2.000000
+d_x = 1.572492 | d_y = 1.572492 --- p_x = 0.009117 | p_y = 2.000000
+d_x = 1.565163 | d_y = 1.565163 --- p_x = 0.016849 | p_y = 2.000000
+d_x = 1.557906 | d_y = 1.557906 --- p_x = 0.024510 | p_y = 2.000000
+d_x = 1.550720 | d_y = 1.550720 --- p_x = 0.032099 | p_y = 2.000000
+d_x = 1.543603 | d_y = 1.543603 --- p_x = 0.039620 | p_y = 2.000000
+d_x = 1.536556 | d_y = 1.536556 --- p_x = 0.047071 | p_y = 2.000000
+d_x = 1.529576 | d_y = 1.529576 --- p_x = 0.054454 | p_y = 2.000000
+d_x = 1.522663 | d_y = 1.522663 --- p_x = 0.061771 | p_y = 2.000000
+d_x = 1.515816 | d_y = 1.515816 --- p_x = 0.069022 | p_y = 2.000000
+d_x = 1.509034 | d_y = 1.509034 --- p_x = 0.076208 | p_y = 2.000000
+d_x = 1.502316 | d_y = 1.502316 --- p_x = 0.083331 | p_y = 2.000000
+d_x = 1.495661 | d_y = 1.495661 --- p_x = 0.090390 | p_y = 2.000000
+d_x = 1.489068 | d_y = 1.489068 --- p_x = 0.097386 | p_y = 2.000000
+d_x = 1.482538 | d_y = 1.482538 --- p_x = 0.104322 | p_y = 2.000000
+d_x = 1.476067 | d_y = 1.476067 --- p_x = 0.111197 | p_y = 2.000000
+d_x = 1.469657 | d_y = 1.469657 --- p_x = 0.118012 | p_y = 2.000000
+d_x = 1.463306 | d_y = 1.463306 --- p_x = 0.124768 | p_y = 2.000000
+d_x = 1.457013 | d_y = 1.457013 --- p_x = 0.131466 | p_y = 2.000000
+d_x = 1.450777 | d_y = 1.450777 --- p_x = 0.138107 | p_y = 2.000000
+d_x = 1.444598 | d_y = 1.444598 --- p_x = 0.144691 | p_y = 2.000000
+d_x = 1.438475 | d_y = 1.438475 --- p_x = 0.151219 | p_y = 2.000000
+d_x = 1.432407 | d_y = 1.432407 --- p_x = 0.157692 | p_y = 2.000000
+d_x = 1.426394 | d_y = 1.426394 --- p_x = 0.164111 | p_y = 2.000000
+d_x = 1.420434 | d_y = 1.420434 --- p_x = 0.170476 | p_y = 2.000000
+d_x = 1.414528 | d_y = 1.414528 --- p_x = 0.176788 | p_y = 2.000000
+d_x = 1.408674 | d_y = 1.408674 --- p_x = 0.183048 | p_y = 2.000000
+d_x = 1.402871 | d_y = 1.402871 --- p_x = 0.189257 | p_y = 2.000000
+d_x = 1.397120 | d_y = 1.397120 --- p_x = 0.195414 | p_y = 2.000000
+d_x = 1.391419 | d_y = 1.391419 --- p_x = 0.201521 | p_y = 2.000000
+d_x = 1.385768 | d_y = 1.385768 --- p_x = 0.207579 | p_y = 2.000000
+d_x = 1.380166 | d_y = 1.380166 --- p_x = 0.213588 | p_y = 2.000000
+d_x = 1.374612 | d_y = 1.374612 --- p_x = 0.219548 | p_y = 2.000000
+d_x = 1.369106 | d_y = 1.369106 --- p_x = 0.225460 | p_y = 2.000000
+d_x = 1.363648 | d_y = 1.363648 --- p_x = 0.231325 | p_y = 2.000000
+d_x = 1.358236 | d_y = 1.358236 --- p_x = 0.237144 | p_y = 2.000000
+d_x = 1.352870 | d_y = 1.352870 --- p_x = 0.242917 | p_y = 2.000000
+d_x = 1.347550 | d_y = 1.347550 --- p_x = 0.248644 | p_y = 2.000000
+d_x = 1.342275 | d_y = 1.342275 --- p_x = 0.254327 | p_y = 2.000000
+d_x = 1.337044 | d_y = 1.337044 --- p_x = 0.259965 | p_y = 2.000000
+d_x = 1.331857 | d_y = 1.331857 --- p_x = 0.265559 | p_y = 2.000000
+d_x = 1.326714 | d_y = 1.326714 --- p_x = 0.271110 | p_y = 2.000000
+d_x = 1.321613 | d_y = 1.321613 --- p_x = 0.276619 | p_y = 2.000000
+d_x = 1.316555 | d_y = 1.316555 --- p_x = 0.282085 | p_y = 2.000000
+d_x = 1.311538 | d_y = 1.311538 --- p_x = 0.287510 | p_y = 2.000000
+d_x = 1.306563 | d_y = 1.306563 --- p_x = 0.292893 | p_y = 2.000000
+d_x = 1.301628 | d_y = 1.301628 --- p_x = 0.298236 | p_y = 2.000000
+d_x = 1.296734 | d_y = 1.296734 --- p_x = 0.303539 | p_y = 2.000000
+d_x = 1.291880 | d_y = 1.291880 --- p_x = 0.308801 | p_y = 2.000000
+d_x = 1.287065 | d_y = 1.287065 --- p_x = 0.314025 | p_y = 2.000000
+d_x = 1.282289 | d_y = 1.282289 --- p_x = 0.319210 | p_y = 2.000000
+d_x = 1.277551 | d_y = 1.277551 --- p_x = 0.324356 | p_y = 2.000000
+d_x = 1.272852 | d_y = 1.272852 --- p_x = 0.329465 | p_y = 2.000000
+d_x = 1.268190 | d_y = 1.268190 --- p_x = 0.334536 | p_y = 2.000000
+d_x = 1.263565 | d_y = 1.263565 --- p_x = 0.339571 | p_y = 2.000000
+d_x = 1.258977 | d_y = 1.258977 --- p_x = 0.344568 | p_y = 2.000000
+d_x = 1.254425 | d_y = 1.254425 --- p_x = 0.349530 | p_y = 2.000000
+d_x = 1.249909 | d_y = 1.249909 --- p_x = 0.354455 | p_y = 2.000000
+d_x = 1.245428 | d_y = 1.245428 --- p_x = 0.359346 | p_y = 2.000000
+d_x = 1.240983 | d_y = 1.240983 --- p_x = 0.364201 | p_y = 2.000000
+d_x = 1.236572 | d_y = 1.236572 --- p_x = 0.369022 | p_y = 2.000000
+d_x = 1.232196 | d_y = 1.232196 --- p_x = 0.373809 | p_y = 2.000000
+d_x = 1.227853 | d_y = 1.227853 --- p_x = 0.378562 | p_y = 2.000000
+d_x = 1.223544 | d_y = 1.223544 --- p_x = 0.383282 | p_y = 2.000000
+d_x = 1.219268 | d_y = 1.219268 --- p_x = 0.387969 | p_y = 2.000000
+d_x = 1.215024 | d_y = 1.215024 --- p_x = 0.392623 | p_y = 2.000000
+d_x = 1.210814 | d_y = 1.210814 --- p_x = 0.397245 | p_y = 2.000000
+d_x = 1.206635 | d_y = 1.206635 --- p_x = 0.401834 | p_y = 2.000000
+d_x = 1.202488 | d_y = 1.202488 --- p_x = 0.406393 | p_y = 2.000000
+d_x = 1.198372 | d_y = 1.198372 --- p_x = 0.410920 | p_y = 2.000000
+d_x = 1.194287 | d_y = 1.194287 --- p_x = 0.415416 | p_y = 2.000000
+d_x = 1.190233 | d_y = 1.190233 --- p_x = 0.419882 | p_y = 2.000000
+d_x = 1.186210 | d_y = 1.186210 --- p_x = 0.424317 | p_y = 2.000000
+d_x = 1.182216 | d_y = 1.182216 --- p_x = 0.428723 | p_y = 2.000000
+d_x = 1.178252 | d_y = 1.178252 --- p_x = 0.433099 | p_y = 2.000000
+d_x = 1.174317 | d_y = 1.174317 --- p_x = 0.437446 | p_y = 2.000000
+d_x = 1.170412 | d_y = 1.170412 --- p_x = 0.441764 | p_y = 2.000000
+d_x = 1.166535 | d_y = 1.166535 --- p_x = 0.446053 | p_y = 2.000000
+d_x = 1.162687 | d_y = 1.162687 --- p_x = 0.450314 | p_y = 2.000000
+d_x = 1.158867 | d_y = 1.158867 --- p_x = 0.454547 | p_y = 2.000000
+d_x = 1.155074 | d_y = 1.155074 --- p_x = 0.458752 | p_y = 2.000000
+d_x = 1.151310 | d_y = 1.151310 --- p_x = 0.462930 | p_y = 2.000000
+d_x = 1.147572 | d_y = 1.147572 --- p_x = 0.467081 | p_y = 2.000000
+d_x = 1.143862 | d_y = 1.143862 --- p_x = 0.471205 | p_y = 2.000000
+d_x = 1.140178 | d_y = 1.140178 --- p_x = 0.475302 | p_y = 2.000000
+d_x = 1.136521 | d_y = 1.136521 --- p_x = 0.479373 | p_y = 2.000000
+d_x = 1.132890 | d_y = 1.132890 --- p_x = 0.483418 | p_y = 2.000000
+d_x = 1.129284 | d_y = 1.129284 --- p_x = 0.487437 | p_y = 2.000000
+d_x = 1.125705 | d_y = 1.125705 --- p_x = 0.491431 | p_y = 2.000000
+d_x = 1.122151 | d_y = 1.122151 --- p_x = 0.495399 | p_y = 2.000000
+d_x = 1.118622 | d_y = 1.118622 --- p_x = 0.499343 | p_y = 2.000000
+d_x = 1.115118 | d_y = 1.115118 --- p_x = 0.503262 | p_y = 2.000000
+d_x = 1.111638 | d_y = 1.111638 --- p_x = 0.507156 | p_y = 2.000000
+d_x = 1.108183 | d_y = 1.108183 --- p_x = 0.511026 | p_y = 2.000000
+d_x = 1.104752 | d_y = 1.104752 --- p_x = 0.514872 | p_y = 2.000000
+d_x = 1.101345 | d_y = 1.101345 --- p_x = 0.518695 | p_y = 2.000000
+d_x = 1.097961 | d_y = 1.097961 --- p_x = 0.522494 | p_y = 2.000000
+d_x = 1.094601 | d_y = 1.094601 --- p_x = 0.526269 | p_y = 2.000000
+d_x = 1.091264 | d_y = 1.091264 --- p_x = 0.530022 | p_y = 2.000000
+d_x = 1.087950 | d_y = 1.087950 --- p_x = 0.533752 | p_y = 2.000000
+d_x = 1.084659 | d_y = 1.084659 --- p_x = 0.537459 | p_y = 2.000000
+d_x = 1.081390 | d_y = 1.081390 --- p_x = 0.541144 | p_y = 2.000000
+d_x = 1.078144 | d_y = 1.078144 --- p_x = 0.544807 | p_y = 2.000000
+d_x = 1.074920 | d_y = 1.074920 --- p_x = 0.548448 | p_y = 2.000000
+d_x = 1.071717 | d_y = 1.071717 --- p_x = 0.552067 | p_y = 2.000000
+d_x = 1.068536 | d_y = 1.068536 --- p_x = 0.555664 | p_y = 2.000000
+d_x = 1.065377 | d_y = 1.065377 --- p_x = 0.559241 | p_y = 2.000000
+d_x = 1.062239 | d_y = 1.062239 --- p_x = 0.562796 | p_y = 2.000000
+d_x = 1.059122 | d_y = 1.059122 --- p_x = 0.566330 | p_y = 2.000000
+d_x = 1.056026 | d_y = 1.056026 --- p_x = 0.569844 | p_y = 2.000000
+d_x = 1.052950 | d_y = 1.052950 --- p_x = 0.573337 | p_y = 2.000000
+d_x = 1.049895 | d_y = 1.049895 --- p_x = 0.576810 | p_y = 2.000000
+d_x = 1.046860 | d_y = 1.046860 --- p_x = 0.580263 | p_y = 2.000000
+d_x = 1.043845 | d_y = 1.043845 --- p_x = 0.583696 | p_y = 2.000000
+d_x = 1.040850 | d_y = 1.040850 --- p_x = 0.587110 | p_y = 2.000000
+d_x = 1.037875 | d_y = 1.037875 --- p_x = 0.590503 | p_y = 2.000000
+d_x = 1.034919 | d_y = 1.034919 --- p_x = 0.593878 | p_y = 2.000000
+d_x = 1.031983 | d_y = 1.031983 --- p_x = 0.597233 | p_y = 2.000000
+d_x = 1.029065 | d_y = 1.029065 --- p_x = 0.600569 | p_y = 2.000000
+d_x = 1.026167 | d_y = 1.026167 --- p_x = 0.603887 | p_y = 2.000000
+d_x = 1.023287 | d_y = 1.023287 --- p_x = 0.607186 | p_y = 2.000000
+d_x = 1.020427 | d_y = 1.020427 --- p_x = 0.610466 | p_y = 2.000000
+d_x = 1.017584 | d_y = 1.017584 --- p_x = 0.613728 | p_y = 2.000000
+d_x = 1.014760 | d_y = 1.014760 --- p_x = 0.616972 | p_y = 2.000000
+d_x = 1.011954 | d_y = 1.011954 --- p_x = 0.620198 | p_y = 2.000000
+d_x = 1.009166 | d_y = 1.009166 --- p_x = 0.623407 | p_y = 2.000000
+d_x = 1.006396 | d_y = 1.006396 --- p_x = 0.626597 | p_y = 2.000000
+d_x = 1.003643 | d_y = 1.003643 --- p_x = 0.629771 | p_y = 2.000000
+d_x = 1.000908 | d_y = 1.000908 --- p_x = 0.632926 | p_y = 2.000000
+d_x = 0.998190 | d_y = 0.998190 --- p_x = 0.636065 | p_y = 2.000000
+d_x = 0.995489 | d_y = 0.995489 --- p_x = 0.639187 | p_y = 2.000000
+d_x = 0.992806 | d_y = 0.992806 --- p_x = 0.642292 | p_y = 2.000000
+d_x = 0.990139 | d_y = 0.990139 --- p_x = 0.645380 | p_y = 2.000000
+d_x = 0.987489 | d_y = 0.987489 --- p_x = 0.648452 | p_y = 2.000000
+d_x = 0.984855 | d_y = 0.984855 --- p_x = 0.651507 | p_y = 2.000000
+d_x = 0.982238 | d_y = 0.982238 --- p_x = 0.654546 | p_y = 2.000000
+d_x = 0.979638 | d_y = 0.979638 --- p_x = 0.657569 | p_y = 2.000000
+d_x = 0.977053 | d_y = 0.977053 --- p_x = 0.660576 | p_y = 2.000000
+d_x = 0.974484 | d_y = 0.974484 --- p_x = 0.663567 | p_y = 2.000000
+d_x = 0.971932 | d_y = 0.971932 --- p_x = 0.666543 | p_y = 2.000000
+d_x = 0.969394 | d_y = 0.969394 --- p_x = 0.669503 | p_y = 2.000000
+d_x = 0.966873 | d_y = 0.966873 --- p_x = 0.672447 | p_y = 2.000000
+d_x = 0.964367 | d_y = 0.964367 --- p_x = 0.675377 | p_y = 2.000000
+d_x = 0.961876 | d_y = 0.961876 --- p_x = 0.678291 | p_y = 2.000000
+d_x = 0.959401 | d_y = 0.959401 --- p_x = 0.681190 | p_y = 2.000000
+d_x = 0.956940 | d_y = 0.956940 --- p_x = 0.684074 | p_y = 2.000000
+d_x = 0.954495 | d_y = 0.954495 --- p_x = 0.686944 | p_y = 2.000000
+d_x = 0.952064 | d_y = 0.952064 --- p_x = 0.689799 | p_y = 2.000000
+d_x = 0.949648 | d_y = 0.949648 --- p_x = 0.692639 | p_y = 2.000000
+d_x = 0.947247 | d_y = 0.947247 --- p_x = 0.695465 | p_y = 2.000000
+d_x = 0.944860 | d_y = 0.944860 --- p_x = 0.698277 | p_y = 2.000000
+d_x = 0.942487 | d_y = 0.942487 --- p_x = 0.701074 | p_y = 2.000000
+d_x = 0.940129 | d_y = 0.940129 --- p_x = 0.703858 | p_y = 2.000000
+d_x = 0.937784 | d_y = 0.937784 --- p_x = 0.706628 | p_y = 2.000000
+d_x = 0.935454 | d_y = 0.935454 --- p_x = 0.709384 | p_y = 2.000000
+d_x = 0.933137 | d_y = 0.933137 --- p_x = 0.712126 | p_y = 2.000000
+d_x = 0.930835 | d_y = 0.930835 --- p_x = 0.714855 | p_y = 2.000000
+d_x = 0.928545 | d_y = 0.928545 --- p_x = 0.717570 | p_y = 2.000000
+d_x = 0.926270 | d_y = 0.926270 --- p_x = 0.720272 | p_y = 2.000000
+d_x = 0.924007 | d_y = 0.924007 --- p_x = 0.722961 | p_y = 2.000000
+d_x = 0.921758 | d_y = 0.921758 --- p_x = 0.725637 | p_y = 2.000000
+d_x = 0.919523 | d_y = 0.919523 --- p_x = 0.728300 | p_y = 2.000000
+d_x = 0.917300 | d_y = 0.917300 --- p_x = 0.730949 | p_y = 2.000000
+d_x = 0.915090 | d_y = 0.915090 --- p_x = 0.733586 | p_y = 2.000000
+d_x = 0.912893 | d_y = 0.912893 --- p_x = 0.736211 | p_y = 2.000000
+d_x = 0.910709 | d_y = 0.910709 --- p_x = 0.738823 | p_y = 2.000000
+d_x = 0.908537 | d_y = 0.908537 --- p_x = 0.741422 | p_y = 2.000000
+d_x = 0.906379 | d_y = 0.906379 --- p_x = 0.744009 | p_y = 2.000000
+d_x = 0.904232 | d_y = 0.904232 --- p_x = 0.746584 | p_y = 2.000000
+d_x = 0.902098 | d_y = 0.902098 --- p_x = 0.749147 | p_y = 2.000000
+d_x = 0.899976 | d_y = 0.899976 --- p_x = 0.751697 | p_y = 2.000000
+d_x = 0.897867 | d_y = 0.897867 --- p_x = 0.754236 | p_y = 2.000000
+d_x = 0.895769 | d_y = 0.895769 --- p_x = 0.756762 | p_y = 2.000000
+d_x = 0.893683 | d_y = 0.893683 --- p_x = 0.759277 | p_y = 2.000000
+d_x = 0.891610 | d_y = 0.891610 --- p_x = 0.761781 | p_y = 2.000000
+d_x = 0.889548 | d_y = 0.889548 --- p_x = 0.764272 | p_y = 2.000000
+d_x = 0.887498 | d_y = 0.887498 --- p_x = 0.766753 | p_y = 2.000000
+d_x = 0.885459 | d_y = 0.885459 --- p_x = 0.769221 | p_y = 2.000000
+d_x = 0.883432 | d_y = 0.883432 --- p_x = 0.771679 | p_y = 2.000000
+d_x = 0.881416 | d_y = 0.881416 --- p_x = 0.774125 | p_y = 2.000000
+d_x = 0.879412 | d_y = 0.879412 --- p_x = 0.776560 | p_y = 2.000000
+d_x = 0.877419 | d_y = 0.877419 --- p_x = 0.778984 | p_y = 2.000000
+d_x = 0.875437 | d_y = 0.875437 --- p_x = 0.781397 | p_y = 2.000000
+d_x = 0.873466 | d_y = 0.873466 --- p_x = 0.783800 | p_y = 2.000000
+d_x = 0.871506 | d_y = 0.871506 --- p_x = 0.786191 | p_y = 2.000000
+d_x = 0.869557 | d_y = 0.869557 --- p_x = 0.788572 | p_y = 2.000000
+d_x = 0.867619 | d_y = 0.867619 --- p_x = 0.790942 | p_y = 2.000000
+d_x = 0.865692 | d_y = 0.865692 --- p_x = 0.793302 | p_y = 2.000000
+d_x = 0.863775 | d_y = 0.863775 --- p_x = 0.795651 | p_y = 2.000000
+d_x = 0.861869 | d_y = 0.861869 --- p_x = 0.797990 | p_y = 2.000000
+d_x = 0.859974 | d_y = 0.859974 --- p_x = 0.800318 | p_y = 2.000000
+d_x = 0.858089 | d_y = 0.858089 --- p_x = 0.802636 | p_y = 2.000000
+d_x = 0.856214 | d_y = 0.856214 --- p_x = 0.804945 | p_y = 2.000000
+d_x = 0.854349 | d_y = 0.854349 --- p_x = 0.807243 | p_y = 2.000000
+d_x = 0.852495 | d_y = 0.852495 --- p_x = 0.809531 | p_y = 2.000000
+d_x = 0.850651 | d_y = 0.850651 --- p_x = 0.811809 | p_y = 2.000000
+d_x = 0.848817 | d_y = 0.848817 --- p_x = 0.814077 | p_y = 2.000000
+d_x = 0.846993 | d_y = 0.846993 --- p_x = 0.816336 | p_y = 2.000000
+d_x = 0.845178 | d_y = 0.845178 --- p_x = 0.818585 | p_y = 2.000000
+d_x = 0.843374 | d_y = 0.843374 --- p_x = 0.820824 | p_y = 2.000000
+d_x = 0.841579 | d_y = 0.841579 --- p_x = 0.823054 | p_y = 2.000000
+d_x = 0.839794 | d_y = 0.839794 --- p_x = 0.825274 | p_y = 2.000000
+d_x = 0.838019 | d_y = 0.838019 --- p_x = 0.827485 | p_y = 2.000000
+d_x = 0.836253 | d_y = 0.836253 --- p_x = 0.829687 | p_y = 2.000000
+d_x = 0.834497 | d_y = 0.834497 --- p_x = 0.831879 | p_y = 2.000000
+d_x = 0.832750 | d_y = 0.832750 --- p_x = 0.834063 | p_y = 2.000000
+d_x = 0.831013 | d_y = 0.831013 --- p_x = 0.836237 | p_y = 2.000000
+d_x = 0.829284 | d_y = 0.829284 --- p_x = 0.838402 | p_y = 2.000000
+d_x = 0.827565 | d_y = 0.827565 --- p_x = 0.840558 | p_y = 2.000000
+d_x = 0.825855 | d_y = 0.825855 --- p_x = 0.842705 | p_y = 2.000000
+d_x = 0.824155 | d_y = 0.824155 --- p_x = 0.844843 | p_y = 2.000000
+d_x = 0.822463 | d_y = 0.822463 --- p_x = 0.846973 | p_y = 2.000000
+d_x = 0.820780 | d_y = 0.820780 --- p_x = 0.849093 | p_y = 2.000000
+d_x = 0.819106 | d_y = 0.819106 --- p_x = 0.851205 | p_y = 2.000000
+d_x = 0.817441 | d_y = 0.817441 --- p_x = 0.853309 | p_y = 2.000000
+d_x = 0.815784 | d_y = 0.815784 --- p_x = 0.855404 | p_y = 2.000000
+d_x = 0.814137 | d_y = 0.814137 --- p_x = 0.857490 | p_y = 2.000000
+d_x = 0.812498 | d_y = 0.812498 --- p_x = 0.859569 | p_y = 2.000000
+d_x = 0.810867 | d_y = 0.810867 --- p_x = 0.861638 | p_y = 2.000000
+d_x = 0.809245 | d_y = 0.809245 --- p_x = 0.863700 | p_y = 2.000000
+d_x = 0.807632 | d_y = 0.807632 --- p_x = 0.865753 | p_y = 2.000000
+d_x = 0.806027 | d_y = 0.806027 --- p_x = 0.867798 | p_y = 2.000000
+d_x = 0.804430 | d_y = 0.804430 --- p_x = 0.869835 | p_y = 2.000000
+d_x = 0.802842 | d_y = 0.802842 --- p_x = 0.871864 | p_y = 2.000000
+d_x = 0.801262 | d_y = 0.801262 --- p_x = 0.873885 | p_y = 2.000000
+d_x = 0.799690 | d_y = 0.799690 --- p_x = 0.875898 | p_y = 2.000000
+d_x = 0.798126 | d_y = 0.798126 --- p_x = 0.877903 | p_y = 2.000000
+d_x = 0.796570 | d_y = 0.796570 --- p_x = 0.879900 | p_y = 2.000000
+d_x = 0.795022 | d_y = 0.795022 --- p_x = 0.881890 | p_y = 2.000000
+d_x = 0.793482 | d_y = 0.793482 --- p_x = 0.883872 | p_y = 2.000000
+d_x = 0.791950 | d_y = 0.791950 --- p_x = 0.885846 | p_y = 2.000000
+d_x = 0.790426 | d_y = 0.790426 --- p_x = 0.887813 | p_y = 2.000000
+d_x = 0.788910 | d_y = 0.788910 --- p_x = 0.889772 | p_y = 2.000000
+d_x = 0.787401 | d_y = 0.787401 --- p_x = 0.891723 | p_y = 2.000000
+d_x = 0.785900 | d_y = 0.785900 --- p_x = 0.893667 | p_y = 2.000000
+d_x = 0.784407 | d_y = 0.784407 --- p_x = 0.895604 | p_y = 2.000000
+d_x = 0.782922 | d_y = 0.782922 --- p_x = 0.897533 | p_y = 2.000000
+d_x = 0.781444 | d_y = 0.781444 --- p_x = 0.899455 | p_y = 2.000000
+d_x = 0.779973 | d_y = 0.779973 --- p_x = 0.901370 | p_y = 2.000000
+d_x = 0.778510 | d_y = 0.778510 --- p_x = 0.903278 | p_y = 2.000000
+d_x = 0.777054 | d_y = 0.777054 --- p_x = 0.905178 | p_y = 2.000000
+d_x = 0.775606 | d_y = 0.775606 --- p_x = 0.907072 | p_y = 2.000000
+d_x = 0.774165 | d_y = 0.774165 --- p_x = 0.908958 | p_y = 2.000000
+d_x = 0.772731 | d_y = 0.772731 --- p_x = 0.910837 | p_y = 2.000000
+d_x = 0.771304 | d_y = 0.771304 --- p_x = 0.912710 | p_y = 2.000000
+d_x = 0.769885 | d_y = 0.769885 --- p_x = 0.914575 | p_y = 2.000000
+d_x = 0.768472 | d_y = 0.768472 --- p_x = 0.916434 | p_y = 2.000000
+d_x = 0.767067 | d_y = 0.767067 --- p_x = 0.918286 | p_y = 2.000000
+d_x = 0.765668 | d_y = 0.765668 --- p_x = 0.920131 | p_y = 2.000000
+d_x = 0.764277 | d_y = 0.764277 --- p_x = 0.921969 | p_y = 2.000000
+d_x = 0.762893 | d_y = 0.762893 --- p_x = 0.923801 | p_y = 2.000000
+d_x = 0.761515 | d_y = 0.761515 --- p_x = 0.925626 | p_y = 2.000000
+d_x = 0.760144 | d_y = 0.760144 --- p_x = 0.927445 | p_y = 2.000000
+d_x = 0.758781 | d_y = 0.758781 --- p_x = 0.929257 | p_y = 2.000000
+d_x = 0.757423 | d_y = 0.757423 --- p_x = 0.931062 | p_y = 2.000000
+d_x = 0.756073 | d_y = 0.756073 --- p_x = 0.932861 | p_y = 2.000000
+d_x = 0.754729 | d_y = 0.754729 --- p_x = 0.934654 | p_y = 2.000000
+d_x = 0.753392 | d_y = 0.753392 --- p_x = 0.936440 | p_y = 2.000000
+d_x = 0.752061 | d_y = 0.752061 --- p_x = 0.938220 | p_y = 2.000000
+d_x = 0.750737 | d_y = 0.750737 --- p_x = 0.939994 | p_y = 2.000000
+d_x = 0.749420 | d_y = 0.749420 --- p_x = 0.941762 | p_y = 2.000000
+d_x = 0.748109 | d_y = 0.748109 --- p_x = 0.943523 | p_y = 2.000000
+d_x = 0.746804 | d_y = 0.746804 --- p_x = 0.945278 | p_y = 2.000000
+d_x = 0.745506 | d_y = 0.745506 --- p_x = 0.947027 | p_y = 2.000000
+d_x = 0.744214 | d_y = 0.744214 --- p_x = 0.948770 | p_y = 2.000000
+d_x = 0.742928 | d_y = 0.742928 --- p_x = 0.950507 | p_y = 2.000000
+d_x = 0.741649 | d_y = 0.741649 --- p_x = 0.952238 | p_y = 2.000000
+d_x = 0.740376 | d_y = 0.740376 --- p_x = 0.953963 | p_y = 2.000000
+d_x = 0.739109 | d_y = 0.739109 --- p_x = 0.955682 | p_y = 2.000000
+d_x = 0.737848 | d_y = 0.737848 --- p_x = 0.957396 | p_y = 2.000000
+d_x = 0.736593 | d_y = 0.736593 --- p_x = 0.959103 | p_y = 2.000000
+d_x = 0.735345 | d_y = 0.735345 --- p_x = 0.960805 | p_y = 2.000000
+d_x = 0.734102 | d_y = 0.734102 --- p_x = 0.962501 | p_y = 2.000000
+d_x = 0.732865 | d_y = 0.732865 --- p_x = 0.964191 | p_y = 2.000000
+d_x = 0.731635 | d_y = 0.731635 --- p_x = 0.965875 | p_y = 2.000000
+d_x = 0.730410 | d_y = 0.730410 --- p_x = 0.967554 | p_y = 2.000000
+d_x = 0.729191 | d_y = 0.729191 --- p_x = 0.969227 | p_y = 2.000000
+d_x = 0.727978 | d_y = 0.727978 --- p_x = 0.970895 | p_y = 2.000000
+d_x = 0.726771 | d_y = 0.726771 --- p_x = 0.972557 | p_y = 2.000000
+d_x = 0.725570 | d_y = 0.725570 --- p_x = 0.974214 | p_y = 2.000000
+d_x = 0.724374 | d_y = 0.724374 --- p_x = 0.975865 | p_y = 2.000000
+d_x = 0.723184 | d_y = 0.723184 --- p_x = 0.977511 | p_y = 2.000000
+d_x = 0.722000 | d_y = 0.722000 --- p_x = 0.979151 | p_y = 2.000000
+d_x = 0.720821 | d_y = 0.720821 --- p_x = 0.980786 | p_y = 2.000000
+d_x = 0.719648 | d_y = 0.719648 --- p_x = 0.982416 | p_y = 2.000000
+d_x = 0.718481 | d_y = 0.718481 --- p_x = 0.984040 | p_y = 2.000000
+d_x = 0.717319 | d_y = 0.717319 --- p_x = 0.985659 | p_y = 2.000000
+d_x = 0.716163 | d_y = 0.716163 --- p_x = 0.987273 | p_y = 2.000000
+d_x = 0.715012 | d_y = 0.715012 --- p_x = 0.988882 | p_y = 2.000000
+d_x = 0.713866 | d_y = 0.713866 --- p_x = 0.990485 | p_y = 2.000000
+d_x = 0.712726 | d_y = 0.712726 --- p_x = 0.992084 | p_y = 2.000000
+d_x = 0.711592 | d_y = 0.711592 --- p_x = 0.993677 | p_y = 2.000000
+d_x = 0.710463 | d_y = 0.710463 --- p_x = 0.995265 | p_y = 2.000000
+d_x = 0.709339 | d_y = 0.709339 --- p_x = 0.996848 | p_y = 2.000000
+d_x = 0.708220 | d_y = 0.708220 --- p_x = 0.998427 | p_y = 2.000000

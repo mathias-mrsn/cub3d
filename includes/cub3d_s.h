@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:49:56 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/02 15:14:31 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/03 14:11:52 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,10 +66,13 @@ typedef struct __attribute__((packed)) s_raycasting
 	t_boolean		is_left : 2;
 	double			dirx;
 	double			distance;
+	// double			angle;
 	double			init_angle;
 	uint8_t			wall_type;
 	t_ray			vertical;
 	t_ray			horizontal;
+	double			hit_x;
+	double			hit_y;
 }			t_raycasting;
 
 typedef struct s_cub
