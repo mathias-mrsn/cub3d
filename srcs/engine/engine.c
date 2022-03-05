@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 16:19:40 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/05 16:28:21 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/05 19:51:38 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -159,7 +159,6 @@ void
 
 	distance_x = __pythagore(s->player->p_x, s->player->p_y, hor->x, hor->y);
 	distance_y = __pythagore(s->player->p_x, s->player->p_y, ver->x, ver->y);
-	// printf("angle = %f --- p_x = %f | p_y = %f\n", pi2degree(rayc->dirx), hor->x - 1, hor->y - 1);
 	if (distance_x < distance_y)
 	{
 		rayc->distance = distance_x;
@@ -172,7 +171,10 @@ void
 		rayc->hit_x = ver->x;
 		rayc->hit_y = ver->y;
 	}
-	// printf("angle = %f --- distance = %f -- x = %f --- y = %f\n", pi2degree(rayc->dirx), rayc->distance, rayc->hit_x, rayc->hit_y);
+	if (rayc->hit_x - (int)rayc->hit_x == 0)
+		rayc->wall_type = __trn8(rayc->is_left, WEST_SIDE, EST_SIDE);
+	else if (rayc->hit_y - (int)rayc->hit_y == 0)
+		rayc->wall_type = __trn8(rayc->is_up, NORTH_SIDE, SOUTH_SIDE);
 }
 
 void
@@ -191,6 +193,7 @@ void
 	ray_hor(s, rayc, &horizontal);
 	ray_ver(s, rayc, &vertical);
 	compute_distance(s, rayc, &horizontal, &vertical);
+	// printf("distance = %f\n", rayc->distance);
 }
 
 
@@ -205,7 +208,13 @@ void
 
 
 
+int
+	__get_color_at__(t_cub *s, t_raycasting *rayc)
+{
+	const int *txtr = (int *)s->textures->walls[rayc->wall_type].addr;
 
+	return (txtr[(int)(rayc->hit_y * s->textures->walls[rayc->wall_type].x + rayc->hit_x)]);
+}
 
 void
 	put_ray_on_img(t_cub *s, t_raycasting *rayc, int col)
@@ -216,16 +225,27 @@ void
 
 	lineheight = s->win_y / rayc->distance;
 	
-
+	(void)col;
 	idx = 0;
-	printf("distance = %f\n\n", rayc->distance); 
+	// printf("distance = %f\n", rayc->distance); 
+	double scale = rayc->distance / cos(rayc->dirx - s->player->angle);
+	scale = s->win_y / scale;
+	double h_start = (s->win_y - scale) / 2;
+	while(idx < h_start)
+	{
+		__put_pixel_on_img(&s->img, col, idx, (int)(145432435));
+		idx++;
+	}
+	while (idx < h_start + scale)
+	{
+		__put_pixel_on_img(&s->img, col, idx, __get_color_at__(s, rayc));
+		idx++;
+	}
+
+	printf("distortion = %f\n", scale);
 	while (idx < s->win_y)
 	{
-		// printf("here\n");
-		// is_in = 1 / rayc->distance;
-		
-		if (lineheight < idx)
-			__put_pixel_on_img(&s->img, col, idx, (int)(14325));
+		__put_pixel_on_img(&s->img, col, idx, (int)(99676585));
 		idx++;
 	}
 }
