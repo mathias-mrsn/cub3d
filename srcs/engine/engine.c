@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 16:19:40 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/05 19:51:38 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/06 10:18:26 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,7 +98,7 @@ t_boolean
 	wall_to_check = (int)ray->x - rayc->is_left;
 	if (wall_to_check < 0)
 		wall_to_check = 0;
-	printf(" [%c] ", s->map[(int)ray->y][wall_to_check]);
+	// printf(" [%c] ", s->map[(int)ray->y][wall_to_check]);
 	if (__is_charset(s->map[(int)ray->y][wall_to_check], "1x"))
 		return (true);
 	return (false);
@@ -206,14 +206,24 @@ void
 
 
 
-
+double
+	get_decimal(double nbr)
+{
+	return (nbr - (int)nbr);
+}
 
 int
-	__get_color_at__(t_cub *s, t_raycasting *rayc)
+	__get_color_at__(t_cub *s, t_raycasting *rayc, double scale, double idx)
 {
-	const int *txtr = (int *)s->textures->walls[rayc->wall_type].addr;
+	const int 		*txtr = (int *)s->textures->walls[rayc->wall_type].addr;
+	const double	ratio_y = scale / s->textures->walls[rayc->wall_type].y;
+	const double	x = get_decimal(rayc->hit_x) * s->textures->walls[rayc->wall_type].x;
+	const double	y = idx / ratio_y;
 
-	return (txtr[(int)(rayc->hit_y * s->textures->walls[rayc->wall_type].x + rayc->hit_x)]);
+	// printf("x = %f --- y = %f\n", x, y);
+	
+
+	return (txtr[(int)(y * s->textures->walls[rayc->wall_type].x + x)]);
 }
 
 void
@@ -233,16 +243,16 @@ void
 	double h_start = (s->win_y - scale) / 2;
 	while(idx < h_start)
 	{
-		__put_pixel_on_img(&s->img, col, idx, (int)(145432435));
+		__put_pixel_on_img(&s->img, col, idx, (int)(679384));
 		idx++;
 	}
 	while (idx < h_start + scale)
 	{
-		__put_pixel_on_img(&s->img, col, idx, __get_color_at__(s, rayc));
+		__put_pixel_on_img(&s->img, col, idx, (int)(145432435));
 		idx++;
 	}
 
-	printf("distortion = %f\n", scale);
+	// printf("distortion = %f\n", scale);
 	while (idx < s->win_y)
 	{
 		__put_pixel_on_img(&s->img, col, idx, (int)(99676585));
@@ -263,7 +273,7 @@ void
 
 
 
-void
+int
 	engine(t_cub *s)
 {
 	int			col;
@@ -271,10 +281,10 @@ void
 
 	(void)s;
 	col = 0;
-	printf("x = %f\n", s->player->p_x);
-	printf("y = %f\n", s->player->p_y);
-	printf("angle = %f\n", pi2degree(s->player->angle));
-	printf("char = %c", s->map[(int)s->player->p_y][(int)s->player->p_x]);
+	// printf("x = %f\n", s->player->p_x);
+	// printf("y = %f\n", s->player->p_y);
+	// printf("angle = %f\n", pi2degree(s->player->angle));
+	// printf("char = %c", s->map[(int)s->player->p_y][(int)s->player->p_x]);
 	while (col < s->win_x)
 	{
 		__memset(&ray, 0, sizeof(t_raycasting));
@@ -284,5 +294,6 @@ void
 		col++;
 	}
 	mlx_put_image_to_window(s->mlx, s->win, s->img.ptr, 0, 0);
+	return (__SUCCESS);
 }
 

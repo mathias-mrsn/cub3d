@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:13 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/03 10:11:14 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/06 10:18:33 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,26 @@
 # define RAYCASTING_STACK	3
 # define SINGLETON_STACK	42
 # define TRASH_STACK		127
+
+# if defined(__APPLE__) && defined(__MACH__)
+#  define KEY_D_LEFT 123
+#  define KEY_D_RIGHT 124
+#  define KEY_ESC		53
+#  define KEY_UP		13
+#  define KEY_RIGHT	0
+#  define KEY_DOWN		1
+#  define KEY_LEFT		2
+#  define RED_CROSS	17
+# else
+#  define KEY_D_LEFT 65361
+#  define KEY_D_RIGHT 65363
+#  define KEY_ESC		65307
+#  define KEY_UP		119
+#  define KEY_RIGHT	97
+#  define KEY_DOWN		115
+#  define KEY_LEFT		100
+#  define RED_CROSS	33
+# endif
 
 /*
 **	WINDOW
