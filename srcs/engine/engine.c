@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 16:19:40 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/06 10:18:26 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/06 16:00:32 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,25 +33,6 @@ void
 }
 
 // add in libft
-
-double
-	pi2degree(double pi)
-{
-	return (pi * (180 / T_PI));
-}
-
-double
-	degree2pi(double ang)
-{
-	return (ang * (T_PI / 180));
-}
-
-int
-	abs_sup(double n)
-{
-	return ((int)n + 1);
-}
-
 
 void
 	init_ray(t_cub *s, t_raycasting *rayc, t_ray *ray)
@@ -172,9 +153,9 @@ void
 		rayc->hit_y = ver->y;
 	}
 	if (rayc->hit_x - (int)rayc->hit_x == 0)
-		rayc->wall_type = __trn8(rayc->is_left, WEST_SIDE, EST_SIDE);
+		rayc->wall_type = __trn32(rayc->is_left, WEST_SIDE, EST_SIDE);
 	else if (rayc->hit_y - (int)rayc->hit_y == 0)
-		rayc->wall_type = __trn8(rayc->is_up, NORTH_SIDE, SOUTH_SIDE);
+		rayc->wall_type = __trn32(rayc->is_up, NORTH_SIDE, SOUTH_SIDE);
 }
 
 void
@@ -231,28 +212,25 @@ void
 {
 	// double	is_in;
 	int	idx;
-	int	lineheight;
-
-	lineheight = s->win_y / rayc->distance;
 	
 	(void)col;
 	idx = 0;
 	// printf("distance = %f\n", rayc->distance); 
-	double scale = rayc->distance / cos(rayc->dirx - s->player->angle);
-	scale = s->win_y / scale;
-	double h_start = (s->win_y - scale) / 2;
-	while(idx < h_start)
+	double scale = s->win_y / (rayc->distance * cos(rayc->dirx - s->player->angle));
+	double draw_start = (-scale / 2) + (s->win_y / 2);
+	double draw_end = (scale / 2) + (s->win_y / 2);
+	while(idx < draw_start)
 	{
 		__put_pixel_on_img(&s->img, col, idx, (int)(679384));
 		idx++;
 	}
-	while (idx < h_start + scale)
+	while (idx < draw_end && idx < s->win_y)
 	{
-		__put_pixel_on_img(&s->img, col, idx, (int)(145432435));
+		__put_pixel_on_img(&s->img, col, idx, rayc->wall_type);
 		idx++;
 	}
 
-	// printf("distortion = %f\n", scale);
+	// // printf("distortion = %f\n", scale);
 	while (idx < s->win_y)
 	{
 		__put_pixel_on_img(&s->img, col, idx, (int)(99676585));
