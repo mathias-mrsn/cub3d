@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:49:56 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/06 15:47:25 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/07 09:14:42 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 # define CUB3D_S_H
 
 enum {
-	NORTH_SIDE = 2142556474,
-	EST_SIDE = 432354,
-	SOUTH_SIDE = INT_MAX,
-	WEST_SIDE = 788
+	NORTH_SIDE,
+	EST_SIDE,
+	SOUTH_SIDE,
+	WEST_SIDE
 };
 
 typedef struct s_player

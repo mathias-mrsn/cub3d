@@ -1,17 +1,17 @@
 R 720 720
 NO ./textures/wall.xpm
-SO ./textures/wall.xpm
-WE ./textures/wall.xpm
-EA ./textures/wall.xpm
+SO ./textures/exit.xpm
+WE ./textures/player_front.xpm
+EA ./textures/grass.xpm
 
 S ./textures/wall.xpm
 C 200,200,200
 F 30,30,30
 
 111111111111111
-12E000000000001
+120000000000001
 100000000000201111111111
-100000000000000000000001
+10000E000000000000000001
 100000000000201111111101
 120000000000001      101
 111111111111101      101

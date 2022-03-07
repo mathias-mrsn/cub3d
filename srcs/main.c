@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 14:05:34 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/06 10:19:00 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/07 14:57:35 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ int
 		s->player->angle = trigo_cercle(s->player->angle + 0.05);
 	else if (key == KEY_D_RIGHT)
 		s->player->angle = trigo_cercle(s->player->angle - 0.05);
+	else if (key == KEY_ESC)
+		__exit(1);
 	return (1);
 }
 

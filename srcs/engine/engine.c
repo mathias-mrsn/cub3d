@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 16:19:40 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/06 16:00:32 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/07 14:59:03 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -208,6 +208,27 @@ int
 }
 
 void
+	put_texture(t_cub *s, t_raycasting *rayc, double start, double end, int col)
+{
+	(void)rayc;(void)col;
+	const uint32_t 		*txtr = (uint32_t *)s->textures->walls[rayc->wall_type].addr;
+	const double ratio_y = (double)s->textures->walls[rayc->wall_type].y / (double)(end - start);
+	// printf("y = %d\n", s->textures->walls[rayc->wall_type].y);
+	double idx;
+
+	idx = start;
+	
+	// printf("start = %f --- end = %f --- ratio_y = %f\n", start, end, ratio_y);
+	while (idx < end && idx < s->win_y)
+	{
+		printf("color = %u\n", txtr[(int)((ratio_y * (int)(idx - start)))]);
+		__put_pixel_on_img(&s->img, col, idx, txtr[(int)(32 * (ratio_y * (int)(idx - start)))]);
+		idx += 1.0;
+	}
+
+}
+
+void
 	put_ray_on_img(t_cub *s, t_raycasting *rayc, int col)
 {
 	// double	is_in;
@@ -221,19 +242,15 @@ void
 	double draw_end = (scale / 2) + (s->win_y / 2);
 	while(idx < draw_start)
 	{
-		__put_pixel_on_img(&s->img, col, idx, (int)(679384));
+		__put_pixel_on_img(&s->img, col, idx, (int)s->textures->ceil);
 		idx++;
 	}
-	while (idx < draw_end && idx < s->win_y)
-	{
-		__put_pixel_on_img(&s->img, col, idx, rayc->wall_type);
-		idx++;
-	}
-
+	put_texture(s, rayc, draw_start, draw_end, col);
 	// // printf("distortion = %f\n", scale);
+	idx = draw_end;
 	while (idx < s->win_y)
 	{
-		__put_pixel_on_img(&s->img, col, idx, (int)(99676585));
+		__put_pixel_on_img(&s->img, col, idx, (int)s->textures->floor);
 		idx++;
 	}
 }
@@ -263,7 +280,7 @@ int
 	// printf("y = %f\n", s->player->p_y);
 	// printf("angle = %f\n", pi2degree(s->player->angle));
 	// printf("char = %c", s->map[(int)s->player->p_y][(int)s->player->p_x]);
-	while (col < s->win_x)
+	while (col < 50)
 	{
 		__memset(&ray, 0, sizeof(t_raycasting));
 		init_raycasting(s, &ray, col);
