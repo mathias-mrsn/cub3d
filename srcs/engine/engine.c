@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 16:19:40 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/08 10:48:36 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/08 18:14:23 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -223,7 +223,7 @@ void
 	while (start < end && start < s->win_y)
 	{
 		
-		color = ((uint32_t *)s->textures->walls[rayc->wall_type].addr + (s->textures->walls[rayc->wall_type].bpp * (int)((int)(idx * (s->textures->walls[rayc->wall_type].size_line / s->textures->walls[rayc->wall_type].bpp)))));
+		color = ((uint32_t *)s->textures->walls[rayc->wall_type].addr + (4 * (32*2)+15));
 
 
 
@@ -237,7 +237,6 @@ void
 		// printf("color = %u\n", txtr[(int)((ratio_y * (int)(idx - start)))]);
 
 	}
-
 }
 
 void
@@ -292,6 +291,9 @@ int
 	// printf("y = %f\n", s->player->p_y);
 	// printf("angle = %f\n", pi2degree(s->player->angle));
 	// printf("char = %c", s->map[(int)s->player->p_y][(int)s->player->p_x]);
+	printf("bpp = %d\n", s->textures->walls[0].bpp / 8);
+	printf("size_line = %d\n", s->textures->walls[0].size_line);
+	printf("endian = %d\n", s->textures->walls[0].endian);
 	while (col < s->win_x)
 	{
 		__memset(&ray, 0, sizeof(t_raycasting));
