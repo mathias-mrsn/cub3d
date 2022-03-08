@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 16:19:40 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/07 14:59:03 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/08 10:48:36 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -211,19 +211,31 @@ void
 	put_texture(t_cub *s, t_raycasting *rayc, double start, double end, int col)
 {
 	(void)rayc;(void)col;
-	const uint32_t 		*txtr = (uint32_t *)s->textures->walls[rayc->wall_type].addr;
+	// const uint32_t 		*txtr = (uint32_t *)s->textures->walls[rayc->wall_type].addr;
 	const double ratio_y = (double)s->textures->walls[rayc->wall_type].y / (double)(end - start);
 	// printf("y = %d\n", s->textures->walls[rayc->wall_type].y);
 	double idx;
 
-	idx = start;
-	
+	idx = 0.0;
+	uint32_t	*color;
+
 	// printf("start = %f --- end = %f --- ratio_y = %f\n", start, end, ratio_y);
-	while (idx < end && idx < s->win_y)
+	while (start < end && start < s->win_y)
 	{
-		printf("color = %u\n", txtr[(int)((ratio_y * (int)(idx - start)))]);
-		__put_pixel_on_img(&s->img, col, idx, txtr[(int)(32 * (ratio_y * (int)(idx - start)))]);
-		idx += 1.0;
+		
+		color = ((uint32_t *)s->textures->walls[rayc->wall_type].addr + (s->textures->walls[rayc->wall_type].bpp * (int)((int)(idx * (s->textures->walls[rayc->wall_type].size_line / s->textures->walls[rayc->wall_type].bpp)))));
+
+
+
+		__put_pixel_on_img(&s->img, col, start, (*color));
+
+
+		start++;
+		idx += ratio_y;
+		
+		// printf("color x32 = %u\n", txtr[(int)(32 * (ratio_y * (int)(idx - start)))]);
+		// printf("color = %u\n", txtr[(int)((ratio_y * (int)(idx - start)))]);
+
 	}
 
 }
@@ -280,7 +292,7 @@ int
 	// printf("y = %f\n", s->player->p_y);
 	// printf("angle = %f\n", pi2degree(s->player->angle));
 	// printf("char = %c", s->map[(int)s->player->p_y][(int)s->player->p_x]);
-	while (col < 50)
+	while (col < s->win_x)
 	{
 		__memset(&ray, 0, sizeof(t_raycasting));
 		init_raycasting(s, &ray, col);
