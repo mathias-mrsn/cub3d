@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 14:05:34 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/09 11:28:41 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/09 17:31:10 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,13 @@ int
 	// mlx_destroy_image(s()->mlx, s()->textures->walls[3].ptr);
 	// mlx_destroy_image(s()->mlx, s()->img.ptr);
 	// mlx_destroy_window(s()->mlx, s()->win);
+	// free(s()->mlx);
 	__print_memory();
-	__clean_all(); // problem
+	// __clean(42); // problem
+	// __clean(127);
+	// __clean(120);
+	// __clean(3);
+	__clean(2);
 	exit(1);
 	return (1);
 }
@@ -45,7 +50,7 @@ int
 	else if (key == KEY_D_RIGHT)
 		s->player->angle = trigo_cercle(s->player->angle - 0.15);
 	else if (key == KEY_ESC)
-		__exit(1);
+		quit();
 	return (1);
 }
 
@@ -73,12 +78,12 @@ int
 	cub->win = mlx_new_window(cub->mlx, cub->win_x, cub->win_y, PROGRAM_NAME);
 	cub->img.ptr = mlx_new_image(cub->mlx, cub->win_x, cub->win_y);
 	cub->img.addr = mlx_get_data_addr(cub->img.ptr, &cub->img.bpp, &cub->img.size_line, &cub->img.endian);
-	engine(cub);
+	// engine(cub);
 	mlx_mouse_hook(cub->win, mouse_handler, cub);
 	mlx_hook(cub->win, 2, (1L << 0), key_handler, cub);
 	mlx_hook(cub->win, 3, (1L << 1), NULL, NULL);
 	mlx_hook(cub->win, 17, 0, quit, NULL);
-	mlx_loop_hook(cub->mlx, &engine, cub);
+	// mlx_loop_hook(cub->mlx, &engine, cub);
 	mlx_loop(cub->mlx);
 
 }
