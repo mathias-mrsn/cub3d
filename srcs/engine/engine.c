@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 16:19:40 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/09 10:46:35 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/09 16:12:27 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -239,7 +239,7 @@ void
 		start++;
 		idx += ratio_y;
 
-	}
+	}42/cu
 }
 
 void
@@ -290,13 +290,8 @@ int
 
 	(void)s;
 	col = 0;
-	// printf("x = %f\n", s->player->p_x);
-	// printf("y = %f\n", s->player->p_y);
-	// printf("angle = %f\n", pi2degree(s->player->angle));
-	// printf("char = %c", s->map[(int)s->player->p_y][(int)s->player->p_x]);
-	printf("bpp = %d\n", s->textures->walls[0].bpp / 8);
-	printf("size_line = %d\n", s->textures->walls[0].size_line);
-	printf("endian = %d\n", s->textures->walls[0].endian);
+
+
 	while (col < s->win_x)
 	{
 		__memset(&ray, 0, sizeof(t_raycasting));

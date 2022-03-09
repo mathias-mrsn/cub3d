@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 14:05:34 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/09 10:43:21 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/09 11:28:41 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,15 @@
 int
 	quit(void)
 {
-	__exit(1);
+	// mlx_destroy_image(s()->mlx, s()->textures->walls[0].ptr);
+	// mlx_destroy_image(s()->mlx, s()->textures->walls[1].ptr);
+	// mlx_destroy_image(s()->mlx, s()->textures->walls[2].ptr);
+	// mlx_destroy_image(s()->mlx, s()->textures->walls[3].ptr);
+	// mlx_destroy_image(s()->mlx, s()->img.ptr);
+	// mlx_destroy_window(s()->mlx, s()->win);
+	__print_memory();
+	__clean_all(); // problem
+	exit(1);
 	return (1);
 }
 
@@ -72,6 +80,5 @@ int
 	mlx_hook(cub->win, 17, 0, quit, NULL);
 	mlx_loop_hook(cub->mlx, &engine, cub);
 	mlx_loop(cub->mlx);
-	__clean(PARSER_STACK);
-	__clean_all();
+
 }
