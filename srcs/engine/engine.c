@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 16:19:40 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/08 18:14:23 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/09 10:46:35 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -207,34 +207,37 @@ int
 	return (txtr[(int)(y * s->textures->walls[rayc->wall_type].x + x)]);
 }
 
+double
+	__find_x_value__(t_raycasting *rayc)
+{
+	if (rayc->wall_type == NORTH_SIDE || rayc->wall_type == SOUTH_SIDE)
+		return (rayc->hit_x);
+	else
+		return (rayc->hit_y);
+}
+
+// simplifier cette fonction (txtr + byte_per_pixel)
+
 void
 	put_texture(t_cub *s, t_raycasting *rayc, double start, double end, int col)
 {
 	(void)rayc;(void)col;
-	// const uint32_t 		*txtr = (uint32_t *)s->textures->walls[rayc->wall_type].addr;
 	const double ratio_y = (double)s->textures->walls[rayc->wall_type].y / (double)(end - start);
-	// printf("y = %d\n", s->textures->walls[rayc->wall_type].y);
 	double idx;
 
 	idx = 0.0;
 	uint32_t	*color;
 
-	// printf("start = %f --- end = %f --- ratio_y = %f\n", start, end, ratio_y);
 	while (start < end && start < s->win_y)
 	{
-		
-		color = ((uint32_t *)s->textures->walls[rayc->wall_type].addr + (4 * (32*2)+15));
+		color = ((uint32_t *)(s->textures->walls[rayc->wall_type].addr + ((((int)idx * s->textures->walls[rayc->wall_type].bpp / 8) * s->textures->walls[rayc->wall_type].y)) + (int)(get_decimal(__find_x_value__(rayc)) * s->textures->walls[rayc->wall_type].x) * s->textures->walls[rayc->wall_type].bpp / 8));
 
 
 
-		__put_pixel_on_img(&s->img, col, start, (*color));
-
+		__put_pixel_on_img(&s->img, col, start, *color);
 
 		start++;
 		idx += ratio_y;
-		
-		// printf("color x32 = %u\n", txtr[(int)(32 * (ratio_y * (int)(idx - start)))]);
-		// printf("color = %u\n", txtr[(int)((ratio_y * (int)(idx - start)))]);
 
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:13 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/08 17:40:18 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/09 10:45:20 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@
 
 
 
-# define FOV T_PI_4
+# define FOV 1.15192
 
 # define WIN_X_MAX			2000
 # define WIN_Y_MAX			1500

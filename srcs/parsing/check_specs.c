@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:32:17 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/01 14:41:07 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/09 10:24:02 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,12 +45,13 @@ static void
 		|| !__str_is(strs[2], __IS_DIGIT) || 255 < __atoi(strs[0])
 		|| 255 < __atoi(strs[1]) || 255 < __atoi(strs[2]))
 		__color_error__(s, idx);
-	if (type_nbr == 1)
+	if (type_nbr != 1)
 		s->parser->floor = __create_color(0, (uint8_t)__atoi(strs[0]),
 			(uint8_t)__atoi(strs[1]), (uint8_t)__atoi(strs[2]));
 	else
 		s->parser->ceil = __create_color(0, (uint8_t)__atoi(strs[0]),
 			(uint8_t)__atoi(strs[1]), (uint8_t)__atoi(strs[2]));
+	printf("floor = %d --- ceil = %d\n", s->parser->floor, s->parser->ceil);
 }
 
 static void

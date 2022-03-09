@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:36:07 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/01 14:56:20 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/09 09:49:17 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,6 @@ void
 			__unable_to_open_xpm__(__LINE__, __FILE__);
 		idx++;
 	}
+	s->textures->ceil = s->parser->ceil;
+	s->textures->floor = s->parser->floor;	
 }
