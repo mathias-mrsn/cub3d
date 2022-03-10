@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:05 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/06 10:18:30 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/10 15:55:28 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,11 @@ void				open_textures(t_cub *s);
 
 int				engine(t_cub *s);
 double			trigo_cercle(double angle);
-
+void			init_ray(t_cub *s, t_raycasting *rayc, t_ray *ray);
+void			init_ray(t_cub *s, t_raycasting *rayc, t_ray *ray);
+void			ray_hor(t_cub *s, t_raycasting *rayc, t_ray *ray);
+void			ray_ver(t_cub *s, t_raycasting *rayc, t_ray *ray);
+void			compute_distance(t_cub *s, t_raycasting *rayc, t_ray *hor, t_ray *ver);
 /*
 **	SINGLETON
 */
@@ -72,8 +76,11 @@ double				__pythagore__(double x1, double y1, double x2, double y2);
 
 
 
+/*
+**	MOVES
+*/
 
-
+void				moves(t_cub *s);
 
 
 void	__error__(void);

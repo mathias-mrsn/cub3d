@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:49:56 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/07 09:14:42 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/10 19:27:40 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,21 @@ enum {
 	WEST_SIDE
 };
 
+enum {
+	MOVE_FORWARD,
+	MOVE_RIGHT,
+	MOVE_BACK,
+	MOVE_LEFT,
+	LOOK_LEFT,
+	LOOK_RIGHT
+};
+
 typedef struct s_player
 {
-	double	p_x;
-	double	p_y;
-	double	angle;
+	double		p_x;
+	double		p_y;
+	double		angle;
+	uint32_t	life_bar;
 }			t_player;
 
 typedef struct s_textures
@@ -32,6 +42,7 @@ typedef struct s_textures
 	t_img	walls[NBR_WALL_SIDES];
 	int		floor;
 	int		ceil;
+	t_img	sky;		
 }			t_textures;
 
 typedef struct s_parser
@@ -75,6 +86,16 @@ typedef struct __attribute__((packed)) s_raycasting
 	double			hit_y;
 }			t_raycasting;
 
+typedef struct s_moves
+{
+	t_boolean	m_forward;
+	t_boolean	m_back;
+	t_boolean	m_left;
+	t_boolean	m_right;
+	t_boolean	l_left;
+	t_boolean	l_right;
+}			t_moves;
+
 typedef struct s_cub
 {
 	void			*mlx;
@@ -89,6 +110,7 @@ typedef struct s_cub
 	t_parser		*parser;
 	t_player		*player;
 	t_textures		*textures;
+	t_moves			*moves;
 	char			*filename;
 }			t_cub;
 

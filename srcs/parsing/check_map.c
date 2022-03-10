@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 11:03:09 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/05 15:01:37 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/10 17:24:54 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,8 @@ char
 	{
 		if (str[str_idx] == ' ')
 			new_str[idx] = 'x';
+		else if (__is_charset(str[str_idx], "NSEW"))
+			new_str[idx] = '0'; 
 		else
 			new_str[idx] = str[str_idx];
 		str_idx++;

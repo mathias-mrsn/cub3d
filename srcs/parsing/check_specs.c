@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:32:17 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/09 10:24:02 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/10 12:37:35 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,7 @@ static void
 void
 	args_data_is_good(t_cub *s, char *str, uint8_t type_nbr, ssize_t idx)
 {
+	printf("%s\n", str);
 	if (s->parser->check[type_nbr] == __TRUE)
 		__duplicate_data_error__(s, idx);
 	else

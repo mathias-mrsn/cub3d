@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 16:40:50 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/09 18:01:53 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/10 12:50:25 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ char
 
 	printf("%d\n", fd);
 	str = __gnl(fd);
-	strs = __malloc(sizeof(char *) * 1, 76);
+	strs = __malloc(sizeof(char *) * 1, PARSER_STACK);
 	while (str)
 	{
-		__mstrs_add_back(&strs, str, 75);
+		__mstrs_add_back(&strs, str, PARSER_STACK);
 		str = __gnl(fd);
 	}
 	close(fd);
@@ -63,7 +63,7 @@ void
 		if (type_nbr == NBR_ARGS)
 			__invalid_info__(s, (*idx));
 		else
-			args_data_is_good(s, __mstrtrim(s->parser->file[(*idx)] + __strlen(_types[type_nbr]), " ", 54), type_nbr, (*idx));
+			args_data_is_good(s, __mstrtrim(s->parser->file[(*idx)] + __strlen(_types[type_nbr]), " ", PARSER_STACK), type_nbr, (*idx));
 	}
 	if (__FALSE == __find_every_values__(s))
 		__data_missing_error__(s);

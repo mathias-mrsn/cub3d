@@ -6,11 +6,23 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:36:07 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/09 09:49:17 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/10 19:03:30 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
+
+void
+	open_sky_txtr(t_cub *s)
+{
+	__memset(&s->textures->sky, 0, sizeof(t_img));
+	s->textures->sky.ptr = mlx_xpm_file_to_image(s->mlx, SKY_TEXTURE, &s->textures->sky.x, &s->textures->sky.y);
+	if (NULL == s->textures->sky.ptr)
+		__unable_to_open_xpm__(__LINE__, __FILE__);
+	s->textures->sky.addr = mlx_get_data_addr(s->textures->sky.ptr, &s->textures->sky.bpp, &s->textures->sky.size_line, &s->textures->sky.endian);
+	if (NULL == s->textures->sky.addr)
+		__unable_to_open_xpm__(__LINE__, __FILE__);
+}
 
 void
 	open_textures(t_cub *s)
@@ -29,6 +41,7 @@ void
 			__unable_to_open_xpm__(__LINE__, __FILE__);
 		idx++;
 	}
+	open_sky_txtr(s);
 	s->textures->ceil = s->parser->ceil;
 	s->textures->floor = s->parser->floor;	
 }

@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:13 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/09 10:45:20 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/10 19:28:39 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,20 @@
 
 # define FOV 1.15192
 
+# define CAMERA_SPEED 0.05
+# define MOVING_DISTANCE 0.15
+# define WALL_HIT_SAFE 0.50
+
 # define WIN_X_MAX			2000
 # define WIN_Y_MAX			1500
+
+/*
+**	BONUS
+*/
+
+# define SKY_TEXTURE "./textures/sky/star_sky.xpm"
+
+# define LIFE_BAR_HEIGHT 40
+# define LIFE_BAR_WIDTH 100
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 16:19:40 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/09 17:02:49 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/10 19:30:20 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -187,6 +187,29 @@ void
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 double
 	get_decimal(double nbr)
 {
@@ -219,27 +242,42 @@ double
 // simplifier cette fonction (txtr + byte_per_pixel)
 
 void
-	put_texture(t_cub *s, t_raycasting *rayc, double start, double end, int col)
+	put_texture(t_cub *s, t_raycasting *rayc, double scale, int col)
 {
-	(void)rayc;(void)col;
-	const double ratio_y = (double)s->textures->walls[rayc->wall_type].y / (double)(end - start);
+	const double ratio_y = (double)s->textures->walls[rayc->wall_type].y / (double)(scale);
+	double draw_start = (-scale / 2) + (s->win_y / 2);
+	double draw_end = (scale / 2) + (s->win_y / 2);
+	uint32_t	*color;
 	double idx;
 
 	idx = 0.0;
-	uint32_t	*color;
-
-	while (start < end && start < s->win_y)
+	if (scale > s->win_y)
 	{
-		color = ((uint32_t *)(s->textures->walls[rayc->wall_type].addr + ((((int)idx * s->textures->walls[rayc->wall_type].bpp / 8) * s->textures->walls[rayc->wall_type].y)) + (int)(get_decimal(__find_x_value__(rayc)) * s->textures->walls[rayc->wall_type].x) * s->textures->walls[rayc->wall_type].bpp / 8));
-
-
-
-		__put_pixel_on_img(&s->img, col, start, *color);
-
-		start++;
+		draw_start = 0.0;
+		draw_end = s->win_y;
+		idx = (s->textures->walls[rayc->wall_type].y * (1 - s->win_y / scale)) / 2;
+	}
+	while (draw_start < draw_end && draw_start < s->win_y)
+	{
+		color = ((uint32_t *)(s->textures->walls[rayc->wall_type].addr
+				+ ((((int)idx * s->textures->walls[rayc->wall_type].bpp / 8) * s->textures->walls[rayc->wall_type].y))
+				+ (int)(get_decimal(__find_x_value__(rayc)) * s->textures->walls[rayc->wall_type].x)
+				* s->textures->walls[rayc->wall_type].bpp / 8));
+		__put_pixel_on_img(&s->img, col, draw_start, *color);
+		draw_start++;
 		idx += ratio_y;
 
 	}
+}
+
+
+void
+	put_sky(t_cub *s, t_raycasting *rayc, double scale, int col)
+{
+	(void)s;
+	(void)rayc;
+	(void)scale;
+	(void)col;
 }
 
 void
@@ -252,27 +290,21 @@ void
 	idx = 0;
 	// printf("distance = %f\n", rayc->distance); 
 	double scale = s->win_y / (rayc->distance * cos(rayc->dirx - s->player->angle));
-	double draw_start = (-scale / 2) + (s->win_y / 2);
-	double draw_end = (scale / 2) + (s->win_y / 2);
-	while(idx < draw_start)
+	while(idx < (-scale / 2) + (s->win_y / 2))
 	{
 		__put_pixel_on_img(&s->img, col, idx, (int)s->textures->ceil);
 		idx++;
 	}
-	put_texture(s, rayc, draw_start, draw_end, col);
+	put_sky(s, rayc, scale, col);
+	put_texture(s, rayc, scale, col);
 	// // printf("distortion = %f\n", scale);
-	idx = draw_end;
+	idx = (scale / 2) + (s->win_y / 2);
 	while (idx < s->win_y)
 	{
 		__put_pixel_on_img(&s->img, col, idx, (int)s->textures->floor);
 		idx++;
 	}
 }
-
-
-
-
-
 
 
 
@@ -291,7 +323,8 @@ int
 	(void)s;
 	col = 0;
 
-
+	moves(s);
+	// print_life_bar(s);
 	while (col < s->win_x)
 	{
 		__memset(&ray, 0, sizeof(t_raycasting));
@@ -303,4 +336,5 @@ int
 	mlx_put_image_to_window(s->mlx, s->win, s->img.ptr, 0, 0);
 	return (__SUCCESS);
 }
+
 

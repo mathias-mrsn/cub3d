@@ -1,12 +1,12 @@
-R 720 720
+R 1020 720
 NO ./textures/Wolf3D/GrasswallD.xpm
 SO ./textures/Wolf3D/MultibrickD.xpm
 WE ./textures/Wolf3D/SteelwallD.xpm
 EA ./textures/Wolf3D/SteelwallswitchoffL.xpm
 
 S ./textures/wall.xpm
-C 20,20,200
-F 255,10,0
+C 50,50,200
+F 50,50,50
 
 111111111111111
 120000000000001
