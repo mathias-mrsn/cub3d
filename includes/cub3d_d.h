@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:13 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/10 19:28:39 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/11 09:56:45 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 # define NBR_ARGS 8
 
 # define SAVE_OPTION "--save"
-# define MAP_CHARSET " 012 NSEW"
+# define MAP_CHARSET "012 NSEW"
 
 /*
 **	MEMORY STACKS
@@ -60,7 +60,6 @@
 
 # define CAMERA_SPEED 0.05
 # define MOVING_DISTANCE 0.15
-# define WALL_HIT_SAFE 0.50
 
 # define WIN_X_MAX			2000
 # define WIN_Y_MAX			1500

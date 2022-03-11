@@ -52,7 +52,7 @@ all:		${NAME}
 
 .c.o:
 			@printf "%-15s ${_YELLOW}${_BOLD}$<${_END}...\n" "Compiling"
-			@${CC} ${FLAGS} ${INCS} -c $< -o $@
+			@${CC} ${FLAGS} -Ofast ${INCS} -c $< -o $@
 
 ${NAME}:	${OBJS}
 			@printf "%-15s ${_CYAN}${_BOLD}libft${_END}...\n" "Compiling"
@@ -60,7 +60,7 @@ ${NAME}:	${OBJS}
 			@printf "%-15s ${_CYAN}${_BOLD}${MLX_USED}${_END}...\n" "Compiling"
 			@${MAKE} -C ${MLX_USED} >/dev/null 2>&1
 			@printf "%-15s ${_PURPLE}${_BOLD}${NAME}${_END}...\n" "Compiling"
-			@${CC} -fsanitize=address -g3 ${FLAGS} ${INCS} ${MLX_FLAGS} -o ${NAME} ${OBJS} ${LIBC}
+			@${CC} ${FLAGS} ${INCS} ${MLX_FLAGS} -o ${NAME} ${OBJS} ${LIBC}
 			@printf "\n${_GREEN}${_BOLD}Compilation done !${_END}\n"
 
 clean:		

@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/28 14:35:14 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/09 17:57:09 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/11 09:52:57 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void
 		(*idx)++;	
 	}
 	if (s->parser->file[(*idx)])
-		__strdup("error"); // error invalid map (map split) -----------------------------
+		__extra_map_error__(s, (*idx));
 	s->parser->map[new_idx] = NULL;
 }
 
@@ -53,7 +53,7 @@ void
 		while (s->parser->map[i][j])
 		{
 			if (__FALSE == __is_charset(s->parser->map[i][j], MAP_CHARSET))
-				__error__(); //Invalid argument in map --------------------------------
+				__invalid_char__(s, i, j);
 			j++;
 		}
 		i++;

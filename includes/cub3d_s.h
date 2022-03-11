@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:49:56 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/10 19:27:40 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/11 13:52:16 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,8 @@ typedef struct s_ray
 	double			x_to_add;
 	double			y_to_add;
 	double			sin;
+	double			cos;
+	double			tan;
 	t_boolean		is_hit;	
 }			t_ray;
 

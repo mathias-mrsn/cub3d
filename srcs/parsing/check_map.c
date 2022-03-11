@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 11:03:09 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/10 17:24:54 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/11 11:16:58 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ char
 }
 
 void
-	check_cross(char **strs)
+	check_cross(t_cub *s, char **strs)
 {
 	const size_t	_height = __strslen(strs);
 	const size_t	_width = __strlen(strs[0]);
@@ -87,14 +87,14 @@ void
 		{
 			if (strs[i][j] == 'x')
 			{
-				if (i > 0 && strs[i - 1][j] != '1' && strs[i - 1][j] != 'x')
-					__error__(); // leak in the map ---------------------------------
-				if (i < _height - 1 && strs[i + 1][j] != '1' && strs[i + 1][j] != 'x')
-					__error__(); // leak in the map ---------------------------------
-				if (j > 0 && strs[i][j - 1] != '1' && strs[i][j - 1] != 'x')
-					__error__(); // leak in the map -----------------------------------
 				if (j < _width - 1 > 0 && strs[i][j + 1] != '1' && strs[i][j + 1] != 'x')
-					__error__(); // leak in the map ---------------------------------
+					__leak_on_map_error__(s, i, j);
+				if (i > 0 && strs[i - 1][j] != '1' && strs[i - 1][j] != 'x')
+					__leak_on_map_error__(s, i - 2, j);
+				if (i < _height - 1 && strs[i + 1][j] != '1' && strs[i + 1][j] != 'x')
+					__leak_on_map_error__(s, i, j);
+				if (j > 0 && strs[i][j - 1] != '1' && strs[i][j - 1] != 'x')
+					__leak_on_map_error__(s, i, j);
 			}
 			j++;
 		}
@@ -119,7 +119,7 @@ void
 		idx++;
 	}
 	strs[idx] = __full_cross_line__(_size_max);
-	check_cross(strs);
+	check_cross(s, strs);
 	s->map = strs;
 	s->map_height = _size + 2;
 	s->map_width = _size_max + 2; 

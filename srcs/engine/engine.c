@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 16:19:40 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/10 19:30:20 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/11 09:39:47 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,21 +39,23 @@ void
 {
 	ray->angle = (rayc->dirx);
 	ray->sin = sin(rayc->dirx);
+	ray->tan = tan(rayc->dirx);
+	ray->cos = cos(rayc->dirx);
 	if (ray->vert)
 	{
 		ray->x = (int)s->player->p_x + __trn32(rayc->is_left, 0, 1);
-		ray->y = s->player->p_y - (ray->x - s->player->p_x) * tan(ray->angle);
+		ray->y = s->player->p_y - (ray->x - s->player->p_x) * ray->tan;
 		ray->x_to_add = __trn8(rayc->is_left, -1, 1);
-		ray->y_to_add = ray->x_to_add * tan(ray->angle) * -1;
+		ray->y_to_add = ray->x_to_add * ray->tan * -1;
 		// ray->y_to_add *= __trn8(rayc->is_up, 1, -1);
 	// printf("ray specs : y_to_add = %f --- x_to_add = %f --- angle = %f\n", ray->y_to_add, ray->x_to_add, pi2degree(rayc->dirx));
 	}
 	else
 	{
 		ray->y = (int)s->player->p_y + __trn32(rayc->is_up, 0, 1);
-		ray->x = s->player->p_x - (ray->y - s->player->p_y) / tan(ray->angle);
+		ray->x = s->player->p_x - (ray->y - s->player->p_y) / ray->tan;
 		ray->y_to_add = __trn8(rayc->is_up, -1, 1);
-		ray->x_to_add = 1 / tan(ray->angle);
+		ray->x_to_add = 1 / ray->tan;
 		ray->x_to_add *= __trn8((rayc->is_up) , 1, -1);
 	}
 }
@@ -244,11 +246,11 @@ double
 void
 	put_texture(t_cub *s, t_raycasting *rayc, double scale, int col)
 {
-	const double ratio_y = (double)s->textures->walls[rayc->wall_type].y / (double)(scale);
-	double draw_start = (-scale / 2) + (s->win_y / 2);
-	double draw_end = (scale / 2) + (s->win_y / 2);
-	uint32_t	*color;
-	double idx;
+	const double	ratio_y = (double)s->textures->walls[rayc->wall_type].y / (double)(scale);
+	double			draw_start = (-scale / 2) + (s->win_y / 2);
+	double			draw_end = (scale / 2) + (s->win_y / 2);
+	uint32_t		*color;
+	double			idx;
 
 	idx = 0.0;
 	if (scale > s->win_y)
@@ -327,7 +329,7 @@ int
 	// print_life_bar(s);
 	while (col < s->win_x)
 	{
-		__memset(&ray, 0, sizeof(t_raycasting));
+		memset(&ray, 0, sizeof(t_raycasting));
 		init_raycasting(s, &ray, col);
 		cast_ray(s, &ray);
 		put_ray_on_img(s, &ray, col);

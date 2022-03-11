@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:05 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/10 15:55:28 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/11 12:58:03 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,13 +68,16 @@ void				__invalid_info__(t_cub *s, ssize_t idx);
 void				__data_missing_error__(t_cub *s);
 void				__unable_to_open_xpm__(int line, char *file);
 
+void				__extra_map_error__(t_cub *s, ssize_t idx);
+void				__invalid_char__(t_cub *s, size_t line, size_t nbr);
+void				__no_player_error__(void);
+void				__leak_on_map_error__(t_cub *s, size_t line, size_t nbr);
+
 /*
 **	MATH
 */
 
 double				__pythagore__(double x1, double y1, double x2, double y2);
-
-
 
 /*
 **	MOVES
