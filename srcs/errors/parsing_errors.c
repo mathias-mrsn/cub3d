@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:03:23 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/02/28 14:32:11 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/12 12:12:59 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void
 			__printf("%s%s%s", __WHITE, s->parser->file[idx], __RESET);
 		else
 			__printf("%s%s%s", __GREEN, s->parser->file[idx], __RESET);
-		__printf("\"\n");		
+		__printf("\"\n");
 		idx++;
 	}
 	__printf("\n");
@@ -37,6 +37,7 @@ void
 void
 	__texture_error__(t_cub *s, ssize_t idx, t_boolean error_type, char *str)
 {
+	__puterr(NULL);
 	__print_error_line__(s, idx);
 	__putstr(PROGRAM_NAME, STDERR_FILENO);
 	if (error_type == 1)
@@ -59,6 +60,7 @@ void
 void
 	__resolution_error__(t_cub *s, ssize_t idx)
 {
+	__puterr(NULL);
 	__print_error_line__(s, idx);
 	__putstr(PROGRAM_NAME, STDERR_FILENO);
 	__putstr(": invalid resolution values\n", STDERR_FILENO);
@@ -69,6 +71,7 @@ void
 void
 	__color_error__(t_cub *s, ssize_t idx)
 {
+	__puterr(NULL);
 	__print_error_line__(s, idx);
 	__putstr(PROGRAM_NAME, STDERR_FILENO);
 	__putstr(": invalid color values\n", STDERR_FILENO);

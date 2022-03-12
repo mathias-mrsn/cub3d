@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 15:08:51 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/10 18:10:13 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/12 12:37:20 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,18 +17,11 @@ void
 {
 	rayc->init_angle = s->player->angle;
 	rayc->dirx = trigo_cercle(rayc->init_angle + (move_dirx * T_PI_2));
-	rayc->is_up = __trnd((rayc->dirx >= 0.0 && rayc->dirx <= T_PI), true, false);
-	rayc->is_left = __trnd((rayc->dirx >= T_PI_2 && rayc->dirx <= T_3PI_2), true, false);
+	rayc->is_up = __trnd((rayc->dirx >= 0.0
+				&& rayc->dirx <= T_PI), true, false);
+	rayc->is_left = __trnd((rayc->dirx >= T_PI_2
+				&& rayc->dirx <= T_3PI_2), true, false);
 }
-
-
-
-
-
-
-
-
-
 
 void
 	change_drix(t_cub *s, int drix)
@@ -52,17 +45,16 @@ void
 	init_rayc_moves(s, rayc, move_dirx);
 	init_ray(s, rayc, &vertical);
 	init_ray(s, rayc, &horizontal);
-	ray_hor(s, rayc, &horizontal);
-	ray_ver(s, rayc, &vertical);
+	ray_hit_wall(s, rayc, &horizontal);
+	ray_hit_wall(s, rayc, &vertical);
 	compute_distance(s, rayc, &horizontal, &vertical);
-	
 }
 
 void
 	move_player(t_cub *s, int move_dirx)
 {
-	t_raycasting rayc;
-	double step;
+	t_raycasting	rayc;
+	double			step;
 
 	__memset(&rayc, 0, sizeof(t_raycasting));
 	compute_if_can_move(s, move_dirx, &rayc);

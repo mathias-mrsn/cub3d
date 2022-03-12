@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 16:40:50 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/10 12:50:25 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/12 11:55:48 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ char
 	char	**strs;
 	char	*str;
 
-	printf("%d\n", fd);
 	str = __gnl(fd);
 	strs = __malloc(sizeof(char *) * 1, PARSER_STACK);
 	while (str)
@@ -45,25 +44,29 @@ static t_boolean
 	return (__TRUE);
 }
 
-void  
+void
 	check_game_data(t_cub *s, ssize_t *idx)
 {
-	const char 	*_types[NBR_ARGS] = {"R ", "C ", "F ", "S ", "NO ",
+	const char	*_types[NBR_ARGS] = {"R ", "C ", "F ", "S ", "NO ",
 		"EA ", "SO ", "WE "};
 	uint8_t		type_nbr;
 
-	while (s->parser->file[++(*idx)] && (!__find_every_values__(s) || !__strcmp(s->parser->file[(*idx)], "\0")))
+	while (s->parser->file[++(*idx)] && (!__find_every_values__(s)
+			|| !__strcmp(s->parser->file[(*idx)], "\0")))
 	{
 		type_nbr = -1;
 		while (++type_nbr < NBR_ARGS)
-			if (0 == __strncmp(s->parser->file[(*idx)], _types[type_nbr], __strlen(_types[type_nbr])))
+			if (0 == __strncmp(s->parser->file[(*idx)],
+					_types[type_nbr], __strlen(_types[type_nbr])))
 				break ;
 		if (0 == __strcmp(s->parser->file[(*idx)], "\0"))
-			continue;
+			continue ;
 		if (type_nbr == NBR_ARGS)
 			__invalid_info__(s, (*idx));
 		else
-			args_data_is_good(s, __mstrtrim(s->parser->file[(*idx)] + __strlen(_types[type_nbr]), " ", PARSER_STACK), type_nbr, (*idx));
+			args_data_is_good(s, __mstrtrim(s->parser->file[(*idx)]
+					+ __strlen(_types[type_nbr]),
+					" ", PARSER_STACK), type_nbr, (*idx));
 	}
 	if (__FALSE == __find_every_values__(s))
 		__data_missing_error__(s);
@@ -73,7 +76,7 @@ t_boolean
 	parsing(t_cub *s)
 {
 	ssize_t	idx;
-	
+
 	idx = -1;
 	s->parser->file = __fd_to_strs__(s->parser->fd);
 	check_game_data(s, &idx);

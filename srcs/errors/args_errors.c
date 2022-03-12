@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 14:14:23 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/02/28 14:25:48 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/12 12:13:43 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void
 	__file_ext_error__(char *file)
 {
-	__putstr(PROGRAM_NAME, STDERR_FILENO);
+	__puterr(PROGRAM_NAME);
 	__putstr(": ", STDERR_FILENO);
 	__putstr(file, STDERR_FILENO);
 	__putstr(": wrong file extension\n", STDERR_FILENO);
@@ -24,7 +24,7 @@ void
 void
 	__wrong_arg_nbr__(int ac)
 {
-	__putstr(PROGRAM_NAME, STDERR_FILENO);
+	__puterr(PROGRAM_NAME);
 	__putstr(": argc = ", STDERR_FILENO);
 	__putnbr(ac, STDERR_FILENO);
 	__putstr(" : incorrect number of arguments\n", STDERR_FILENO);
@@ -33,7 +33,7 @@ void
 void
 	__wrong_option__(char *option)
 {
-	__putstr(PROGRAM_NAME, STDERR_FILENO);
+	__puterr(PROGRAM_NAME);
 	__putstr(": ", STDERR_FILENO);
 	__putstr(option, STDERR_FILENO);
 	__putstr(": invalid option\n", STDERR_FILENO);
@@ -42,9 +42,9 @@ void
 void
 	__file_cant_be_opened__(char *str)
 {
-	__putstr(PROGRAM_NAME, STDERR_FILENO);
+	__puterr(PROGRAM_NAME);
 	__putstr(": ", STDERR_FILENO);
-	__putstr(str, STDERR_FILENO);	
+	__putstr(str, STDERR_FILENO);
 	if (errno == 13)
 		__putstr(": permission denied\n", STDERR_FILENO);
 	else

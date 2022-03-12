@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/11 09:43:33 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/11 10:05:13 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/12 12:15:38 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,11 @@
 void
 	__extra_map_error__(t_cub *s, ssize_t idx)
 {
+	__puterr(NULL);
 	__print_error_line__(s, idx);
 	__putstr(PROGRAM_NAME, STDERR_FILENO);
-	__putstr(": extra map\n", STDERR_FILENO); //revoir nom message erreur
-	__exit(0);	
+	__putstr(": end of map isn't end of file\n", STDERR_FILENO);
+	__exit(0);
 }
 
 void
@@ -43,7 +44,7 @@ void
 				__printf("%s%c%s", __WHITE, s->parser->map[idx][idx2], __RESET);
 			idx2++;
 		}
-		__printf("\"\n");		
+		__printf("\"\n");
 		idx++;
 	}
 	__printf("\n");
@@ -52,6 +53,7 @@ void
 void
 	__invalid_char__(t_cub *s, size_t line, size_t nbr)
 {
+	__puterr(NULL);
 	__print_error_line_elem__(s, line, nbr);
 	__putstr(PROGRAM_NAME, STDERR_FILENO);
 	__putstr(": invalid character on map\n", STDERR_FILENO);
@@ -62,7 +64,7 @@ void
 void
 	__no_player_error__(void)
 {
-	__putstr(PROGRAM_NAME, STDERR_FILENO);
+	__puterr(PROGRAM_NAME);
 	__putstr(": no player on map\n", STDERR_FILENO);
 	__exit(0);
 }
@@ -70,6 +72,7 @@ void
 void
 	__leak_on_map_error__(t_cub *s, size_t line, size_t nbr)
 {
+	__puterr(NULL);
 	__print_error_line_elem__(s, line, nbr);
 	__putstr(PROGRAM_NAME, STDERR_FILENO);
 	__putstr(": leak(s) on map\n", STDERR_FILENO);

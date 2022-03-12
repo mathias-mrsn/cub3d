@@ -6,13 +6,11 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 13:53:27 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/11 11:07:14 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/12 12:03:26 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
-
-#define	TOO_MANY_PLAYER "too many player on the map\n"
 
 void
 	__set_player__(t_cub *s, size_t	idx)
@@ -27,9 +25,11 @@ void
 			s->player->p_x = (double)(pos_x + 1) + 0.5;
 			s->player->p_y = (double)(idx + 1) + 0.5;
 			if (true == __is_charset(s->parser->map[idx][pos_x], "NS"))
-				s->player->angle = __trnd((s->parser->map[idx][pos_x] == 'N'), T_PI_2, T_3PI_2);
+				s->player->angle = __trnd((s->parser->map[idx][pos_x] == 'N'),
+						T_PI_2, T_3PI_2);
 			else if (true == __is_charset(s->parser->map[idx][pos_x], "EW"))
-				s->player->angle = __trnd((s->parser->map[idx][pos_x] == 'E'), 0.0, T_PI);
+				s->player->angle = __trnd((s->parser->map[idx][pos_x] == 'E'),
+						0.0, T_PI);
 		}
 		pos_x++;
 	}
@@ -42,7 +42,7 @@ void
 	size_t			i;
 
 	i = 0;
-	nbr_players = 0; 
+	nbr_players = 0;
 	while (s->parser->map[i])
 	{
 		nbr_players += __str_count_cs(s->parser->map[i], "NSEW");

@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/28 14:35:14 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/11 09:52:57 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/12 12:01:49 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,16 +18,17 @@ void
 	size_t	new_idx;
 
 	new_idx = 0;
-	s->parser->map = __malloc(sizeof(char *) * (__strslen(&s->parser->file[(*idx)]) + 2), PARSER_STACK);
+	s->parser->map = __malloc(sizeof(char *)
+			* (__strslen(&s->parser->file[(*idx)]) + 2), PARSER_STACK);
 	while (s->parser->file[(*idx)] && __strcmp(s->parser->file[(*idx)], "\0"))
 	{
 		s->parser->map[new_idx++] = __strdup(s->parser->file[(*idx)]);
-		(*idx)++;	
+		(*idx)++;
 	}
 	while (s->parser->file[(*idx)] && !__strcmp(s->parser->file[(*idx)], "\0"))
 	{
 		s->parser->map[new_idx++] = __strdup(s->parser->file[(*idx)]);
-		(*idx)++;	
+		(*idx)++;
 	}
 	if (s->parser->file[(*idx)])
 		__extra_map_error__(s, (*idx));

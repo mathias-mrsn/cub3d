@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 11:03:09 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/11 11:16:58 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/12 11:59:40 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ size_t
 	while (strs[idx])
 	{
 		if (__strlen(strs[idx]) > maxlen)
-			maxlen = __strlen(strs[idx]);	
+			maxlen = __strlen(strs[idx]);
 		idx++;
 	}
 	return (maxlen);
@@ -59,11 +59,11 @@ char
 		if (str[str_idx] == ' ')
 			new_str[idx] = 'x';
 		else if (__is_charset(str[str_idx], "NSEW"))
-			new_str[idx] = '0'; 
+			new_str[idx] = '0';
 		else
 			new_str[idx] = str[str_idx];
 		str_idx++;
-		idx++;	
+		idx++;
 	}
 	while (idx < len + 2)
 		new_str[idx++] = 'x';
@@ -72,31 +72,31 @@ char
 }
 
 void
-	check_cross(t_cub *s, char **strs)
+	check_cross(t_cub *s, char **strs,
+		const size_t _height, const size_t _width)
 {
-	const size_t	_height = __strslen(strs);
-	const size_t	_width = __strlen(strs[0]);
 	size_t			i;
 	size_t			j;
 
 	i = 0;
 	while (i < _height)
 	{
-		j = 0;
-		while (j < _width)
+		j = -1;
+		while (++j < _width)
 		{
 			if (strs[i][j] == 'x')
 			{
-				if (j < _width - 1 > 0 && strs[i][j + 1] != '1' && strs[i][j + 1] != 'x')
-					__leak_on_map_error__(s, i, j);
+				if (j < _width - 1 > 0 && strs[i][j + 1] != '1'
+						&& strs[i][j + 1] != 'x')
+					__leak_on_map_error__(s, i - 1, j + 1);
 				if (i > 0 && strs[i - 1][j] != '1' && strs[i - 1][j] != 'x')
-					__leak_on_map_error__(s, i - 2, j);
-				if (i < _height - 1 && strs[i + 1][j] != '1' && strs[i + 1][j] != 'x')
-					__leak_on_map_error__(s, i, j);
+					__leak_on_map_error__(s, i - 2, j - 1);
+				if (i < _height - 1 && strs[i + 1][j] != '1'
+						&& strs[i + 1][j] != 'x')
+					__leak_on_map_error__(s, i, j - 1);
 				if (j > 0 && strs[i][j - 1] != '1' && strs[i][j - 1] != 'x')
-					__leak_on_map_error__(s, i, j);
+					__leak_on_map_error__(s, i - 1, j - 2);
 			}
-			j++;
 		}
 		i++;
 	}
@@ -119,8 +119,8 @@ void
 		idx++;
 	}
 	strs[idx] = __full_cross_line__(_size_max);
-	check_cross(s, strs);
+	check_cross(s, strs, __strslen(strs), __strlen(strs[0]));
 	s->map = strs;
 	s->map_height = _size + 2;
-	s->map_width = _size_max + 2; 
+	s->map_width = _size_max + 2;
 }

@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:13 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/11 09:56:45 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/12 12:16:44 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,15 +54,16 @@
 **	WINDOW
 */
 
-
-
-# define FOV 1.15192
-
-# define CAMERA_SPEED 0.05
-# define MOVING_DISTANCE 0.15
-
 # define WIN_X_MAX			2000
 # define WIN_Y_MAX			1500
+
+/*
+**	GAME SETTINGS
+*/
+
+# define FOV 1.15192
+# define CAMERA_SPEED 0.05
+# define MOVING_DISTANCE 0.15
 
 /*
 **	BONUS

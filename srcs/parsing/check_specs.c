@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:32:17 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/10 12:37:35 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/12 12:11:02 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static void
 	__check_resolution__(t_cub *s, char *str, ssize_t idx)
 {
 	char	**strs;
-	
+
 	if (__FALSE == __str_is(str, __IS_DIGIT | __IS_EMPTY))
 		__resolution_error__(s, idx);
 	strs = __msplit(str, ' ', TRASH_STACK);
@@ -34,7 +34,7 @@ static void
 	__check_colors__(t_cub *s, char *str, ssize_t idx, uint8_t type_nbr)
 {
 	char	**strs;
-	
+
 	if (11 < __strlen(str))
 		__color_error__(s, idx);
 	strs = __msplit(str, ',', TRASH_STACK);
@@ -47,11 +47,10 @@ static void
 		__color_error__(s, idx);
 	if (type_nbr != 1)
 		s->parser->floor = __create_color(0, (uint8_t)__atoi(strs[0]),
-			(uint8_t)__atoi(strs[1]), (uint8_t)__atoi(strs[2]));
+				(uint8_t)__atoi(strs[1]), (uint8_t)__atoi(strs[2]));
 	else
 		s->parser->ceil = __create_color(0, (uint8_t)__atoi(strs[0]),
-			(uint8_t)__atoi(strs[1]), (uint8_t)__atoi(strs[2]));
-	printf("floor = %d --- ceil = %d\n", s->parser->floor, s->parser->ceil);
+				(uint8_t)__atoi(strs[1]), (uint8_t)__atoi(strs[2]));
 }
 
 static void
@@ -67,7 +66,6 @@ static void
 void
 	args_data_is_good(t_cub *s, char *str, uint8_t type_nbr, ssize_t idx)
 {
-	printf("%s\n", str);
 	if (s->parser->check[type_nbr] == __TRUE)
 		__duplicate_data_error__(s, idx);
 	else

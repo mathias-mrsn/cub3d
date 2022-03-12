@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:05 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/11 12:58:03 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/12 12:38:43 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,12 +37,15 @@ void				open_textures(t_cub *s);
 */
 
 int				engine(t_cub *s);
-double			trigo_cercle(double angle);
 void			init_ray(t_cub *s, t_raycasting *rayc, t_ray *ray);
-void			init_ray(t_cub *s, t_raycasting *rayc, t_ray *ray);
-void			ray_hor(t_cub *s, t_raycasting *rayc, t_ray *ray);
-void			ray_ver(t_cub *s, t_raycasting *rayc, t_ray *ray);
+void			init_raycasting(t_cub *s, t_raycasting *rayc, int col);
 void			compute_distance(t_cub *s, t_raycasting *rayc, t_ray *hor, t_ray *ver);
+void			put_ray_on_img(t_cub *s, t_raycasting *rayc, int col);
+void			cast_ray(t_cub *s, t_raycasting *rayc);
+
+void			ray_hit_wall(t_cub *s, t_raycasting *rayc, t_ray *ray);
+
+
 /*
 **	SINGLETON
 */
@@ -84,9 +87,18 @@ double				__pythagore__(double x1, double y1, double x2, double y2);
 */
 
 void				moves(t_cub *s);
+int					key_handler(int key, t_cub *s);
 
 
-void	__error__(void);
+int					quit(void);
+
+
+/*
+**	UTILS
+*/
+
+double				trigo_cercle(double angle);
+double				get_decimal(double nbr);
 
 
 
