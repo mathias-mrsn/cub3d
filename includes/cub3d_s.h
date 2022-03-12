@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:49:56 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/11 13:52:16 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/12 15:08:34 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,6 @@ typedef struct s_player
 	double		p_x;
 	double		p_y;
 	double		angle;
-	uint32_t	life_bar;
 }			t_player;
 
 typedef struct s_textures
@@ -42,7 +41,6 @@ typedef struct s_textures
 	t_img	walls[NBR_WALL_SIDES];
 	int		floor;
 	int		ceil;
-	t_img	sky;		
 }			t_textures;
 
 typedef struct s_parser
@@ -57,7 +55,7 @@ typedef struct s_parser
 	int				fd;
 }			t_parser;
 
-typedef struct s_ray
+typedef struct __attribute__((packed)) s_ray
 {
 	t_boolean		vert : 2;
 	double			distance;
@@ -79,9 +77,8 @@ typedef struct __attribute__((packed)) s_raycasting
 	t_boolean		is_left : 2;
 	double			dirx;
 	double			distance;
-	// double			angle;
 	double			init_angle;
-	uint32_t			wall_type;
+	uint32_t		wall_type;
 	t_ray			vertical;
 	t_ray			horizontal;
 	double			hit_x;
@@ -90,12 +87,12 @@ typedef struct __attribute__((packed)) s_raycasting
 
 typedef struct s_moves
 {
-	t_boolean	m_forward;
-	t_boolean	m_back;
-	t_boolean	m_left;
-	t_boolean	m_right;
-	t_boolean	l_left;
-	t_boolean	l_right;
+	t_boolean	m_forward : 1;
+	t_boolean	m_back : 1;
+	t_boolean	m_left : 1;
+	t_boolean	m_right : 1;
+	t_boolean	l_left : 1;
+	t_boolean	l_right : 1;
 }			t_moves;
 
 typedef struct s_cub
