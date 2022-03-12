@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 15:08:51 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/12 12:37:20 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/12 16:36:07 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,16 +54,13 @@ void
 	move_player(t_cub *s, int move_dirx)
 {
 	t_raycasting	rayc;
-	double			step;
 
 	__memset(&rayc, 0, sizeof(t_raycasting));
 	compute_if_can_move(s, move_dirx, &rayc);
-	if (rayc.distance - MOVING_DISTANCE < 0.1)
-		step = 0;
-	else
-		step = MOVING_DISTANCE;
-	s->player->p_x += cos(rayc.dirx) * step;
-	s->player->p_y -= sin(rayc.dirx) * step;
+	if (fabs(s->player->p_x - rayc.hit_x) > MOVING_DISTANCE + 0.1)
+		s->player->p_x += cos(rayc.dirx) * MOVING_DISTANCE;
+	if (fabs(s->player->p_y - rayc.hit_y) > MOVING_DISTANCE + 0.1)
+		s->player->p_y -= sin(rayc.dirx) * MOVING_DISTANCE;
 }
 
 void

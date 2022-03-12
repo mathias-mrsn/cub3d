@@ -1,5 +1,9 @@
 {
 	"files.associations": {
-		"sstream": "c"
+		"sstream": "c",
+		"math.h": "c",
+		"atomic": "cpp",
+		"memory": "cpp",
+		"utility": "cpp"
 	}
 }
