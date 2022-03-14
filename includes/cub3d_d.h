@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:13 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/12 12:16:44 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/14 13:35:42 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,8 +62,8 @@
 */
 
 # define FOV 1.15192
-# define CAMERA_SPEED 0.05
-# define MOVING_DISTANCE 0.15
+# define CAMERA_SPEED 0.04
+# define MOVING_DISTANCE 0.10
 
 /*
 **	BONUS

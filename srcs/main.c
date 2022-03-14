@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 14:05:34 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/12 12:20:23 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/14 13:06:08 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ int
 	cub->mlx = mlx_init();
 	if (NULL == cub->mlx)
 		return (EXIT_FAILURE);
+	mlx_do_key_autorepeaton(cub->mlx);
 	if (__FAILURE == __check_args__(ac, av, cub))
 		__exit(EXIT_FAILURE);
 	if (__FAILURE == parsing(cub))
@@ -31,7 +32,7 @@ int
 			&cub->img.bpp, &cub->img.size_line, &cub->img.endian);
 	engine(cub);
 	mlx_hook(cub->win, 2, (1L << 0), key_handler, cub);
-	mlx_hook(cub->win, 3, (1L << 1), NULL, NULL);
+	mlx_hook(cub->win, 3, (1L << 1), key_release, cub);
 	mlx_hook(cub->win, 17, 0, quit, NULL);
 	mlx_loop_hook(cub->mlx, &engine, cub);
 	mlx_loop(cub->mlx);

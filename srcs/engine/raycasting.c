@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 12:26:33 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/12 12:43:39 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/14 13:34:29 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,8 +109,8 @@ void
 	t_ray	horizontal;
 	t_ray	vertical;
 
-	memset(&vertical, 0, sizeof(t_ray));
-	memset(&horizontal, 0, sizeof(t_ray));
+	__memset(&vertical, 0, sizeof(t_ray));
+	__memset(&horizontal, 0, sizeof(t_ray));
 	vertical.vert = 1;
 	horizontal.vert = 0;
 	init_ray(s, rayc, &vertical);
