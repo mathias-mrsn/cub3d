@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3d_s.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
+/*   By: malouvar <malouvar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:49:56 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/16 14:07:02 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/16 15:11:59 by malouvar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ typedef struct s_player
 typedef struct s_textures
 {
 	t_img	walls[NBR_WALL_SIDES];
+	t_img	door;
 	int		floor;
 	int		ceil;
 }			t_textures;

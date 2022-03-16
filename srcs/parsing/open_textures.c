@@ -3,14 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   open_textures.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
+/*   By: malouvar <malouvar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:36:07 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/12 15:09:37 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/16 15:23:27 by malouvar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
+
+void	open_door_texture(t_cub *s)
+{
+	__memset(&s->textures->door, 0, sizeof(t_img));
+	s->textures->door.ptr = mlx_xpm_file_to_image(s->mlx, DOOR_TEXTURE,
+	&s->textures->door.x, &s->textures->door.y);
+	if (NULL == s->textures->door.ptr)
+	__unable_to_open_xpm__(__LINE__, __FILE__);
+	s->textures->door.addr = mlx_get_data_addr(s->textures->door.ptr,
+	&s->textures->door.bpp, &s->textures->door.size_line,
+	&s->textures->door.endian);
+	if (NULL == s->textures->door.addr)
+	__unable_to_open_xpm__(__LINE__, __FILE__);
+}
 
 void
 	open_textures(t_cub *s)
@@ -37,4 +51,5 @@ void
 	}
 	s->textures->ceil = s->parser->ceil;
 	s->textures->floor = s->parser->floor;
+	open_door_texture(s);
 }

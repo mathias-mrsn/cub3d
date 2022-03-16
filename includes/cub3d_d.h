@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3d_d.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
+/*   By: malouvar <malouvar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:13 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/16 14:15:06 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/16 15:23:36 by malouvar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,7 @@
 */
 
 # define SKY_TEXTURE "./textures/sky/star_sky.xpm"
+# define DOOR_TEXTURE "./textures/door.xpm"
 
 # define LIFE_BAR_HEIGHT 40
 # define LIFE_BAR_WIDTH 100
