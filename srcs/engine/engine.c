@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   engine.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malouvar <malouvar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 16:19:40 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/15 15:46:38 by malouvar         ###   ########.fr       */
+/*   Updated: 2022/03/16 13:17:33 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int
 		put_ray_on_img(s, &ray, col);
 		col++;
 	}
-	mlx_put_image_to_window(s->mlx, s->win, s->img.ptr, 0, 0);
 	map2d(s);
+	mlx_put_image_to_window(s->mlx, s->win, s->img.ptr, 0, 0);
 	return (__SUCCESS);
 }

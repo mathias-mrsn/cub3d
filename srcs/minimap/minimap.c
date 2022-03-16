@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minimap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malouvar <malouvar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/15 15:53:28 by malouvar          #+#    #+#             */
-/*   Updated: 2022/03/15 16:03:27 by malouvar         ###   ########.fr       */
+/*   Updated: 2022/03/16 13:18:26 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	draw_elem(t_cub *s, int y, int x, int color)
 		j = 0;
 		while (j <= 2)
 		{
-			mlx_pixel_put(s->mlx, s->win, MINIMAP_OFFSET_X + (x * 4) + i,
+			__put_pixel_on_img(&s->img, MINIMAP_OFFSET_X + (x * 4) + i,
 				MINIMAP_OFFSET_Y + (y * 4) + j, color);
 			j++;
 		}
