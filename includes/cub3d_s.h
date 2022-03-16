@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:49:56 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/12 15:08:34 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/16 14:07:02 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,6 +93,8 @@ typedef struct s_moves
 	t_boolean	m_right : 1;
 	t_boolean	l_left : 1;
 	t_boolean	l_right : 1;
+	int			last_x_mouse;
+	int			last_y_mouse;
 }			t_moves;
 
 typedef struct s_cub

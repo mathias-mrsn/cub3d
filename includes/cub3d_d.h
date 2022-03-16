@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3d_d.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malouvar <malouvar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:13 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/15 15:53:07 by malouvar         ###   ########.fr       */
+/*   Updated: 2022/03/16 14:15:06 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,12 @@
 
 # define WIN_X_MAX			2000
 # define WIN_Y_MAX			1500
+
+/*
+**	MOUSE
+*/
+
+# define RAD_PER_PIXEL		0.0025
 
 /*
 **	GAME SETTINGS

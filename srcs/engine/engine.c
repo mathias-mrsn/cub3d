@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 16:19:40 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/16 13:17:33 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/16 14:14:11 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ int
 	t_raycasting	ray;
 
 	col = 0;
+	mouse_move(s);
 	moves(s);
 	while (col < s->win_x)
 	{
