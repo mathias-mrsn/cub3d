@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 12:24:23 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/17 17:04:56 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/17 17:17:25 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,11 +108,9 @@ void
 					+ ((((int)idx * txtr.bpp / 8) * txtr.y))
 					+ (int)(tmp->texture_x * txtr.x)
 					*txtr.bpp / 8));
-
 			if (*color != 0)
 				__put_pixel_on_img(&s->img, col, draw_start, *color);
 			draw_start++;
-			// printf("idx = %d -- y = %d -- scale = %f\n", idx, txtr.y, scale);
 			idx += (double)txtr.y / (double)(scale);
 		}
 		tmp = tmp->next;
