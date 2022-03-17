@@ -4,7 +4,7 @@ SRCS	=	${shell find ./srcs -name "*.c"}
 
 OBJS	=	${SRCS:.c=.o}
 CC		=	clang
-FLAGS	=	-Wall -Wextra -Werror
+FLAGS	=	-Wall -Wextra -Werror #-fsanitize=address -g3
 SYSTEM = $(shell uname)
 
 ifeq (${SYSTEM}, Darwin)

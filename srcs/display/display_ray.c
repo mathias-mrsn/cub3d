@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 12:24:23 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/12 14:55:11 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/17 17:04:56 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,5 +71,50 @@ void
 	{
 		__put_pixel_on_img(&s->img, col, idx, (int)s->textures->floor);
 		idx++;
+	}
+}
+
+void
+	put_sprite_on_img(t_cub *s, t_raycasting *rayc, int col)
+{
+	t_sprite *tmp;
+	const t_img		txtr = s->textures->sprite;
+	
+
+
+	tmp = rayc->head;
+	while (tmp)
+	{
+		if (tmp->error)
+		{
+			tmp = tmp->next;
+			continue;
+		}
+		double scale = (s->win_y / tmp->distance_fc);
+		double		idx = 0;
+
+		double draw_start = (-scale / 2) + (s->win_y / 2);
+		double draw_end = (scale / 2) + (s->win_y / 2);
+
+		if (scale > s->win_y)
+		{
+			draw_start = 0.0;
+			draw_end = s->win_y;
+			idx = (txtr.y * (1 - s->win_y / scale)) / 2;
+		}
+		while (draw_start < draw_end && draw_start < s->win_y)
+		{
+			uint32_t	*color = ((uint32_t *)(txtr.addr
+					+ ((((int)idx * txtr.bpp / 8) * txtr.y))
+					+ (int)(tmp->texture_x * txtr.x)
+					*txtr.bpp / 8));
+
+			if (*color != 0)
+				__put_pixel_on_img(&s->img, col, draw_start, *color);
+			draw_start++;
+			// printf("idx = %d -- y = %d -- scale = %f\n", idx, txtr.y, scale);
+			idx += (double)txtr.y / (double)(scale);
+		}
+		tmp = tmp->next;
 	}
 }

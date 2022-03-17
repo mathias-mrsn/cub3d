@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3d_d.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malouvar <malouvar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:13 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/16 15:23:36 by malouvar         ###   ########.fr       */
+/*   Updated: 2022/03/17 11:42:31 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@
 # define PARSER_STACK		2
 # define RAYCASTING_STACK	3
 # define SINGLETON_STACK	42
+# define SPRITE_STACK		50
 # define TRASH_STACK		127
 
 # if defined(__APPLE__) && defined(__MACH__)

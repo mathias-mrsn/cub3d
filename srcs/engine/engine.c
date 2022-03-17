@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 16:19:40 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/16 14:14:11 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/17 16:13:04 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ int
 		init_raycasting(s, &ray, col);
 		cast_ray(s, &ray);
 		put_ray_on_img(s, &ray, col);
+		put_sprite_on_img(s, &ray, col);
 		col++;
 	}
 	map2d(s);

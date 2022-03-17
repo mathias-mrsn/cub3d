@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 15:08:51 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/14 13:34:13 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/17 15:57:40 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,8 @@ void
 	init_rayc_moves(s, rayc, move_dirx);
 	init_ray(s, rayc, &vertical);
 	init_ray(s, rayc, &horizontal);
-	ray_hit_wall(s, rayc, &horizontal);
-	ray_hit_wall(s, rayc, &vertical);
+	ray_hit_wall(s, rayc, &horizontal, "12x");
+	ray_hit_wall(s, rayc, &vertical, "12x");
 	compute_distance(s, rayc, &horizontal, &vertical);
 }
 

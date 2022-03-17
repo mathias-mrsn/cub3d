@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:05 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/16 14:13:58 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/17 16:13:21 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ void				compute_distance(t_cub *s, t_raycasting *rayc,
 						t_ray *hor, t_ray *ver);
 void				put_ray_on_img(t_cub *s, t_raycasting *rayc, int col);
 void				cast_ray(t_cub *s, t_raycasting *rayc);
-void				ray_hit_wall(t_cub *s, t_raycasting *rayc, t_ray *ray);
+void				ray_hit_wall(t_cub *s, t_raycasting *rayc, t_ray *ray, char *limiters);
 
 /*
 **	SINGLETON
@@ -98,6 +98,16 @@ int					quit(void);
 
 double				trigo_cercle(double angle);
 double				get_decimal(double nbr);
+
+/*
+**	SPRITE
+*/
+
+t_sprite			*create_sprite(void);
+void				add_sprite_back(t_sprite **head, t_sprite *new);
+void				add_sprite_front(t_sprite **head, t_sprite *new);
+
+void				put_sprite_on_img(t_cub *s, t_raycasting *rayc, int col);
 
 /*
 ** MINIMAP

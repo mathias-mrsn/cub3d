@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3d_s.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malouvar <malouvar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:49:56 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/16 15:11:59 by malouvar         ###   ########.fr       */
+/*   Updated: 2022/03/17 16:43:25 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ typedef struct s_player
 typedef struct s_textures
 {
 	t_img	walls[NBR_WALL_SIDES];
+	t_img	sprite;
 	t_img	door;
 	int		floor;
 	int		ceil;
@@ -72,7 +73,25 @@ typedef struct __attribute__((packed)) s_ray
 	t_boolean		is_hit;	
 }			t_ray;
 
-typedef struct __attribute__((packed)) s_raycasting
+typedef struct __attribute__((packed)) s_sprite
+{
+	t_boolean	error;
+	double	hit_x;
+	double	hit_y;
+	double	x;
+	double	y;
+	double	distance_fc;
+	double	angle_initial;
+	double	angle_view_sprite;
+	double 	hypothenus;
+	double	adj;
+	double	sin;
+	double	acos;
+	double	texture_x;
+	struct s_sprite *next;
+}			t_sprite;
+
+typedef struct s_raycasting
 {
 	t_boolean		is_up : 2;
 	t_boolean		is_left : 2;
@@ -84,6 +103,7 @@ typedef struct __attribute__((packed)) s_raycasting
 	t_ray			horizontal;
 	double			hit_x;
 	double			hit_y;
+	t_sprite		*head;
 }			t_raycasting;
 
 typedef struct s_moves
