@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:32:17 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/18 10:13:24 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/18 12:45:00 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,38 +60,11 @@ static void
 		__texture_error__(s, idx, 1, str);
 	if (__FALSE == __file_extention(str, ".xpm"))
 		__texture_error__(s, idx, 0, str);
-	s->parser->walls_path[type_nbr - 4] = __mstrdup(str, RAYCASTING_STACK);
-}
-
-/*
-t_boolean
-	__open_dir__(DIR **dir)
-{
-	(*dir) = opendir(".");
-	if (NULL == (*dir))
-		return (strerror(errno), __FAILURE);
+	if (type_nbr == 4)
+		s->parser->door_path = __mstrdup(str, RAYCASTING_STACK);
 	else
-		return (__SUCCESS);
+		s->parser->walls_path[type_nbr - 5] = __mstrdup(str, RAYCASTING_STACK);
 }
-
-
-static char
-	**replace_wildcard(char *str)
-{
-	DIR		*dir;
-	char	**list;
-	char	**final_list;
-
-	list = NULL;
-	final_list = NULL;
-	if (__FAILURE == __open_dir__(&dir))
-		return (NULL);
-	__get_list__(&list, dir);
-	create_list(&final_list, list, str);
-	return (final_list);
-}
-*/
-
 
 void
 	__sort_args__(char ***list)

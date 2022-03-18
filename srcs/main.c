@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 14:05:34 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/18 09:30:52 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/18 12:44:13 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void
 	printf("wall 1 = %s\n", s()->parser->walls_path[1]);
 	printf("wall 2 = %s\n", s()->parser->walls_path[2]);
 	printf("wall 3 = %s\n", s()->parser->walls_path[3]);
-	
+	printf("door = %s\n", s()->parser->door_path);	
 }
 
 int

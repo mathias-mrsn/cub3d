@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:49:56 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/18 09:55:55 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/18 12:53:26 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ typedef struct s_parser
 	t_boolean		error;
 	char			*walls_path[NBR_WALL_SIDES];
 	char			**sprite_path;
+	char			*door_path;
 	uint32_t		nbr_sprite;
 	t_boolean		check[NBR_ARGS];
 	int				floor;
@@ -120,6 +121,14 @@ typedef struct s_moves
 	int			last_y_mouse;
 }			t_moves;
 
+typedef struct	s_door
+{
+	int			x;
+	int			y;
+	t_boolean	is_open; // 0 -> close | 1 -> is opening | 2 -> is open
+	clock_t		start;	 // the moment when the door started opening
+}				t_door;
+
 typedef struct s_cub
 {
 	void			*mlx;
@@ -137,6 +146,7 @@ typedef struct s_cub
 	t_moves			*moves;
 	char			*filename;
 	uint32_t		sprite_to_print;
+	t_door			*doors;
 	clock_t			time;
 }			t_cub;
 

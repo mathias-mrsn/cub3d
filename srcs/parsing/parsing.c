@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 16:40:50 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/18 09:12:34 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/18 12:30:38 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ static t_boolean
 void
 	check_game_data(t_cub *s, ssize_t *idx)
 {
-	const char	*_types[NBR_ARGS] = {"R ", "C ", "F ", "S ", "NO ",
+	const char	*_types[NBR_ARGS] = {"R ", "C ", "F ", "S ", "D ", "NO ",
 		"EA ", "SO ", "WE "};
 	uint8_t		type_nbr;
 

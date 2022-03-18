@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:13 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/18 10:37:10 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/18 12:38:40 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@
 # define PROGRAM_NAME "cub3d"
 
 # define NBR_WALL_SIDES	4
-# define NBR_ARGS 8
+# define NBR_ARGS 9
 
 # define SAVE_OPTION "--save"
-# define MAP_CHARSET "012 NSEW"
+# define MAP_CHARSET "012 DNSEW"
 
 /*
 **	MEMORY STACKS
