@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:13 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/18 10:34:20 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/18 10:37:10 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@
 #  define KEY_DOWN		1
 #  define KEY_LEFT		2
 #  define RED_CROSS	17
+#  define MAC 1
 # else
 #  define KEY_D_LEFT 65361
 #  define KEY_D_RIGHT 65363
@@ -49,6 +50,7 @@
 #  define KEY_DOWN		115
 #  define KEY_LEFT		100
 #  define RED_CROSS	33
+#  define MAC 0
 # endif
 
 /*

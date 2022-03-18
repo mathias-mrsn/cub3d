@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 12:18:48 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/18 10:33:14 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/18 10:37:18 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,8 @@ void
 int
 	key_handler(int key, t_cub *s)
 {
-	mouse_move(s);
+	if (MAC)
+		mouse_move(s);
 	if (key == KEY_UP)
 		s->moves->m_forward = 1;
 	else if (key == KEY_DOWN)
