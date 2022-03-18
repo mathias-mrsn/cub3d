@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:49:56 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/17 16:43:25 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/18 09:55:55 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ typedef struct s_player
 typedef struct s_textures
 {
 	t_img	walls[NBR_WALL_SIDES];
-	t_img	sprite;
+	t_img	*sprite;
 	t_img	door;
 	int		floor;
 	int		ceil;
@@ -49,6 +49,8 @@ typedef struct s_parser
 {
 	t_boolean		error;
 	char			*walls_path[NBR_WALL_SIDES];
+	char			**sprite_path;
+	uint32_t		nbr_sprite;
 	t_boolean		check[NBR_ARGS];
 	int				floor;
 	int				ceil;
@@ -134,6 +136,8 @@ typedef struct s_cub
 	t_textures		*textures;
 	t_moves			*moves;
 	char			*filename;
+	uint32_t		sprite_to_print;
+	clock_t			time;
 }			t_cub;
 
 #endif

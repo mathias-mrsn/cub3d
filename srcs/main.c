@@ -6,11 +6,21 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 14:05:34 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/14 13:06:08 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/18 09:30:52 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
+
+void
+	_print_parsing(void)
+{
+	printf("wall 0 = %s\n", s()->parser->walls_path[0]);
+	printf("wall 1 = %s\n", s()->parser->walls_path[1]);
+	printf("wall 2 = %s\n", s()->parser->walls_path[2]);
+	printf("wall 3 = %s\n", s()->parser->walls_path[3]);
+	
+}
 
 int
 	main(int ac, char **av)

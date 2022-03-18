@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 12:24:23 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/17 17:17:25 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/18 10:17:33 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ void
 	put_sprite_on_img(t_cub *s, t_raycasting *rayc, int col)
 {
 	t_sprite *tmp;
-	const t_img		txtr = s->textures->sprite;
+	const t_img		txtr = s->textures->sprite[s->sprite_to_print];
 	
 
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   check_specs.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malouvar <malouvar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:32:17 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/16 15:10:00 by malouvar         ###   ########.fr       */
+/*   Updated: 2022/03/18 10:13:24 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,98 @@ static void
 	s->parser->walls_path[type_nbr - 4] = __mstrdup(str, RAYCASTING_STACK);
 }
 
+/*
+t_boolean
+	__open_dir__(DIR **dir)
+{
+	(*dir) = opendir(".");
+	if (NULL == (*dir))
+		return (strerror(errno), __FAILURE);
+	else
+		return (__SUCCESS);
+}
+
+
+static char
+	**replace_wildcard(char *str)
+{
+	DIR		*dir;
+	char	**list;
+	char	**final_list;
+
+	list = NULL;
+	final_list = NULL;
+	if (__FAILURE == __open_dir__(&dir))
+		return (NULL);
+	__get_list__(&list, dir);
+	create_list(&final_list, list, str);
+	return (final_list);
+}
+*/
+
+
+void
+	__sort_args__(char ***list)
+{
+	size_t	idx;
+
+	idx = 0;
+	while ((*list)[idx] && (*list)[idx + 1])
+	{
+		if (__strcmp((*list)[idx], (*list)[idx + 1]) > 0)
+		{
+			__memswap((void **)&(*list)[idx], (void **)&(*list)[idx + 1]);
+			idx = 0;
+		}
+		else
+			idx++;
+	}
+}
+
+void
+	__get_list__(char ***list, DIR *dir, char *path)
+{
+	struct dirent	*dirent;
+	char			*new_path;
+
+	dirent = __malloc(sizeof(struct dirent), 1);
+	dirent = readdir(dir);
+	while (dirent)
+	{
+		if (dirent->d_name[0] != '.' && __file_extention(dirent->d_name, ".xpm"))
+		{
+			new_path = __strjoin(path, "/");
+			__strs_add_back(list, __strjoin(new_path, dirent->d_name));
+		}
+		dirent = readdir(dir);
+	}
+	__free(dirent);
+}
+
+
+static void
+	__sprite_dir__(t_cub *s, char *str, ssize_t idx, uint8_t type_nbr)
+{
+	DIR *dir;
+	char	**list;
+	
+	(void)s;
+	(void)type_nbr;
+	(void)idx;
+	printf("path = %s\n", str);
+	list = NULL;
+	dir = opendir(str);
+	if (NULL == dir)
+	{
+		__texture_error__(s, idx, 1, str);
+		return ;
+	}
+	__get_list__(&list, dir, str);
+	__sort_args__(&list);
+	s->parser->sprite_path = list;
+	s->parser->nbr_sprite = __strslen(list);
+}
+
 void
 	args_data_is_good(t_cub *s, char *str, uint8_t type_nbr, ssize_t idx)
 {
@@ -74,6 +166,8 @@ void
 		__check_resolution__(s, str, idx);
 	else if (type_nbr > 0 && type_nbr < 3)
 		__check_colors__(s, str, idx, type_nbr);
+	else if (type_nbr == 3)
+		__sprite_dir__(s, str, idx, type_nbr);
 	else
 		__check_file__(s, str, idx, type_nbr);
 }

@@ -4,7 +4,7 @@ SO ./textures/Wolf3D/MultibrickD.xpm
 WE ./textures/Wolf3D/SteelwallD.xpm
 EA ./textures/Wolf3D/SteelwallswitchoffL.xpm
 
-S ./textures/wall.xpm
+S ./textures/sprites/cage
 C 50,50,200
 F 50,50,50
 
