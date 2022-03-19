@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 13:53:27 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/12 12:03:26 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/19 19:14:00 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,34 @@ void
 }
 
 void
+	stock_doors(t_cub *s)
+{
+	size_t			i;
+	size_t			j;
+	size_t			idx;
+	
+	idx = 0;
+	if (0 == s->nbr_door)
+		return ;
+	s->doors = __malloc(sizeof(t_door) * s->nbr_door, PARSER_STACK);
+	i = 0;
+	while (i < __strslen(s->map))
+	{
+		j = -1;
+		while (++j < __strlen(s->map[i]))
+		{
+			if (s->map[i][j] == 'D')
+			{
+				s->doors[idx].x = j + 0.5;
+				s->doors[idx].y = i + 0.5;
+				idx++;
+			}
+		}
+		i++;
+	}
+}
+
+void
 	is_player_in(t_cub *s)
 {
 	uint64_t		nbr_players;
@@ -48,8 +76,9 @@ void
 		nbr_players += __str_count_cs(s->parser->map[i], "NSEW");
 		if (__str_count_cs(s->parser->map[i], "NSEW"))
 			__set_player__(s, i);
+		s->nbr_door += __str_count_cs(s->parser->map[i], "D");
 		i++;
-	}
+	}	
 	if (!nbr_players)
 		__no_player_error__();
 }

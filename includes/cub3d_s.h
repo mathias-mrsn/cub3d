@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:49:56 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/18 12:53:26 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/19 18:51:50 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ enum {
 	NORTH_SIDE,
 	EST_SIDE,
 	SOUTH_SIDE,
-	WEST_SIDE
+	WEST_SIDE,
+	DOOR
 };
 
 enum {
@@ -62,7 +63,8 @@ typedef struct s_parser
 
 typedef struct __attribute__((packed)) s_ray
 {
-	t_boolean		vert : 2;
+	t_boolean		vert : 1;
+	t_boolean		hit_door : 1;
 	double			distance;
 	double			angle;
 	double			x;
@@ -73,8 +75,27 @@ typedef struct __attribute__((packed)) s_ray
 	double			sin;
 	double			cos;
 	double			tan;
-	t_boolean		is_hit;	
+	t_boolean		is_hit : 1;
+	const struct s_door	*door;
 }			t_ray;
+
+
+typedef struct s_raycasting
+{
+	t_boolean		is_up : 1;
+	t_boolean		is_left : 1;
+	t_boolean		hit_door : 1;
+	double			dirx;
+	double			distance;
+	double			init_angle;
+	uint32_t		wall_type;
+	t_ray			vertical;
+	t_ray			horizontal;
+	double			hit_x;
+	double			hit_y;
+	const struct s_sprite		*head;
+	const struct s_door			*door;
+}			t_raycasting;
 
 typedef struct __attribute__((packed)) s_sprite
 {
@@ -94,21 +115,6 @@ typedef struct __attribute__((packed)) s_sprite
 	struct s_sprite *next;
 }			t_sprite;
 
-typedef struct s_raycasting
-{
-	t_boolean		is_up : 2;
-	t_boolean		is_left : 2;
-	double			dirx;
-	double			distance;
-	double			init_angle;
-	uint32_t		wall_type;
-	t_ray			vertical;
-	t_ray			horizontal;
-	double			hit_x;
-	double			hit_y;
-	t_sprite		*head;
-}			t_raycasting;
-
 typedef struct s_moves
 {
 	t_boolean	m_forward : 1;
@@ -123,9 +129,10 @@ typedef struct s_moves
 
 typedef struct	s_door
 {
-	int			x;
-	int			y;
-	t_boolean	is_open; // 0 -> close | 1 -> is opening | 2 -> is open
+	double		x;
+	double		y;
+	t_boolean	is_open; // 0 -> close | 1 -> is opening | 2 -> is open | 3 -> is closing
+	double		opening_x; 
 	clock_t		start;	 // the moment when the door started opening
 }				t_door;
 
@@ -146,6 +153,7 @@ typedef struct s_cub
 	t_moves			*moves;
 	char			*filename;
 	uint32_t		sprite_to_print;
+	uint32_t		nbr_door;
 	t_door			*doors;
 	clock_t			time;
 }			t_cub;

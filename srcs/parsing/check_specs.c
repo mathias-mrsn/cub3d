@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:32:17 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/18 12:45:00 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/19 18:39:38 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,10 +60,8 @@ static void
 		__texture_error__(s, idx, 1, str);
 	if (__FALSE == __file_extention(str, ".xpm"))
 		__texture_error__(s, idx, 0, str);
-	if (type_nbr == 4)
-		s->parser->door_path = __mstrdup(str, RAYCASTING_STACK);
 	else
-		s->parser->walls_path[type_nbr - 5] = __mstrdup(str, RAYCASTING_STACK);
+		s->parser->walls_path[type_nbr - 4] = __mstrdup(str, RAYCASTING_STACK);
 }
 
 void

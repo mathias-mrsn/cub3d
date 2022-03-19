@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 16:40:50 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/18 12:30:38 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/19 18:36:44 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,8 +47,8 @@ static t_boolean
 void
 	check_game_data(t_cub *s, ssize_t *idx)
 {
-	const char	*_types[NBR_ARGS] = {"R ", "C ", "F ", "S ", "D ", "NO ",
-		"EA ", "SO ", "WE "};
+	const char	*_types[NBR_ARGS] = {"R ", "C ", "F ", "S ", "NO ",
+		"EA ", "SO ", "WE ", "D "};
 	uint8_t		type_nbr;
 
 	while (s->parser->file[++(*idx)] && (!__find_every_values__(s)
@@ -85,5 +85,8 @@ t_boolean
 	check_map_charset(s);
 	check_map_walls(s);
 	is_player_in(s);
+	stock_doors(s);
+	mlx_mouse_hide();
+	s->moves->last_x_mouse = s->win_x / 2;
 	return (__SUCCESS);
 }

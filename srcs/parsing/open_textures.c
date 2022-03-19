@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:36:07 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/18 12:46:33 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/19 19:03:12 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 void	open_door_texture(t_cub *s)
 {	
 	__memset(&s->textures->door, 0, sizeof(t_img));
-	s->textures->door.ptr = mlx_xpm_file_to_image(s->mlx, s->parser->door_path,
-	&s->textures->door.x, &s->textures->door.y);
-	if (NULL == s->textures->door.ptr)
+	s->textures->walls[DOOR].ptr = mlx_xpm_file_to_image(s->mlx, s->parser->walls_path[DOOR],
+	&s->textures->walls[DOOR].x, &s->textures->walls[DOOR].y);
+	if (NULL == s->textures->walls[DOOR].ptr)
 		__unable_to_open_xpm__(__LINE__, __FILE__);
-	s->textures->door.addr = mlx_get_data_addr(s->textures->door.ptr,
-	&s->textures->door.bpp, &s->textures->door.size_line,
-	&s->textures->door.endian);
-	if (NULL == s->textures->door.addr)
+	s->textures->walls[DOOR].addr = mlx_get_data_addr(s->textures->walls[DOOR].ptr,
+	&s->textures->walls[DOOR].bpp, &s->textures->walls[DOOR].size_line,
+	&s->textures->walls[DOOR].endian);
+	if (NULL == s->textures->walls[DOOR].addr)
 		__unable_to_open_xpm__(__LINE__, __FILE__);
 }
 
@@ -49,7 +49,6 @@ void
 {
 	uint8_t	idx;
 
-	_print_parsing();
 	idx = 0;
 	while (idx < NBR_WALL_SIDES)
 	{

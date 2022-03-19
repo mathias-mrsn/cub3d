@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 16:19:40 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/18 09:53:23 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/19 18:54:41 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ void
 	uint64_t	diff;
 
 	if (s->time == 0)
-		s->time = clock() / 50000;
-	now = clock() / 50000;
+		s->time = clock() / SPRITE_INTERVAL;
+	now = clock() / SPRITE_INTERVAL;
 	diff = now - s->time;
 	if (diff >= 1)
 	{
@@ -29,7 +29,6 @@ void
 			s->sprite_to_print = 0;
 	}
 	s->time = now;
-	printf("%llu\n", diff);
 }
 
 int
@@ -42,6 +41,7 @@ int
 	mouse_move(s);
 	moves(s);
 	update_sprite_to_print(s);
+	update_doors(s);
 	while (col < s->win_x)
 	{
 		__memset(&ray, 0, sizeof(t_raycasting));

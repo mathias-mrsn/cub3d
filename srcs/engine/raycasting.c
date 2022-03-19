@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 12:26:33 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/17 16:34:45 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/19 19:19:03 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,56 @@ void
 	else
 		new->texture_x = 0.5 + new->adj;
 	if (new->adj <= 0.5)
-		add_sprite_front(&rayc->head, new);
+		add_sprite_front((t_sprite **)&rayc->head, new);
+}
+
+t_door
+	*door_at(t_cub *s, int y, int x)
+{
+	uint32_t	idx;
+
+	idx = 0;
+	while (idx < s->nbr_door)
+	{
+		// printf("list print -> %f\n", s->doors[idx].x);
+		if ((double)(y + 0.5) == s->doors[idx].y && (double)(x + 0.5) == s->doors[idx].x)
+			return (&s->doors[idx]);
+		idx++;
+	}
+	return (NULL);
+}
+
+int
+	through_door(t_cub *s, t_ray *ray, int y, int x)
+{
+	const t_door	*door = door_at(s, y, x);
+
+	// printf("%f\n", door->x);
+
+	// printf("through dore\n");
+	if (NULL == door)
+		return (false);
+	if (door->is_open == 0)
+	{
+		ray->door = door;
+		ray->hit_door = 1;
+		return (true);
+	}
+	else if (door->is_open == 1 || door->is_open == 3)
+	{
+		if ((ray->vert && get_decimal(ray->y) > door->opening_x)
+				|| (!ray->vert && get_decimal(ray->x) > door->opening_x))
+		{
+			ray->door = door;
+			ray->hit_door = 1;
+			return (true);
+		}
+		else
+			return (false);
+	}
+	if (door->is_open == 2)
+		return (false);
+	return (false);
 }
 
 void
@@ -88,26 +137,25 @@ void
 {
 	int64_t	wall_to_check;
 
-	// printf("new ray casted\n");
 	while (ray->x >= 0 && ray->x <= s->map_width
 		&& ray->y >= 0 && ray->y <= s->map_height)
 	{
 		if (1 == ray->vert)
 		{
-			wall_to_check = (int)ray->x - rayc->is_left;
-			if (wall_to_check < 0)
-				wall_to_check = 0;
-			if (__is_charset(s->map[(int)ray->y][wall_to_check], limiters))
+			wall_to_check = __trn64(((int)ray->x - rayc->is_left < 0), 0, (int)ray->x - rayc->is_left);
+			if (__is_charset(s->map[(int)ray->y][wall_to_check], limiters)
+				|| (s->map[(int)ray->y][wall_to_check] == 'D'
+				&& through_door(s, ray, (int)ray->y, (int)wall_to_check)))
 				return ;
 			if (__is_charset(s->map[(int)ray->y][wall_to_check], "2"))
 				add_new_sprite(s, rayc, ray);
 		}
 		else
 		{
-			wall_to_check = (int)ray->y - rayc->is_up;
-			if (wall_to_check < 0)
-				wall_to_check = 0;
-			if (__is_charset(s->map[wall_to_check][(int)ray->x], limiters))
+			wall_to_check = __trn64(((int)ray->y - rayc->is_up < 0), 0, (int)ray->y - rayc->is_up);
+			if (__is_charset(s->map[wall_to_check][(int)ray->x], limiters)
+				|| (s->map[wall_to_check][(int)ray->x] == 'D'
+				&& through_door(s, ray, (int)wall_to_check, (int)ray->x)))
 				return ;
 			if (__is_charset(s->map[wall_to_check][(int)ray->x], "2"))
 				add_new_sprite(s, rayc, ray);
@@ -120,27 +168,31 @@ void
 void
 	compute_distance(t_cub *s, t_raycasting *rayc, t_ray *hor, t_ray *ver)
 {
-	double	distance_x;
-	double	distance_y;
+	double	d_x = __pythagore(s->player->p_x, s->player->p_y, hor->x, hor->y);
+	double	d_y = __pythagore(s->player->p_x, s->player->p_y, ver->x, ver->y);
 
-	distance_x = __pythagore(s->player->p_x, s->player->p_y, hor->x, hor->y);
-	distance_y = __pythagore(s->player->p_x, s->player->p_y, ver->x, ver->y);
-	if (distance_x < distance_y)
+	if (d_x < d_y)
 	{
-		rayc->distance = distance_x;
+		rayc->distance = d_x;
 		rayc->hit_x = hor->x;
 		rayc->hit_y = hor->y;
+		rayc->hit_door = hor->hit_door;
+		rayc->door = hor->door;
 	}
 	else
 	{
-		rayc->distance = distance_y;
+		rayc->distance = d_y;
 		rayc->hit_x = ver->x;
 		rayc->hit_y = ver->y;
+		rayc->hit_door = ver->hit_door;
+		rayc->door = ver->door;
 	}
 	if (rayc->hit_x - (int)rayc->hit_x == 0)
 		rayc->wall_type = __trn32(rayc->is_left, WEST_SIDE, EST_SIDE);
 	else if (rayc->hit_y - (int)rayc->hit_y == 0)
 		rayc->wall_type = __trn32(rayc->is_up, NORTH_SIDE, SOUTH_SIDE);
+	if (rayc->hit_door)
+		rayc->wall_type = DOOR;
 }
 
 void
@@ -148,7 +200,7 @@ void
 {
 	t_sprite	*tmp;
 
-	tmp = rayc->head;
+	tmp = (t_sprite *)rayc->head;
 	while (tmp)
 	{
 		if (rayc->distance < tmp->distance_fc)

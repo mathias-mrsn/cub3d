@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:05 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/18 12:43:46 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/19 13:04:43 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ void				check_map_charset(t_cub *s);
 void				check_map_walls(t_cub *s);
 void				is_player_in(t_cub *s);
 void				open_textures(t_cub *s);
+void				stock_doors(t_cub *s);
 
 /*
 **	ENGINE
@@ -39,6 +40,7 @@ void				compute_distance(t_cub *s, t_raycasting *rayc,
 void				put_ray_on_img(t_cub *s, t_raycasting *rayc, int col);
 void				cast_ray(t_cub *s, t_raycasting *rayc);
 void				ray_hit_wall(t_cub *s, t_raycasting *rayc, t_ray *ray, char *limiters);
+void				update_doors(t_cub *s);
 
 /*
 **	SINGLETON

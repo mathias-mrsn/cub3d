@@ -4,6 +4,8 @@
 		"math.h": "c",
 		"atomic": "cpp",
 		"memory": "cpp",
-		"utility": "cpp"
+		"utility": "cpp",
+		"chrono": "c",
+		"ctime": "c"
 	}
 }

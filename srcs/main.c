@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 14:05:34 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/18 12:44:13 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/19 19:21:12 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@ void
 	printf("wall 1 = %s\n", s()->parser->walls_path[1]);
 	printf("wall 2 = %s\n", s()->parser->walls_path[2]);
 	printf("wall 3 = %s\n", s()->parser->walls_path[3]);
-	printf("door = %s\n", s()->parser->door_path);	
+	printf("door = %s\n", s()->parser->walls_path[4]);
+	printf("nbr_door = %d\n", s()->nbr_door);
 }
 
 int
@@ -36,11 +37,18 @@ int
 		__exit(EXIT_FAILURE);
 	if (__FAILURE == parsing(cub))
 		__exit(EXIT_FAILURE);
+	_print_parsing();
 	cub->win = mlx_new_window(cub->mlx, cub->win_x, cub->win_y, PROGRAM_NAME);
 	cub->img.ptr = mlx_new_image(cub->mlx, cub->win_x, cub->win_y);
 	cub->img.addr = mlx_get_data_addr(cub->img.ptr,
 			&cub->img.bpp, &cub->img.size_line, &cub->img.endian);
-	engine(cub);
+
+# if defined(__APPLE__) && defined(__MACH__)
+	mlx_mouse_move(cub->win, cub->win_x / 2, cub->win_y / 2);
+# else
+	mlx_mouse_move(cub->mlx, cub->win, cub->win_x / 2, cub->win_y / 2);
+# endif
+
 	mlx_hook(cub->win, 2, (1L << 0), key_handler, cub);
 	mlx_hook(cub->win, 3, (1L << 1), key_release, cub);
 	mlx_hook(cub->win, 17, 0, quit, NULL);

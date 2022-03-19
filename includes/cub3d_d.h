@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:13 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/18 12:38:40 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/19 18:35:55 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # define PROGRAM_NAME "cub3d"
 
-# define NBR_WALL_SIDES	4
+# define NBR_WALL_SIDES	5
 # define NBR_ARGS 9
 
 # define SAVE_OPTION "--save"
@@ -73,6 +73,9 @@
 # define FOV 1.15192
 # define CAMERA_SPEED 0.04
 # define MOVING_DISTANCE 0.10
+# define SPRITE_INTERVAL 100000
+# define OPENING_DOOR_DIST	2.5
+# define DOOR_OPENING_SPEED 0.10
 
 /*
 **	BONUS
