@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 12:18:48 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/19 19:24:15 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/19 19:29:48 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,8 @@ void
 	int	y;
 
 # if defined(__APPLE__) && defined(__MACH__)
-	mlx_mouse_hide();
 	mlx_mouse_get_pos(s->win, &x, &y);
 # else
-	mlx_mouse_hide(s->mlx, s->win);
 	mlx_mouse_get_pos(s->mlx, s->win, &x, &y);
 # endif
 
