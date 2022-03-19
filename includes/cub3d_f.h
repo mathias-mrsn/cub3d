@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:05 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/19 13:04:43 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/19 19:31:59 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,10 +86,7 @@ double				__pythagore__(double x1, double y1, double x2, double y2);
 void				moves(t_cub *s);
 int					key_handler(int key, t_cub *s);
 int					key_release(int keycode, t_cub *s);
-
-# if defined(__APPLE__) && defined(__MACH__)
-	void				mouse_move(t_cub *s);
-# endif
+void				mouse_move(t_cub *s);
 
 /*
 **	QUIT
