@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 14:05:34 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/19 19:21:12 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/20 17:14:03 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,23 @@ void
 	printf("wall 3 = %s\n", s()->parser->walls_path[3]);
 	printf("door = %s\n", s()->parser->walls_path[4]);
 	printf("nbr_door = %d\n", s()->nbr_door);
+}
+
+int
+	mouse_handler(int action, t_cub *ss)
+{
+	printf("%d\n", action);
+	if (action == 1)
+		s()->moves->fire = 1;
+	return (0);
+}
+
+int
+	mouse_release(int action, t_cub *ss)
+{
+	if (action == 1)
+		s()->moves->fire = 0;
+	return (0);
 }
 
 int
@@ -49,6 +66,8 @@ int
 	mlx_mouse_move(cub->mlx, cub->win, cub->win_x / 2, cub->win_y / 2);
 # endif
 
+	mlx_hook(cub->win, 4, (0L), mouse_handler, cub);
+	mlx_hook(cub->win, 5, (0L), mouse_release, cub);
 	mlx_hook(cub->win, 2, (1L << 0), key_handler, cub);
 	mlx_hook(cub->win, 3, (1L << 1), key_release, cub);
 	mlx_hook(cub->win, 17, 0, quit, NULL);

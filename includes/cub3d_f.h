@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:05 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/19 19:31:59 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/20 16:54:42 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,8 +108,17 @@ double				get_decimal(double nbr);
 t_sprite			*create_sprite(void);
 void				add_sprite_back(t_sprite **head, t_sprite *new);
 void				add_sprite_front(t_sprite **head, t_sprite *new);
-
 void				put_sprite_on_img(t_cub *s, t_raycasting *rayc, int col);
+
+/*
+**	GUN
+*/
+
+void				init_gun_textures(t_cub *s);
+void				put_gun_on_img(t_cub *s);
+void				update_gun_sprite(t_cub *s);
+void				put_gun_cursor(t_cub *s);
+void				kill_sprite(t_cub *s, t_raycasting *rayc);
 
 /*
 ** MINIMAP

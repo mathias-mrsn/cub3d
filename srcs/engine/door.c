@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/19 12:56:17 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/19 18:53:02 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/20 12:23:04 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ void
 	{
 		door->is_open = 1;
 		door->start = clock() / _CLOCK_TIME;
+		system(CMD_PLAY_SOUND" "SOUND_DOOR_PATH" 2>/dev/null&");
 	}
 	else if (door->is_open == 1)
 	{
@@ -30,6 +31,7 @@ void
 		{
 			door->is_open = 2;
 			door->opening_x = 1.0;
+			system("killall "CMD_PLAY_SOUND" 2>/dev/null&");
 		}
 	}
 	else if (door->is_open == 2)
@@ -38,6 +40,8 @@ void
 	{
 		door->start = clock() / _CLOCK_TIME;
 		door->is_open = 1;
+		system("killall "CMD_PLAY_SOUND" 2>/dev/null&");
+		system(CMD_PLAY_SOUND" "SOUND_DOOR_PATH" 2>/dev/null&");
 	}
 }
 
@@ -50,11 +54,14 @@ void
 	{
 		door->start = clock() / _CLOCK_TIME;
 		door->is_open = 3;
+		system("killall "CMD_PLAY_SOUND" 2>/dev/null&");
+		system(CMD_PLAY_SOUND" "SOUND_DOOR_PATH" 2>/dev/null&");
 	}
 	else if (door->is_open == 2)
 	{
 		door->is_open = 3;
 		door->start = clock() / _CLOCK_TIME;
+		system(CMD_PLAY_SOUND" "SOUND_DOOR_PATH" 2>/dev/null&");
 	}
 	else
 	{
@@ -64,6 +71,7 @@ void
 		{
 			door->is_open = 0;
 			door->opening_x = 0;		
+			system("killall "CMD_PLAY_SOUND" 2>/dev/null&");
 		}
 	}
 }

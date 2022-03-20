@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:49:56 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/19 18:51:50 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/20 16:34:03 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,14 +85,14 @@ typedef struct s_raycasting
 	t_boolean		is_up : 1;
 	t_boolean		is_left : 1;
 	t_boolean		hit_door : 1;
+	t_boolean		vert : 1;
 	double			dirx;
 	double			distance;
 	double			init_angle;
 	uint32_t		wall_type;
-	t_ray			vertical;
-	t_ray			horizontal;
 	double			hit_x;
 	double			hit_y;
+	uint32_t		col;
 	const struct s_sprite		*head;
 	const struct s_door			*door;
 }			t_raycasting;
@@ -123,6 +123,7 @@ typedef struct s_moves
 	t_boolean	m_right : 1;
 	t_boolean	l_left : 1;
 	t_boolean	l_right : 1;
+	t_boolean	fire : 1;
 	int			last_x_mouse;
 	int			last_y_mouse;
 }			t_moves;
@@ -135,6 +136,15 @@ typedef struct	s_door
 	double		opening_x; 
 	clock_t		start;	 // the moment when the door started opening
 }				t_door;
+
+typedef struct s_gun
+{
+	// char		*gun_paths[NBR_GUN_SPRITE];
+	t_img		gun_txtr[NBR_GUN_SPRITE];
+	uint32_t	gun_state;
+	clock_t		time;
+	t_boolean	can_kill;
+}				t_gun;
 
 typedef struct s_cub
 {
@@ -151,10 +161,11 @@ typedef struct s_cub
 	t_player		*player;
 	t_textures		*textures;
 	t_moves			*moves;
+	t_door			*doors;
+	t_gun			*gun;
 	char			*filename;
 	uint32_t		sprite_to_print;
 	uint32_t		nbr_door;
-	t_door			*doors;
 	clock_t			time;
 }			t_cub;
 

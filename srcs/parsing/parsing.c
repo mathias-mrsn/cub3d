@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 16:40:50 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/19 19:30:36 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/20 12:47:34 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,6 +93,7 @@ t_boolean
 	mlx_mouse_hide(s->mlx, s->win);
 #endif
 
+	init_gun_textures(s);
 	s->moves->last_x_mouse = s->win_x / 2;
 	return (__SUCCESS);
 }

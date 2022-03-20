@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:13 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/19 18:35:55 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/20 16:18:57 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,8 @@
 #  define KEY_LEFT		2
 #  define RED_CROSS	17
 #  define MAC 1
+#  define CMD_PLAY_SOUND "afplay"
+#  define KEY_T		3
 # else
 #  define KEY_D_LEFT 65361
 #  define KEY_D_RIGHT 65363
@@ -51,6 +53,8 @@
 #  define KEY_LEFT		100
 #  define RED_CROSS	33
 #  define MAC 0
+#  define CMD_PLAY_SOUND "aplay"
+#  define KEY_T		102
 # endif
 
 /*
@@ -59,6 +63,19 @@
 
 # define WIN_X_MAX			2000
 # define WIN_Y_MAX			1500
+
+/*
+**	SOUNDS
+*/
+
+# define SOUND_DOOR_PATH	"sounds/Door.wav"
+# define SOUND_GUN_PATH		"sounds/Pistol.wav"
+
+/*
+**	GUN
+*/
+
+# define NBR_GUN_SPRITE		6
 
 /*
 **	MOUSE
@@ -74,8 +91,8 @@
 # define CAMERA_SPEED 0.04
 # define MOVING_DISTANCE 0.10
 # define SPRITE_INTERVAL 100000
-# define OPENING_DOOR_DIST	2.5
-# define DOOR_OPENING_SPEED 0.10
+# define OPENING_DOOR_DIST	3.5
+# define DOOR_OPENING_SPEED 0.02
 
 /*
 **	BONUS

@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 12:18:48 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/19 19:29:48 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/20 15:48:59 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,8 @@ int
 		s->moves->l_left = 1;
 	else if (key == KEY_D_RIGHT)
 		s->moves->l_right = 1;
+	else if (key == KEY_T)
+		s->moves->fire = 1;
 	else if (key == KEY_ESC)
 		quit();
 	return (0);
@@ -70,5 +72,7 @@ int
 		s->moves->l_left = 0;
 	else if (key == KEY_D_RIGHT)
 		s->moves->l_right = 0;
+	else if (key == KEY_T)
+		s->moves->fire = 0;
 	return (0);
 }

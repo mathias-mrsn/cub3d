@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 12:26:33 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/19 19:19:03 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/20 17:16:01 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ void
 				&& rayc->dirx <= T_PI), true, false);
 	rayc->is_left = __trnd((rayc->dirx >= T_PI_2
 				&& rayc->dirx <= T_3PI_2), true, false);
+	rayc->col = col;
 }
 
 void
@@ -75,10 +76,7 @@ void
 	new->adj = sqrt(pow(new->hypothenus, 2) - pow(new->distance_fc, 2));
 	if (new->adj > 0.5)
 		return;
-	if (new->angle_view_sprite < 0)
-		new->texture_x = 0.5 - new->adj;
-	else
-		new->texture_x = 0.5 + new->adj;
+	new->texture_x = __trnd((new->angle_view_sprite < 0), (0.5 - new->adj), (0.5 + new->adj));
 	if (new->adj <= 0.5)
 		add_sprite_front((t_sprite **)&rayc->head, new);
 }
@@ -104,9 +102,6 @@ int
 {
 	const t_door	*door = door_at(s, y, x);
 
-	// printf("%f\n", door->x);
-
-	// printf("through dore\n");
 	if (NULL == door)
 		return (false);
 	if (door->is_open == 0)
@@ -132,38 +127,78 @@ int
 	return (false);
 }
 
+int
+	ray_hit_ver(t_cub *s, t_raycasting *rayc, t_ray *ray, char *limiters)
+{
+	int64_t	wall_to_check;
+
+	wall_to_check = __trn64(((int)ray->x - rayc->is_left < 0), 0, (int)ray->x - rayc->is_left);
+	if (__is_charset(s->map[(int)ray->y][wall_to_check], limiters)
+			|| (s->map[(int)ray->y][wall_to_check] == 'D'
+			&& through_door(s, ray, (int)ray->y, (int)wall_to_check)))
+		return (1);
+	if (__is_charset(s->map[(int)ray->y][wall_to_check], "2"))
+			add_new_sprite(s, rayc, ray);
+	return (0);
+}
+
+int
+	ray_hit_hor(t_cub *s, t_raycasting *rayc, t_ray *ray, char *limiters)
+{
+	int64_t	wall_to_check;
+
+	wall_to_check = __trn64(((int)ray->y - rayc->is_up < 0), 0, (int)ray->y - rayc->is_up);
+	if (__is_charset(s->map[wall_to_check][(int)ray->x], limiters)
+			|| (s->map[wall_to_check][(int)ray->x] == 'D'
+			&& through_door(s, ray, (int)wall_to_check, (int)ray->x)))
+		return (1);
+	if (__is_charset(s->map[wall_to_check][(int)ray->x], "2"))
+			add_new_sprite(s, rayc, ray);
+	return (0);
+}
+
 void
 	ray_hit_wall(t_cub *s, t_raycasting *rayc, t_ray *ray, char *limiters)
 {
-	int64_t	wall_to_check;
+	// int64_t	wall_to_check;
 
 	while (ray->x >= 0 && ray->x <= s->map_width
 		&& ray->y >= 0 && ray->y <= s->map_height)
 	{
-		if (1 == ray->vert)
+		if (ray->vert)
 		{
-			wall_to_check = __trn64(((int)ray->x - rayc->is_left < 0), 0, (int)ray->x - rayc->is_left);
-			if (__is_charset(s->map[(int)ray->y][wall_to_check], limiters)
-				|| (s->map[(int)ray->y][wall_to_check] == 'D'
-				&& through_door(s, ray, (int)ray->y, (int)wall_to_check)))
+			if (ray_hit_ver(s, rayc, ray, limiters))
 				return ;
-			if (__is_charset(s->map[(int)ray->y][wall_to_check], "2"))
-				add_new_sprite(s, rayc, ray);
 		}
 		else
 		{
-			wall_to_check = __trn64(((int)ray->y - rayc->is_up < 0), 0, (int)ray->y - rayc->is_up);
-			if (__is_charset(s->map[wall_to_check][(int)ray->x], limiters)
-				|| (s->map[wall_to_check][(int)ray->x] == 'D'
-				&& through_door(s, ray, (int)wall_to_check, (int)ray->x)))
+			if (ray_hit_hor(s, rayc, ray, limiters))
 				return ;
-			if (__is_charset(s->map[wall_to_check][(int)ray->x], "2"))
-				add_new_sprite(s, rayc, ray);
 		}
 		ray->x += ray->x_to_add;
 		ray->y += ray->y_to_add;
 	}
 }
+
+// void
+// 	kill_sprite(t_cub *s, t_raycasting *rayc)
+// {
+// 	int64_t	wall_to_check;
+
+// 	if (rayc->vert)
+// 	{
+// 		printf("kill_sprite\n");
+// 		wall_to_check = __trn64(((int)rayc->hit_x - rayc->is_left < 0), 0, (int)rayc->hit_x - rayc->is_left);
+// 		if (s->gun->can_kill && __is_charset(s->map[(int)rayc->hit_y][wall_to_check], "2"))
+// 			s->map[(int)rayc->hit_y][wall_to_check] = '0';
+// 	}
+// 	else
+// 	{
+// 		wall_to_check = __trn64(((int)rayc->hit_y - rayc->is_up < 0), 0, (int)rayc->hit_y - rayc->is_up);
+// 		if (s->gun->can_kill && __is_charset(s->map[wall_to_check][(int)rayc->hit_x], "2"))
+// 			s->map[wall_to_check][(int)rayc->hit_x] = '0';
+// 	}
+// }
 
 void
 	compute_distance(t_cub *s, t_raycasting *rayc, t_ray *hor, t_ray *ver)
@@ -178,6 +213,7 @@ void
 		rayc->hit_y = hor->y;
 		rayc->hit_door = hor->hit_door;
 		rayc->door = hor->door;
+		rayc->vert = false;
 	}
 	else
 	{
@@ -186,13 +222,13 @@ void
 		rayc->hit_y = ver->y;
 		rayc->hit_door = ver->hit_door;
 		rayc->door = ver->door;
+		rayc->vert = true;
 	}
+	// kill_sprite(s, rayc);
 	if (rayc->hit_x - (int)rayc->hit_x == 0)
 		rayc->wall_type = __trn32(rayc->is_left, WEST_SIDE, EST_SIDE);
 	else if (rayc->hit_y - (int)rayc->hit_y == 0)
 		rayc->wall_type = __trn32(rayc->is_up, NORTH_SIDE, SOUTH_SIDE);
-	if (rayc->hit_door)
-		rayc->wall_type = DOOR;
 }
 
 void
@@ -208,6 +244,29 @@ void
 		tmp = tmp->next;
 	}
 }
+
+
+
+
+void
+	kill_sprite(t_cub *s, t_raycasting *rayc)
+{
+	t_sprite	*tmp;
+
+	tmp = (t_sprite *)rayc->head;
+	while (tmp)
+	{
+		if (tmp->error == false && s->gun->can_kill)
+		{
+			s->map[(int)tmp->y][(int)tmp->x] = '0';
+			tmp->error = true;
+			return ;
+		}
+		tmp = tmp->next;
+	}
+}
+
+
 
 void
 	cast_ray(t_cub *s, t_raycasting *rayc)
