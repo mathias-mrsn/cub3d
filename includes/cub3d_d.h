@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:13 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/20 16:18:57 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/21 16:35:39 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,20 +89,30 @@
 
 # define FOV 1.15192
 # define CAMERA_SPEED 0.04
-# define MOVING_DISTANCE 0.10
+# define MOVING_DISTANCE 0.50
 # define SPRITE_INTERVAL 100000
-# define OPENING_DOOR_DIST	3.5
-# define DOOR_OPENING_SPEED 0.02
 
 /*
 **	BONUS
 */
 
-# define SKY_TEXTURE "./textures/sky/star_sky.xpm"
 # define DOOR_TEXTURE "./textures/door.xpm"
+# define OPENING_DOOR_DIST	3.5
+# define DOOR_OPENING_SPEED 0.005
 
-# define LIFE_BAR_HEIGHT 40
-# define LIFE_BAR_WIDTH 100
+/*
+**	MINIMAP
+*/
+
+# define PADDING_X	50
+# define PADDING_Y	50
+# define MINIMAP_H	60
+# define MINIMAP_W	150
+# define PPC		10
+# define CENTER_X	MINIMAP_W / 2
+# define CENTER_Y	MINIMAP_H / 2
+# define DIST_PER_PIXEL	0.1
+
 
 # define MINIMAP_OFFSET_X 21
 # define MINIMAP_OFFSET_Y 21

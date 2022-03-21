@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 16:19:40 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/20 16:54:24 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/21 09:20:45 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,50 @@ void
 }
 
 int
+	hit_box_sprite(t_cub *s, t_raycasting *rayc, int col)
+{
+	t_sprite *tmp;
+	const t_img		txtr = s->textures->sprite[s->sprite_to_print];
+	
+
+
+	tmp = (t_sprite *)rayc->head;
+	while (tmp)
+	{
+		if (tmp->error)
+		{
+			tmp = tmp->next;
+			continue;
+		}
+		double scale = (s->win_y / tmp->distance_fc);
+		double		idx = 0;
+
+		double draw_start = (-scale / 2) + (s->win_y / 2);
+		double draw_end = (scale / 2) + (s->win_y / 2);
+
+		if (scale > s->win_y)
+		{
+			draw_start = 0.0;
+			draw_end = s->win_y;
+			idx = (txtr.y * (1 - s->win_y / scale)) / 2;
+		}
+		while (draw_start < draw_end && draw_start < s->win_y)
+		{
+			uint32_t	*color = ((uint32_t *)(txtr.addr
+					+ ((((int)idx * txtr.bpp / 8) * txtr.y))
+					+ (int)(tmp->texture_x * txtr.x)
+					*txtr.bpp / 8));
+			if (*color != 0)
+				return (1);
+			draw_start++;
+			idx += (double)txtr.y / (double)(scale);
+		}
+		tmp = tmp->next;
+	}
+	return (0);
+}
+
+int
 	engine(t_cub *s)
 {
 	int				col;
@@ -48,7 +92,7 @@ int
 		__memset(&ray, 0, sizeof(t_raycasting));
 		init_raycasting(s, &ray, col);
 		cast_ray(s, &ray);
-		if (col == s->win_x / 2)
+		if (col == s->win_x / 2 && hit_box_sprite(s, &ray, col))
 			kill_sprite(s, &ray);
 		put_ray_on_img(s, &ray, col);
 		put_sprite_on_img(s, &ray, col);

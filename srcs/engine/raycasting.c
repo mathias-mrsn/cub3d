@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 12:26:33 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/20 17:16:01 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/21 09:58:34 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -252,18 +252,23 @@ void
 	kill_sprite(t_cub *s, t_raycasting *rayc)
 {
 	t_sprite	*tmp;
+	int			x;
+	int			y;
 
+	x = 0;
+	y = 0;
 	tmp = (t_sprite *)rayc->head;
 	while (tmp)
 	{
 		if (tmp->error == false && s->gun->can_kill)
 		{
-			s->map[(int)tmp->y][(int)tmp->x] = '0';
-			tmp->error = true;
-			return ;
+			x = (int)tmp->x;
+			y = (int)tmp->y;
 		}
 		tmp = tmp->next;
 	}
+	if (x && y)
+		s->map[y][x] = '0';
 }
 
 

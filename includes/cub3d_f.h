@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:05 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/20 16:54:42 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/21 10:41:37 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -125,7 +125,6 @@ void				kill_sprite(t_cub *s, t_raycasting *rayc);
 */
 
 void				map2d(t_cub *s);
-void				draw_elem(t_cub *s, int y, int x, int color);
 
 
 
