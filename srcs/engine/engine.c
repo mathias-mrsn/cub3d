@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 16:19:40 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/21 09:20:45 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/22 10:43:10 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,6 +82,7 @@ int
 	t_raycasting	ray;
 
 	col = 0;
+	// __print_memory();
 	mouse_move(s);
 	moves(s);
 	update_sprite_to_print(s);
@@ -102,5 +103,6 @@ int
 	put_gun_on_img(s);
 	map2d(s);
 	mlx_put_image_to_window(s->mlx, s->win, s->img.ptr, 0, 0);
+	__clean(SPRITE_STACK);
 	return (__SUCCESS);
 }

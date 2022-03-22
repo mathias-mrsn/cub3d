@@ -5,7 +5,7 @@ WE ./textures/Wolf3D/SteelwallD.xpm
 EA ./textures/Wolf3D/SteelwallswitchoffL.xpm
 
 S ./textures/sprites/cage
-D ./textures/Door.xpm
+D ./textures/door.xpm
 C 50,50,200
 F 50,50,50
 

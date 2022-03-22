@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:36:07 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/19 19:03:12 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/22 10:38:43 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ void
 	uint8_t	idx;
 
 	idx = 0;
-	while (idx < NBR_WALL_SIDES)
+	while (idx < NBR_WALL_SIDES - 1)
 	{
 		__memset(&s->textures->walls[idx], 0, sizeof(t_img));
 		s->textures->walls[idx].ptr = mlx_xpm_file_to_image(s->mlx,

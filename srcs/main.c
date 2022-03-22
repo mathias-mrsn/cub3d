@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 14:05:34 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/20 17:14:03 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/22 10:10:36 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,8 +61,10 @@ int
 			&cub->img.bpp, &cub->img.size_line, &cub->img.endian);
 
 # if defined(__APPLE__) && defined(__MACH__)
+	mlx_mouse_hide();
 	mlx_mouse_move(cub->win, cub->win_x / 2, cub->win_y / 2);
 # else
+	mlx_mouse_hide(cub->mlx, cub->win);
 	mlx_mouse_move(cub->mlx, cub->win, cub->win_x / 2, cub->win_y / 2);
 # endif
 

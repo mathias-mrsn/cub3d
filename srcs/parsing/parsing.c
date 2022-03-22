@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 16:40:50 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/20 12:47:34 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/22 10:10:05 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,11 +87,11 @@ t_boolean
 	is_player_in(s);
 	stock_doors(s);
 	
-#if defined(__APPLE__) && defined(__MACH__)
-	mlx_mouse_hide();
-#else
-	mlx_mouse_hide(s->mlx, s->win);
-#endif
+// #if defined(__APPLE__) && defined(__MACH__)
+// 	
+// #else
+// 	
+// #endif
 
 	init_gun_textures(s);
 	s->moves->last_x_mouse = s->win_x / 2;
