@@ -24,7 +24,7 @@ void
 	s->player->angle = trigo_cercle(s->player->angle
 			+ (s->moves->last_x_mouse - x) * RAD_PER_PIXEL);
 	s->moves->last_x_mouse = s->win_x / 2;
-	mlx_mouse_move(s->mlx, s->win, s->win_x / 2, s->win_y / 2);
+	mlx_mouse_move(s->win, s->win_x / 2, s->win_y / 2);
 }
 
 #else
