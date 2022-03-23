@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 13:02:06 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/20 16:19:18 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/23 13:56:14 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void
 	update_gun_sprite(t_cub *s)
 {
 	const clock_t	now = clock();
-	
+
 	if (s->moves->fire || s->gun->gun_state)
 	{
 		if (!s->gun->gun_state)
@@ -32,7 +32,7 @@ void
 		{
 			s->gun->can_kill = false;
 			if (((double)(now - s->gun->time) / CLOCKS_PER_SEC) < DELAY_TIME)
-				return;
+				return ;
 			s->gun->time = now;
 			s->gun->gun_state += 1;
 			if (s->gun->gun_state == NBR_GUN_SPRITE)
@@ -61,17 +61,15 @@ void
 }
 
 void
-	put_gun_on_img(t_cub *s)
+	put_gun_on_img(t_cub *s, double i, double j)
 {
 	const t_img	txtr = s->gun->gun_txtr[s->gun->gun_state];
 	uint32_t	*color;
+	int			x;
+	int			y;
 
-	double		i;
-	double		j;
-	
-	int	x = 0;
-	int y = 0;
-
+	x = (s->win_x / 2) - (fmin(s->win_x, s->win_y) / 2);
+	y = (s->win_y - fmin(s->win_x, s->win_y));
 	i = 0.0;
 	while (i < txtr.x)
 	{
@@ -79,16 +77,15 @@ void
 		while (j < txtr.y)
 		{
 			color = ((uint32_t *)(txtr.addr
-					+ ((((int)i * txtr.bpp / 8) * txtr.y))
-					+ (int)j * txtr.bpp / 8));
-
+						+ ((((int)i * txtr.bpp / 8) * txtr.y))
+						+ (int)j * txtr.bpp / 8));
 			if (*color != (uint32_t)9961608)
 				__put_pixel_on_img(&s->img, x, y, *color);
 			x++;
 			j += txtr.y / fmin(s->win_x, s->win_y);
 		}
 		y++;
-		x = 0;
+		x = (s->win_x / 2) - (fmin(s->win_x, s->win_y) / 2);
 		i += txtr.x / fmin(s->win_x, s->win_y);
 	}
 }

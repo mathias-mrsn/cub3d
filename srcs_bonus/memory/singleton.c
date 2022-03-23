@@ -1,33 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   engine.c                                           :+:      :+:    :+:   */
+/*   singleton.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/01 16:19:40 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/23 17:50:01 by mamaurai         ###   ########.fr       */
+/*   Created: 2022/02/26 14:05:24 by mamaurai          #+#    #+#             */
+/*   Updated: 2022/03/20 12:46:22 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
-int
-	engine(t_cub *s)
+t_cub
+	*s(void)
 {
-	int				col;
-	t_raycasting	ray;
+	static t_cub	*s;
 
-	col = -1;
-	moves(s);
-	while (++col < s->win_x)
+	if (!s)
 	{
-		__memset(&ray, 0, sizeof(t_raycasting));
-		init_raycasting(s, &ray, col);
-		cast_ray(s, &ray);
-		put_ray_on_img(s, &ray, col);
+		s = __malloc(sizeof(t_cub), SINGLETON_STACK);
+		s->parser = __malloc(sizeof(t_parser), SINGLETON_STACK);
+		s->textures = __malloc(sizeof(t_textures), SINGLETON_STACK);
+		s->player = __malloc(sizeof(t_player), SINGLETON_STACK);
+		s->moves = __malloc(sizeof(t_moves), SINGLETON_STACK);
+		s->gun = __malloc(sizeof(t_gun), SINGLETON_STACK);
 	}
-	mlx_put_image_to_window(s->mlx, s->win, s->img.ptr, 0, 0);
-	__clean(SPRITE_STACK);
-	return (__SUCCESS);
+	return (s);
 }

@@ -2,7 +2,10 @@ NAME	:=	cub3d
 
 SRCS	=	${shell find ./srcs -name "*.c"}
 
+SRCS_BONUS = ${shell find ./srcs_bonus -name "*.c"}
+
 OBJS	=	${SRCS:.c=.o}
+OBJS_BONUS = ${SRCS_BONUS:.c=.o}
 CC		=	clang
 FLAGS	=	#-fsanitize=address -g3
 SYSTEM = $(shell uname)
@@ -63,13 +66,22 @@ ${NAME}:	${OBJS}
 			@${CC} ${FLAGS} ${INCS} ${MLX_FLAGS} -o ${NAME} ${OBJS} ${LIBC}
 			@printf "\n${_GREEN}${_BOLD}Compilation done !${_END}\n"
 
+bonus:		${OBJS_BONUS}
+			@printf "%-15s ${_CYAN}${_BOLD}libft${_END}...\n" "Compiling"
+			@${MAKE} -C libft >/dev/null
+			@printf "%-15s ${_CYAN}${_BOLD}${MLX_USED}${_END}...\n" "Compiling"
+			@${MAKE} -C ${MLX_USED} >/dev/null 2>&1
+			@printf "%-15s ${_PURPLE}${_BOLD}${NAME}${_END}...\n" "Compiling"
+			@${CC} ${FLAGS} ${INCS} ${MLX_FLAGS} -o ${NAME} ${OBJS_BONUS} ${LIBC}
+			@printf "\n${_GREEN}${_BOLD}Compilation done !${_END}\n"
+
 clean:		
 			@printf "%-15s ${_RED}${_BOLD}libft binary files${_END}...\n" "Deleting"
 			@${MAKE} -C libft clean >/dev/null
 			@printf "%-15s ${_RED}${_BOLD}mlx binary files${_END}...\n" "Deleting"
 			@${MAKE} -C ${MLX_USED} clean >/dev/null
 			@printf "%-15s ${_RED}${_BOLD}${NAME} binary files${_END}...\n" "Deleting"
-			@rm -f ${OBJS}
+			@rm -f ${OBJS} ${OBJS_BONUS}
 
 
 fclean:		clean

@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 12:26:33 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/23 17:51:12 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/23 14:55:26 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,12 @@ int
 
 	wall_to_check = __trn64(((int)ray->x - rayc->is_left < 0),
 			0, (int)ray->x - rayc->is_left);
-	if (__is_charset(s->map[(int)ray->y][wall_to_check], limiters))
+	if (__is_charset(s->map[(int)ray->y][wall_to_check], limiters)
+			|| (s->map[(int)ray->y][wall_to_check] == 'D'
+			&& through_door(s, ray, (int)ray->y, (int)wall_to_check)))
 		return (1);
+	if (__is_charset(s->map[(int)ray->y][wall_to_check], "2"))
+		init_new_sprite(s, rayc, ray);
 	return (0);
 }
 
@@ -31,8 +35,12 @@ int
 
 	wall_to_check = __trn64(((int)ray->y - rayc->is_up < 0),
 			0, (int)ray->y - rayc->is_up);
-	if (__is_charset(s->map[wall_to_check][(int)ray->x], limiters))
+	if (__is_charset(s->map[wall_to_check][(int)ray->x], limiters)
+			|| (s->map[wall_to_check][(int)ray->x] == 'D'
+			&& through_door(s, ray, (int)wall_to_check, (int)ray->x)))
 		return (1);
+	if (__is_charset(s->map[wall_to_check][(int)ray->x], "2"))
+		init_new_sprite(s, rayc, ray);
 	return (0);
 }
 
@@ -101,4 +109,5 @@ void
 	hor.distance = __pythagore(s->player->p_x, s->player->p_y, hor.x, hor.y);
 	ver.distance = __pythagore(s->player->p_x, s->player->p_y, ver.x, ver.y);
 	compute_distance(s, rayc, &hor, &ver);
+	set_error_sprite(rayc);
 }

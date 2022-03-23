@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:05 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/21 10:41:37 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/23 17:02:10 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ void				compute_distance(t_cub *s, t_raycasting *rayc,
 void				put_ray_on_img(t_cub *s, t_raycasting *rayc, int col);
 void				cast_ray(t_cub *s, t_raycasting *rayc);
 void				ray_hit_wall(t_cub *s, t_raycasting *rayc, t_ray *ray, char *limiters);
-void				update_doors(t_cub *s);
 
 /*
 **	SINGLETON
@@ -87,12 +86,14 @@ void				moves(t_cub *s);
 int					key_handler(int key, t_cub *s);
 int					key_release(int keycode, t_cub *s);
 void				mouse_move(t_cub *s);
+int					mouse_handler(int action);
+int					mouse_release(int action);
 
 /*
 **	QUIT
 */
 
-int					quit(void);
+int					quit(int exit_code);
 
 /*
 **	UTILS
@@ -109,13 +110,19 @@ t_sprite			*create_sprite(void);
 void				add_sprite_back(t_sprite **head, t_sprite *new);
 void				add_sprite_front(t_sprite **head, t_sprite *new);
 void				put_sprite_on_img(t_cub *s, t_raycasting *rayc, int col);
+void				sprite_dir(t_cub *s, char *str, ssize_t idx, uint8_t type_nbr);
+void				init_new_sprite(t_cub *s, t_raycasting *rayc, t_ray *ray);
+void				kill_sprite(t_cub *s, t_raycasting *rayc);
+void				set_error_sprite(t_raycasting *rayc);
+void				update_sprite_to_print(t_cub *s);
+
 
 /*
 **	GUN
 */
 
 void				init_gun_textures(t_cub *s);
-void				put_gun_on_img(t_cub *s);
+void				put_gun_on_img(t_cub *s, double i, double j);
 void				update_gun_sprite(t_cub *s);
 void				put_gun_cursor(t_cub *s);
 void				kill_sprite(t_cub *s, t_raycasting *rayc);
@@ -126,22 +133,13 @@ void				kill_sprite(t_cub *s, t_raycasting *rayc);
 
 void				map2d(t_cub *s);
 
+/*
+**	DOOR
+*/
 
-
-
-
-
-
-
-
-
-
-
-void
-	_print_parsing(void);
-
-
-
+void				update_doors(t_cub *s);
+int					through_door(t_cub *s, t_ray *ray, int y, int x);
+// t_door				*door_at(t_cub *s, int y, int x);
 
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 11:39:12 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/21 09:57:05 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/23 12:59:28 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ void
 	t_sprite	*tmp;
 
 	tmp = (*head);
-	// new->next = NULL;
 	if (!tmp)
 	{
 		(*head) = new;
@@ -51,4 +50,3 @@ void
 	new->next = (*head);
 	(*head) = new;
 }
-

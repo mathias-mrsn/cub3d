@@ -6,11 +6,43 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 12:18:48 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/23 17:44:22 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/23 13:13:59 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
+
+#if defined(__APPLE__) && defined(__MACH__)
+
+void
+	mouse_move(t_cub *s)
+{
+	int	x;
+	int	y;
+
+	mlx_mouse_get_pos(s->win, &x, &y);
+	s->player->angle = trigo_cercle(s->player->angle
+			+ (s->moves->last_x_mouse - x) * RAD_PER_PIXEL);
+	s->moves->last_x_mouse = s->win_x / 2;
+	mlx_mouse_move(s->mlx, s->win, s->win_x / 2, s->win_y / 2);
+}
+
+#else
+
+void
+	mouse_move(t_cub *s)
+{
+	int	x;
+	int	y;
+
+	mlx_mouse_get_pos(s->mlx, s->win, &x, &y);
+	s->player->angle = trigo_cercle(s->player->angle
+			+ (s->moves->last_x_mouse - x) * RAD_PER_PIXEL);
+	s->moves->last_x_mouse = s->win_x / 2;
+	mlx_mouse_move(s->mlx, s->win, s->win_x / 2, s->win_y / 2);
+}
+
+#endif
 
 int
 	key_handler(int key, t_cub *s)
