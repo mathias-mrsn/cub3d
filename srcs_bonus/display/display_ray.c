@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 12:24:23 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/23 16:50:24 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/24 14:29:17 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ static void
 		draw_end = s->win_y;
 		idx = (txtr.y * (1 - s->win_y / scale)) / 2;
 	}
-	while (draw_start < draw_end && draw_start < s->win_y)
+	while (draw_start < draw_end && draw_start < s->win_y && idx < txtr.y)
 	{
 		__put_pixel_on_img(&s->img, col, draw_start, *((uint32_t *)(txtr.addr
 					+ ((((int)idx * txtr.bpp / 8) * txtr.y))
@@ -99,7 +99,7 @@ void
 		draw_end = s()->win_y;
 		idx = (txtr.y * (1 - s()->win_y / scale)) / 2;
 	}
-	while (++draw_start < draw_end && draw_start < s()->win_y)
+	while (++draw_start < draw_end && draw_start < s()->win_y && idx < txtr.y)
 	{
 		color = ((uint32_t *)(txtr.addr
 					+ ((((int)idx * txtr.bpp / 8) * txtr.y))

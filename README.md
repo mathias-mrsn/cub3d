@@ -1,7 +1,8 @@
 # Task list
 
--	[ ] fix leaks (1 day)
--	[ ] finish minimap (1-2 days)
--	[ ] norme (1/2 day)
--	[ ]	create mandatory part (1 day)
 -	[ ] do more test (1 day)
+-	[ ] fix leaks (1 day)
+-	[ ] find new sounds and sprites
+-	[x] finish minimap (1-2 days)
+-	[x] norme (1/2 day)
+-	[x]	create mandatory part (1 day)

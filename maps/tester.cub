@@ -1,4 +1,4 @@
-R 720 720
+R 1000 500
 NO ./textures/Wolf3D/GrasswallD.xpm
 SO ./textures/Wolf3D/MultibrickD.xpm
 WE ./textures/Wolf3D/SteelwallD.xpm

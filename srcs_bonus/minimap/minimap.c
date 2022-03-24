@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/15 15:53:28 by malouvar          #+#    #+#             */
-/*   Updated: 2022/03/24 10:26:21 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/24 12:38:55 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,6 +90,8 @@ void
 	int	pxl_y;
 
 	pxl_x = 0;
+	if (s->win_x < 300 || s->win_y < 300)
+		return ;
 	draw_border(s);
 	while (pxl_x < MINIMAP_W)
 	{

@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 12:41:36 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/23 13:08:31 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/24 13:43:26 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,12 +118,11 @@ void
 	(void)s;
 	(void)type_nbr;
 	(void)idx;
-	printf("path = %s\n", str);
 	list = NULL;
 	dir = opendir(str);
 	if (NULL == dir)
 	{
-		__texture_error__(s, idx, 1, str);
+		__sprite_error__(str);
 		return ;
 	}
 	__get_list__(&list, dir, str);

@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:03:23 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/12 12:12:59 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/24 12:58:58 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ void
 	__print_error_line__(s, idx);
 	__putstr(PROGRAM_NAME, STDERR_FILENO);
 	__putstr(": invalid resolution values\n", STDERR_FILENO);
-	__printf("norme: \"R [0-%d] [0-%d]\"\n", WIN_X_MAX, WIN_Y_MAX);
+	__printf("norme: \"R [1-%d] [1-%d]\"\n", WIN_X_MAX, WIN_Y_MAX);
 	__exit(0);
 }
 

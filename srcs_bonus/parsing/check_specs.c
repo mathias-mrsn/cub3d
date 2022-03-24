@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:32:17 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/23 13:05:02 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/24 14:20:53 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,8 @@ static void
 		__resolution_error__(s, idx);
 	s->win_x = __atol(strs[0]);
 	s->win_y = __atol(strs[1]);
-	if (s->win_x > WIN_X_MAX || s->win_y > WIN_Y_MAX)
+	if (s->win_x > WIN_X_MAX || s->win_y > WIN_Y_MAX
+		|| s->win_x < 1 || s->win_y < 1)
 		__resolution_error__(s, idx);
 }
 

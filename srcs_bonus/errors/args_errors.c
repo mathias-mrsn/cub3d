@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 14:14:23 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/12 12:13:43 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/24 13:45:37 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,4 +49,14 @@ void
 		__putstr(": permission denied\n", STDERR_FILENO);
 	else
 		__putstr(": no such file or directory\n", STDERR_FILENO);
+}
+
+void
+	__sprite_error__(char *str)
+{
+	__puterr(PROGRAM_NAME);
+	__putstr(": ", STDERR_FILENO);
+	__putstr(str, STDERR_FILENO);
+	__putstr(": directory can't be opened\n", STDERR_FILENO);
+	quit(EXIT_FAILURE);
 }

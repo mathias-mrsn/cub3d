@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 13:02:06 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/23 13:56:14 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/24 14:22:19 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,8 +60,8 @@ void
 	}
 }
 
-void
-	put_gun_on_img(t_cub *s, double i, double j)
+static void
+	_put_gun_on_img(t_cub *s, double i, double j)
 {
 	const t_img	txtr = s->gun->gun_txtr[s->gun->gun_state];
 	uint32_t	*color;
@@ -88,4 +88,13 @@ void
 		x = (s->win_x / 2) - (fmin(s->win_x, s->win_y) / 2);
 		i += txtr.x / fmin(s->win_x, s->win_y);
 	}
+}
+
+void
+	put_gun_on_img(t_cub *s, double i, double j)
+{
+	if (s->win_x < 4 || s->win_y < 4)
+		return ;
+	else
+		put_gun_on_img(s, i, j);
 }

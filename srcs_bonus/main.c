@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 14:05:34 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/23 13:30:58 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/24 13:21:11 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,12 @@ int
 	t_cub	*cub;
 
 	cub = s();
+	if (__FAILURE == __check_args__(ac, av, cub))
+		__exit(EXIT_FAILURE);
 	cub->mlx = mlx_init();
 	if (NULL == cub->mlx)
 		return (EXIT_FAILURE);
 	mlx_do_key_autorepeaton(cub->mlx);
-	if (__FAILURE == __check_args__(ac, av, cub))
-		__exit(EXIT_FAILURE);
 	if (__FAILURE == parsing(cub))
 		__exit(EXIT_FAILURE);
 	cub->win = mlx_new_window(cub->mlx, cub->win_x, cub->win_y, PROGRAM_NAME);

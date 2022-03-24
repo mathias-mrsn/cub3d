@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:21:46 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/12 12:15:58 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/24 13:33:35 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void
 	const char	*string[NBR_ARGS] = {"resolution [R]",
 		"ceil color [C]", "floor color [F]", "sprite texture [S]",
 		"north texture [NO]", "east texture [EA]", "south texture [SO]",
-		"west texture [WE]"};
+		"west texture [WE]", "door texture [D]"};
 	uint8_t		idx;
 
 	idx = 0;

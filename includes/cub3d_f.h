@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:05 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/23 17:02:10 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/24 13:42:51 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ void				__file_ext_error__(char *file);
 void				__wrong_arg_nbr__(int ac);
 void				__wrong_option__(char *option);
 void				__file_cant_be_opened__(char *str);
+void				__sprite_error__(char *str);
 
 void				__color_error__(t_cub *s, ssize_t idx);
 void				__resolution_error__(t_cub *s, ssize_t idx);

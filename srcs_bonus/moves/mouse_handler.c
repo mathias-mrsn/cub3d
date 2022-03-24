@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 13:17:31 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/23 13:20:25 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/24 14:19:31 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 int
 	mouse_handler(int action)
 {
-	printf("%d\n", action);
 	if (action == 1)
 		s()->moves->fire = 1;
 	return (0);
