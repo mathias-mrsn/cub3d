@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:13 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/22 10:11:25 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/24 10:21:58 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,18 +106,18 @@
 
 # define PADDING_X	50
 # define PADDING_Y	50
-# define MINIMAP_H	60
-# define MINIMAP_W	150
-# define PPC		10
+# define MINIMAP_H	100
+# define MINIMAP_W	200
 # define CENTER_X	MINIMAP_W / 2
 # define CENTER_Y	MINIMAP_H / 2
-# define DIST_PER_PIXEL	0.1
+# define DIST_PER_PIXEL	0.15
+# define BORDER			3
 
-
-# define MINIMAP_OFFSET_X 21
-# define MINIMAP_OFFSET_Y 21
-# define EMPTY_COLOR 0XFFFFFF
-# define WALL_COLOR 0X00FF00
-# define PLAYER_COLOR 0XFF0000
+# define BACKGROUND_COLOR	0x101010
+# define WALL_COLOR			0xFFFFFF
+# define DOOR_COLOR			0xfffe48
+# define SPRITE_COLOR		0x55a155
+# define BORDER_COLOR		0x303030
+# define PLAYER_COLOR		0xf0f0f0
 
 #endif
