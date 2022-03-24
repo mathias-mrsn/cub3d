@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 15:03:53 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/24 13:55:55 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/24 15:59:49 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,9 @@ void
 	{
 		if (tmp->error == false && s->gun->can_kill
 			&& (*((uint32_t *)(txtr.addr
-					+ ((((txtr.y / 2) * txtr.bpp / 8) * txtr.y))
+					+ ((((txtr.y / 2) * txtr.bpp / 8) * txtr.x))
 					+ (int)(tmp->texture_x * txtr.x) * \
-				txtr.bpp / 8)) != 0))
+				txtr.bpp / 8)) != 0U))
 		{
 			x = (int)tmp->x;
 			y = (int)tmp->y;

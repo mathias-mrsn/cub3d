@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:05 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/24 13:42:51 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/24 14:38:26 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -140,7 +140,6 @@ void				map2d(t_cub *s);
 
 void				update_doors(t_cub *s);
 int					through_door(t_cub *s, t_ray *ray, int y, int x);
-// t_door				*door_at(t_cub *s, int y, int x);
 
 
 #endif

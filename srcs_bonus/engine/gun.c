@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 13:02:06 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/24 14:22:19 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/24 14:41:10 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,5 +96,5 @@ void
 	if (s->win_x < 4 || s->win_y < 4)
 		return ;
 	else
-		put_gun_on_img(s, i, j);
+		_put_gun_on_img(s, i, j);
 }

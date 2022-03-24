@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 12:24:23 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/24 14:29:17 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/24 15:56:07 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,7 +102,7 @@ void
 	while (++draw_start < draw_end && draw_start < s()->win_y && idx < txtr.y)
 	{
 		color = ((uint32_t *)(txtr.addr
-					+ ((((int)idx * txtr.bpp / 8) * txtr.y))
+					+ ((((int)idx * txtr.bpp / 8) * (txtr.x)))
 					+ (int)(sprite->texture_x * txtr.x) * \
 					txtr.bpp / 8));
 		if (*color != 0U)
