@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 15:03:53 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/24 15:59:49 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/25 10:15:15 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,20 @@ void
 		s->map[y][x] = '0';
 }
 
+double
+	find_angle(double dirx, double angle_initial)
+{
+	if (dirx - angle_initial < T_PI_4 && dirx - angle_initial > -T_PI_4)
+		return (dirx - angle_initial);
+	else
+	{
+		if (angle_initial > dirx)
+			return ((T_2PI - (angle_initial)) + dirx);
+		else
+			return (-1 * (T_2PI - (dirx) + angle_initial));
+	}
+}
+
 void
 	init_new_sprite(t_cub *s, t_raycasting *rayc, t_ray *ray)
 {
@@ -72,7 +86,7 @@ void
 	new->sin = ((new->y - s->player->p_y) / new->distance_fc);
 	new->angle_initial = trigo_cercle(new->acos * \
 		__trnd((new->sin > 0), -1, 1));
-	new->angle_view_sprite = rayc->dirx - new->angle_initial;
+	new->angle_view_sprite = find_angle(rayc->dirx, new->angle_initial);
 	new->hypothenus = new->distance_fc / cos(new->angle_view_sprite);
 	new->adj = sqrt(pow(new->hypothenus, 2) - pow(new->distance_fc, 2));
 	if (new->adj > 0.5)

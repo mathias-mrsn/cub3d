@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:13 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/24 10:21:58 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/25 09:54:01 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,7 @@
 
 # define FOV 1.15192
 # define CAMERA_SPEED 0.04
-# define MOVING_DISTANCE 0.10
+# define MOVING_DISTANCE 0.03
 # define SPRITE_INTERVAL 100000
 
 /*
