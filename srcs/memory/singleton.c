@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 14:05:24 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/20 12:46:22 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/25 10:39:31 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ t_cub
 		s->textures = __malloc(sizeof(t_textures), SINGLETON_STACK);
 		s->player = __malloc(sizeof(t_player), SINGLETON_STACK);
 		s->moves = __malloc(sizeof(t_moves), SINGLETON_STACK);
-		s->gun = __malloc(sizeof(t_gun), SINGLETON_STACK);
 	}
 	return (s);
 }

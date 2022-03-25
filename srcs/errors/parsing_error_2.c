@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:21:46 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/12 12:15:58 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/25 10:38:50 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void
 	__print_error_line__(s, idx);
 	__putstr(PROGRAM_NAME, STDERR_FILENO);
 	__putstr(": invalid data\n", STDERR_FILENO);
-	__putstr("norme: \"[R | C | F | S | NO | SO | EA | WE]\"", STDERR_FILENO);
+	__putstr("norme: \"[R | C | F | NO | SO | EA | WE]\"", STDERR_FILENO);
 	__exit(0);
 }
 

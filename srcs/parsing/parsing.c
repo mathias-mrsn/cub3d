@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 16:40:50 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/23 13:03:28 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/25 10:45:06 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ static t_boolean
 	uint8_t	idx;
 
 	idx = 0;
-	while (idx < NBR_ARGS)
+	while (idx < NBR_ARGS - 2)
 	{
 		if (s->parser->check[idx] == 0)
 			return (__FALSE);
@@ -47,21 +47,21 @@ static t_boolean
 void
 	check_game_data(t_cub *s, ssize_t *idx)
 {
-	const char	*_types[NBR_ARGS] = {"R ", "C ", "F ", "S ", "NO ",
-		"EA ", "SO ", "WE ", "D "};
+	const char	*_types[NBR_ARGS - 2] = {"R ", "C ", "F ", "NO ",
+		"EA ", "SO ", "WE "};
 	uint8_t		type_nbr;
 
 	while (s->parser->file[++(*idx)] && (!__find_every_values__(s)
 			|| !__strcmp(s->parser->file[(*idx)], "\0")))
 	{
 		type_nbr = -1;
-		while (++type_nbr < NBR_ARGS)
+		while (++type_nbr < NBR_ARGS - 2)
 			if (0 == __strncmp(s->parser->file[(*idx)],
 					_types[type_nbr], __strlen(_types[type_nbr])))
 				break ;
 		if (0 == __strcmp(s->parser->file[(*idx)], "\0"))
 			continue ;
-		if (type_nbr == NBR_ARGS)
+		if (type_nbr == NBR_ARGS - 2)
 			__invalid_info__(s, (*idx));
 		else
 			args_data_is_good(s, __mstrtrim(s->parser->file[(*idx)]
@@ -85,8 +85,5 @@ t_boolean
 	check_map_charset(s);
 	check_map_walls(s);
 	is_player_in(s);
-	stock_doors(s);
-	init_gun_textures(s);
-	s->moves->last_x_mouse = s->win_x / 2;
 	return (__SUCCESS);
 }

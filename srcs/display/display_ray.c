@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 12:24:23 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/24 10:26:48 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/25 10:20:40 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ static void
 	while (draw_start < draw_end && draw_start < s->win_y)
 	{
 		__put_pixel_on_img(&s->img, col, draw_start, *((uint32_t *)(txtr.addr
-					+ ((((int)idx * txtr.bpp / 8) * txtr.y))
+					+ ((((int)idx * txtr.bpp / 8) * txtr.x))
 					+ (int)(get_decimal(__find_x_value__(rayc)) * txtr.x)
 					*txtr.bpp / 8)));
 		draw_start++;

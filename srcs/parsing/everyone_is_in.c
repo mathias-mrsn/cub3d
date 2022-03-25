@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 13:53:27 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/23 13:05:31 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/25 10:43:23 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,6 @@ void
 		nbr_players += __str_count_cs(s->parser->map[i], "NSEW");
 		if (__str_count_cs(s->parser->map[i], "NSEW"))
 			__set_player__(s, i);
-		s->nbr_door += __str_count_cs(s->parser->map[i], "D");
 		i++;
 	}	
 	if (!nbr_players)

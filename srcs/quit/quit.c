@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 12:17:55 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/23 13:02:16 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/25 10:35:11 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,6 @@ int
 	while (++i < NBR_WALL_SIDES)
 		if (s()->textures->walls[i].ptr)
 			mlx_destroy_image(s()->mlx, s()->textures->walls[i].ptr);
-	i = -1;
-	while (++i < NBR_GUN_SPRITE)
-		if (s()->gun->gun_txtr[i].ptr)
-			mlx_destroy_image(s()->mlx, s()->gun->gun_txtr[i].ptr);
-	i = -1;
-	while (++i < s()->parser->nbr_sprite)
-		if (s()->textures->sprite[i].ptr)
-			mlx_destroy_image(s()->mlx, s()->textures->sprite[i].ptr);
 	if (s()->img.ptr)
 		mlx_destroy_image(s()->mlx, s()->img.ptr);
 	if (s()->win)

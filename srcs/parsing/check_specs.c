@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:32:17 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/23 13:05:02 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/25 10:43:58 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ static void
 	if (__FALSE == __file_extention(str, ".xpm"))
 		__texture_error__(s, idx, 0, str);
 	else
-		s->parser->walls_path[type_nbr - 4] = __mstrdup(str, RAYCASTING_STACK);
+		s->parser->walls_path[type_nbr - 3] = __mstrdup(str, RAYCASTING_STACK);
 }
 
 void
@@ -75,8 +75,6 @@ void
 		__check_resolution__(s, str, idx);
 	else if (type_nbr > 0 && type_nbr < 3)
 		__check_colors__(s, str, idx, type_nbr);
-	else if (type_nbr == 3)
-		sprite_dir(s, str, idx, type_nbr);
 	else
 		__check_file__(s, str, idx, type_nbr);
 }
