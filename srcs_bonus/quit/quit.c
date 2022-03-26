@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 12:17:55 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/23 13:02:16 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/26 14:35:57 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int
 	quit(int exit_code)
 {
-	int	i;
+	uint32_t	i;
 
 	i = -1;
 	while (++i < NBR_WALL_SIDES)

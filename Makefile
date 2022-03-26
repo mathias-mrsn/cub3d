@@ -7,7 +7,7 @@ SRCS_BONUS = ${shell find ./srcs_bonus -name "*.c"}
 OBJS	=	${SRCS:.c=.o}
 OBJS_BONUS = ${SRCS_BONUS:.c=.o}
 CC		=	clang
-FLAGS	=	-fsanitize=address -g3
+FLAGS	=	-Wall -Werror -Wextra
 SYSTEM = $(shell uname)
 
 ifeq (${SYSTEM}, Darwin)

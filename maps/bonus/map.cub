@@ -1,16 +1,19 @@
 R 1050 520
-NO ./textures/Wolf3D/GrasswallD.xpm
-SO ./textures/Wolf3D/MultibrickD.xpm
-WE ./textures/Wolf3D/SteelwallD.xpm
-EA ./textures/sprites/male/male_1_.xpm
+NO ./textures/walls/Wall_10.xpm
+SO ./textures/walls/Wall_11.xpm
+WE ./textures/walls/Wall_01.xpm
+EA ./textures/walls/Wall_07.xpm
+
+S ./textures/sprites/female
+D ./textures/doors/Door_02.xpm
 C 50,50,200
 F 50,50,50
 
 111111111111111
 100000000000001
-100000000000001111111111
-10000E000100000000000001
-100000000000001111111101
+102000000000001111111111
+10000E20010D000000000001
+100000000D00001111111101
 100000000100001      101
 111111111111101      101
         1111101111111101111111111

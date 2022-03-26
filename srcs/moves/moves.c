@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 15:08:51 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/23 17:48:16 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/26 14:33:35 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ void
 	ray_hit_wall(s, rayc, &ver, "1x");
 	hor.distance = __pythagore(s->player->p_x, s->player->p_y, hor.x, hor.y);
 	ver.distance = __pythagore(s->player->p_x, s->player->p_y, ver.x, ver.y);
-	compute_distance(s, rayc, &hor, &ver);
+	compute_distance(rayc, &hor, &ver);
 }
 
 void

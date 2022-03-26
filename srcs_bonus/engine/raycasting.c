@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 12:26:33 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/23 14:55:26 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/26 14:33:13 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ void
 }
 
 void
-	compute_distance(t_cub *s, t_raycasting *rayc, t_ray *hor, t_ray *ver)
+	compute_distance(t_raycasting *rayc, t_ray *hor, t_ray *ver)
 {
 	if (hor->distance < ver->distance)
 	{
@@ -108,6 +108,6 @@ void
 	ray_hit_wall(s, rayc, &ver, "1x");
 	hor.distance = __pythagore(s->player->p_x, s->player->p_y, hor.x, hor.y);
 	ver.distance = __pythagore(s->player->p_x, s->player->p_y, ver.x, ver.y);
-	compute_distance(s, rayc, &hor, &ver);
+	compute_distance(rayc, &hor, &ver);
 	set_error_sprite(rayc);
 }

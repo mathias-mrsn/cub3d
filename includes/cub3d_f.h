@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 15:50:05 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/25 10:55:38 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/26 14:33:03 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void				stock_doors(t_cub *s);
 int					engine(t_cub *s);
 void				init_ray(t_cub *s, t_raycasting *rayc, t_ray *ray);
 void				init_raycasting(t_cub *s, t_raycasting *rayc, int col);
-void				compute_distance(t_cub *s, t_raycasting *rayc,
+void				compute_distance(t_raycasting *rayc,
 						t_ray *hor, t_ray *ver);
 void				put_ray_on_img(t_cub *s, t_raycasting *rayc, int col);
 void				cast_ray(t_cub *s, t_raycasting *rayc);

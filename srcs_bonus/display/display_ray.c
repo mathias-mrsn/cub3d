@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/12 12:24:23 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/25 10:16:11 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/26 14:36:45 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,31 +82,31 @@ void
 }
 
 void
-	put_sprite(t_raycasting *rayc, t_sprite *sprite, int col, t_img txtr)
+	put_sprite(t_cub *s, t_sprite *sprite, int col, t_img txtr)
 {
-	const double	scale = (s()->win_y / sprite->distance_fc);
+	const double	scale = (s->win_y / sprite->distance_fc);
 	uint32_t		*color;
 	double			draw_start;
 	double			draw_end;
 	double			idx;
 
 	idx = 0.0;
-	draw_start = (-scale / 2) + (s()->win_y / 2) - 1;
-	draw_end = (scale / 2) + (s()->win_y / 2);
-	if ((s()->win_y / sprite->distance_fc) > s()->win_y)
+	draw_start = (-scale / 2) + (s->win_y / 2) - 1;
+	draw_end = (scale / 2) + (s->win_y / 2);
+	if ((s->win_y / sprite->distance_fc) > s->win_y)
 	{
 		draw_start = -1.0;
-		draw_end = s()->win_y;
-		idx = (txtr.y * (1 - s()->win_y / scale)) / 2;
+		draw_end = s->win_y;
+		idx = (txtr.y * (1 - s->win_y / scale)) / 2;
 	}
-	while (++draw_start < draw_end && draw_start < s()->win_y && idx < txtr.y)
+	while (++draw_start < draw_end && draw_start < s->win_y && idx < txtr.y)
 	{
 		color = ((uint32_t *)(txtr.addr
 					+ ((((int)idx * txtr.bpp / 8) * (txtr.x)))
 					+ (int)(sprite->texture_x * txtr.x) * \
 					txtr.bpp / 8));
 		if (*color != 0U)
-			__put_pixel_on_img(&s()->img, col, draw_start, (*color));
+			__put_pixel_on_img(&s->img, col, draw_start, (*color));
 		idx += (double)txtr.y / (double)scale;
 	}
 }
@@ -122,7 +122,7 @@ void
 	{
 		if (!tmp->error)
 		{
-			put_sprite(rayc, tmp, col, txtr);
+			put_sprite(s, tmp, col, txtr);
 		}
 		tmp = tmp->next;
 	}
