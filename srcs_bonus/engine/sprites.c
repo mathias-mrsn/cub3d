@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 15:03:53 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/25 10:15:15 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/03/31 08:52:02 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,7 @@ void
 	new->texture_x = __trnd((new->angle_view_sprite < 0),
 			(0.5 - new->adj), (0.5 + new->adj));
 	if (new->adj < 0.5)
-		add_sprite_front((t_sprite **)&rayc->head, new);
+		add_sprite((t_sprite **)&rayc->head, new);
 }
 
 void
