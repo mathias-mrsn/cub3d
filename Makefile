@@ -1,8 +1,54 @@
 NAME	:=	cub3d
 
-SRCS	=	${shell find ./srcs -name "*.c"}
+SRCS	=	./srcs/display/display_ray.c \
+				./srcs/engine/engine.c \
+				./srcs/engine/raycasting.c \
+				./srcs/errors/args_errors.c \
+				./srcs/errors/map_errors.c \
+				./srcs/errors/parsing_error_2.c \
+				./srcs/errors/parsing_errors.c \
+				./srcs/main.c \
+				./srcs/memory/singleton.c \
+				./srcs/moves/key_handler.c \
+				./srcs/moves/moves.c \
+				./srcs/parsing/check_args.c \
+				./srcs/parsing/check_map.c \
+				./srcs/parsing/check_specs.c \
+				./srcs/parsing/everyone_is_in.c \
+				./srcs/parsing/get_map.c \
+				./srcs/parsing/open_textures.c \
+				./srcs/parsing/parsing.c \
+				./srcs/quit/quit.c \
+				./srcs/utils/utils.c \
 
-SRCS_BONUS = ${shell find ./srcs_bonus -name "*.c"}
+SRCS_BONUS = ./srcs_bonus/display/display_ray.c \
+				./srcs_bonus/engine/door.c \
+				./srcs_bonus/engine/engine.c \
+				./srcs_bonus/engine/gun.c \
+				./srcs_bonus/engine/init_raycasting.c \
+				./srcs_bonus/engine/raycasting.c \
+				./srcs_bonus/engine/sprites.c \
+				./srcs_bonus/errors/args_errors.c \
+				./srcs_bonus/errors/map_errors.c \
+				./srcs_bonus/errors/parsing_error_2.c \
+				./srcs_bonus/errors/parsing_errors.c \
+				./srcs_bonus/main.c \
+				./srcs_bonus/memory/singleton.c \
+				./srcs_bonus/minimap/minimap.c \
+				./srcs_bonus/moves/key_handler.c \
+				./srcs_bonus/moves/mouse_handler.c \
+				./srcs_bonus/moves/moves.c \
+				./srcs_bonus/parsing/bonus_init.c \
+				./srcs_bonus/parsing/check_args.c \
+				./srcs_bonus/parsing/check_map.c \
+				./srcs_bonus/parsing/check_specs.c \
+				./srcs_bonus/parsing/everyone_is_in.c \
+				./srcs_bonus/parsing/get_map.c \
+				./srcs_bonus/parsing/open_textures.c \
+				./srcs_bonus/parsing/parsing.c \
+				./srcs_bonus/quit/quit.c \
+				./srcs_bonus/utils/sprite_list_tools.c \
+				./srcs_bonus/utils/utils.c \
 
 OBJS	=	${SRCS:.c=.o}
 OBJS_BONUS = ${SRCS_BONUS:.c=.o}
