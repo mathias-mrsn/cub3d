@@ -6,29 +6,11 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:32:17 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/25 10:43:58 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/04/03 16:09:15 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
-
-static void
-	__check_resolution__(t_cub *s, char *str, ssize_t idx)
-{
-	char	**strs;
-
-	if (__FALSE == __str_is(str, __IS_DIGIT | __IS_EMPTY))
-		__resolution_error__(s, idx);
-	strs = __msplit(str, ' ', TRASH_STACK);
-	if (__strslen(strs) != 2)
-		__resolution_error__(s, idx);
-	if (10 < __strlen(strs[0]) || 10 < __strlen(strs[1]))
-		__resolution_error__(s, idx);
-	s->win_x = __atol(strs[0]);
-	s->win_y = __atol(strs[1]);
-	if (s->win_x > WIN_X_MAX || s->win_y > WIN_Y_MAX)
-		__resolution_error__(s, idx);
-}
 
 static void
 	__check_colors__(t_cub *s, char *str, ssize_t idx, uint8_t type_nbr)
@@ -61,7 +43,7 @@ static void
 	if (__FALSE == __file_extention(str, ".xpm"))
 		__texture_error__(s, idx, 0, str);
 	else
-		s->parser->walls_path[type_nbr - 3] = __mstrdup(str, RAYCASTING_STACK);
+		s->parser->walls_path[type_nbr - 2] = __mstrdup(str, RAYCASTING_STACK);
 }
 
 void
@@ -71,9 +53,7 @@ void
 		__duplicate_data_error__(s, idx);
 	else
 		s->parser->check[type_nbr] = __TRUE;
-	if (type_nbr == 0)
-		__check_resolution__(s, str, idx);
-	else if (type_nbr > 0 && type_nbr < 3)
+	if (type_nbr >= 0 && type_nbr < 2)
 		__check_colors__(s, str, idx, type_nbr);
 	else
 		__check_file__(s, str, idx, type_nbr);

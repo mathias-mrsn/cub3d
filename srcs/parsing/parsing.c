@@ -6,11 +6,14 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 16:40:50 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/25 10:45:06 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/04/03 16:02:10 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
+
+#define WIN_X 1000
+#define WIN_Y 750
 
 char
 	**__fd_to_strs__(int fd)
@@ -35,7 +38,7 @@ static t_boolean
 	uint8_t	idx;
 
 	idx = 0;
-	while (idx < NBR_ARGS - 2)
+	while (idx < NBR_ARGS - 3)
 	{
 		if (s->parser->check[idx] == 0)
 			return (__FALSE);
@@ -47,7 +50,7 @@ static t_boolean
 void
 	check_game_data(t_cub *s, ssize_t *idx)
 {
-	const char	*_types[NBR_ARGS - 2] = {"R ", "C ", "F ", "NO ",
+	const char	*_types[NBR_ARGS - 3] = {"C ", "F ", "NO ",
 		"EA ", "SO ", "WE "};
 	uint8_t		type_nbr;
 
@@ -55,13 +58,13 @@ void
 			|| !__strcmp(s->parser->file[(*idx)], "\0")))
 	{
 		type_nbr = -1;
-		while (++type_nbr < NBR_ARGS - 2)
+		while (++type_nbr < NBR_ARGS - 3)
 			if (0 == __strncmp(s->parser->file[(*idx)],
 					_types[type_nbr], __strlen(_types[type_nbr])))
 				break ;
 		if (0 == __strcmp(s->parser->file[(*idx)], "\0"))
 			continue ;
-		if (type_nbr == NBR_ARGS - 2)
+		if (type_nbr == NBR_ARGS - 3)
 			__invalid_info__(s, (*idx));
 		else
 			args_data_is_good(s, __mstrtrim(s->parser->file[(*idx)]
@@ -85,5 +88,7 @@ t_boolean
 	check_map_charset(s);
 	check_map_walls(s);
 	is_player_in(s);
+	s->win_x = WIN_X;
+	s->win_y = WIN_Y;
 	return (__SUCCESS);
 }

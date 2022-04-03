@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:21:46 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/25 10:39:07 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/04/03 14:44:24 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void
 			__printf("\t%s is missing\n", string[idx]);
 		idx++;
 	}
-	__exit(0);
+	quit(1);
 }
 
 void
@@ -41,7 +41,7 @@ void
 	__putstr(PROGRAM_NAME, STDERR_FILENO);
 	__putstr(": invalid data\n", STDERR_FILENO);
 	__putstr("norme: \"[R | C | F | S | NO | SO | EA | WE | D]\"", STDERR_FILENO);
-	__exit(0);
+	quit(1);
 }
 
 void
@@ -51,7 +51,7 @@ void
 	__print_error_line__(s, idx);
 	__putstr(PROGRAM_NAME, STDERR_FILENO);
 	__putstr(": duplicated information in the file\n", STDERR_FILENO);
-	__exit(0);
+	quit(1);
 }
 
 void
@@ -60,5 +60,5 @@ void
 	__puterr(PROGRAM_NAME);
 	__printf(": (\"%s\" l.%d)", file, line);
 	__putstr(": unable to open xpm file\n", STDERR_FILENO);
-	__exit(0);
+	quit(1);
 }

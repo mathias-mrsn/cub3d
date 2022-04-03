@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 14:14:23 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/12 12:13:43 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/04/03 15:05:12 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ void
 	__putstr(": ", STDERR_FILENO);
 	__putstr(file, STDERR_FILENO);
 	__putstr(": wrong file extension\n", STDERR_FILENO);
+	quit(1);
 }
 
 void
@@ -28,6 +29,7 @@ void
 	__putstr(": argc = ", STDERR_FILENO);
 	__putnbr(ac, STDERR_FILENO);
 	__putstr(" : incorrect number of arguments\n", STDERR_FILENO);
+	quit(1);
 }
 
 void
@@ -37,6 +39,7 @@ void
 	__putstr(": ", STDERR_FILENO);
 	__putstr(option, STDERR_FILENO);
 	__putstr(": invalid option\n", STDERR_FILENO);
+	quit(1);
 }
 
 void
@@ -49,4 +52,5 @@ void
 		__putstr(": permission denied\n", STDERR_FILENO);
 	else
 		__putstr(": no such file or directory\n", STDERR_FILENO);
+	quit(1);
 }

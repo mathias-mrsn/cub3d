@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/28 14:35:14 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/12 12:01:49 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/04/03 15:15:11 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,14 @@ void
 			* (__strslen(&s->parser->file[(*idx)]) + 2), PARSER_STACK);
 	while (s->parser->file[(*idx)] && __strcmp(s->parser->file[(*idx)], "\0"))
 	{
-		s->parser->map[new_idx++] = __strdup(s->parser->file[(*idx)]);
+		s->parser->map[new_idx++] = __mstrdup(s->parser->file[(*idx)],
+				STANDARD_STACK);
 		(*idx)++;
 	}
 	while (s->parser->file[(*idx)] && !__strcmp(s->parser->file[(*idx)], "\0"))
 	{
-		s->parser->map[new_idx++] = __strdup(s->parser->file[(*idx)]);
+		s->parser->map[new_idx++] = __mstrdup(s->parser->file[(*idx)],
+				STANDARD_STACK);
 		(*idx)++;
 	}
 	if (s->parser->file[(*idx)])

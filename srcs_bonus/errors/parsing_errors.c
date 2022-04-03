@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 18:03:23 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/24 12:58:58 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/04/03 14:45:36 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ void
 		__putstr(": wrong file extension\n", STDERR_FILENO);
 	}
 	__putstr("norme: \"[NO | SO | WE | EA] [filename.xpm]\"\n", STDERR_FILENO);
-	__exit(0);
+	quit(1);
 }
 
 void
@@ -65,7 +65,7 @@ void
 	__putstr(PROGRAM_NAME, STDERR_FILENO);
 	__putstr(": invalid resolution values\n", STDERR_FILENO);
 	__printf("norme: \"R [1-%d] [1-%d]\"\n", WIN_X_MAX, WIN_Y_MAX);
-	__exit(0);
+	quit(1);
 }
 
 void
@@ -76,5 +76,5 @@ void
 	__putstr(PROGRAM_NAME, STDERR_FILENO);
 	__putstr(": invalid color values\n", STDERR_FILENO);
 	__putstr("norme: \"[C | F] [0-255],[0-255],[0-255]\"\n", STDERR_FILENO);
-	__exit(0);
+	quit(1);
 }

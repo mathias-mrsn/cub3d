@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/11 09:43:33 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/12 12:15:38 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/04/03 15:05:28 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void
 	__print_error_line__(s, idx);
 	__putstr(PROGRAM_NAME, STDERR_FILENO);
 	__putstr(": end of map isn't end of file\n", STDERR_FILENO);
-	__exit(0);
+	quit(1);
 }
 
 void
@@ -58,7 +58,7 @@ void
 	__putstr(PROGRAM_NAME, STDERR_FILENO);
 	__putstr(": invalid character on map\n", STDERR_FILENO);
 	__putstr("map charset: \""MAP_CHARSET"\"", STDERR_FILENO);
-	__exit(0);
+	quit(1);
 }
 
 void
@@ -66,7 +66,7 @@ void
 {
 	__puterr(PROGRAM_NAME);
 	__putstr(": no player on map\n", STDERR_FILENO);
-	__exit(0);
+	quit(1);
 }
 
 void
@@ -76,5 +76,5 @@ void
 	__print_error_line_elem__(s, line, nbr);
 	__putstr(PROGRAM_NAME, STDERR_FILENO);
 	__putstr(": leak(s) on map\n", STDERR_FILENO);
-	__exit(0);
+	quit(1);
 }
