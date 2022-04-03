@@ -53,7 +53,7 @@ SRCS_BONUS = ./srcs_bonus/display/display_ray.c \
 OBJS	=	${SRCS:.c=.o}
 OBJS_BONUS = ${SRCS_BONUS:.c=.o}
 CC		=	clang
-FLAGS	=	-Wall -Werror -Wextra
+FLAGS	=	-Wall -Werror -Wextra -fsanitize=address -g3
 SYSTEM = $(shell uname)
 
 ifeq (${SYSTEM}, Darwin)

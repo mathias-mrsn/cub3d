@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 12:41:36 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/03/24 13:43:26 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/04/03 12:29:02 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,8 @@ void
 	size_t	idx;
 
 	idx = 0;
+	if (*list == NULL)
+		return ;
 	while ((*list)[idx] && (*list)[idx + 1])
 	{
 		if (__strcmp((*list)[idx], (*list)[idx + 1]) > 0)

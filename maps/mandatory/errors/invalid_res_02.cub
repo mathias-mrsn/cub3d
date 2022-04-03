@@ -1,0 +1,13 @@
+RE 1050 520
+NO ./textures/walls/Wall_05.xpm
+SO ./textures/walls/Wall_12.xpm
+WE ./textures/walls/Wall_08.xpm
+EA ./textures/walls/Wall_02.xpm
+
+C 51,185,200
+F 0,53,100
+
+11111111111
+10E00000001
+10000000001
+11111111111
