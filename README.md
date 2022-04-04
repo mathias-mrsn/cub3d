@@ -45,6 +45,7 @@ Here is a little work plan to easily start this project
 
 ## screeshot
 
-![cub3d](/screeshot.png?raw=true "cub3d")
+![cub3d](screenshots/screeshot.png?raw=true "cub3d")
+![cub3d](screenshots/screenshot_2.png?raw=true "cub3d")
 
 
