@@ -6,7 +6,7 @@
 /*   By: mamaurai <mamaurai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/28 14:35:14 by mamaurai          #+#    #+#             */
-/*   Updated: 2022/04/03 15:15:02 by mamaurai         ###   ########.fr       */
+/*   Updated: 2022/04/05 10:26:10 by mamaurai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ void
 		j = 0;
 		while (s->parser->map[i][j])
 		{
-			if (__FALSE == __is_charset(s->parser->map[i][j], "EWND10 "))
+			if (__FALSE == __is_charset(s->parser->map[i][j], "EWNS10 "))
 				__invalid_char__(s, i, j);
 			j++;
 		}
