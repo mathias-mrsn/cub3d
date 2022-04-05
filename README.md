@@ -2,7 +2,8 @@
 ## Warning 
 
 The sharing of this project on my GitHub aims to help peoples to open their minds to new logics or help peoples in case of difficulty. In no way, that aims to copy and paste this work on your own repository.
-# cub3d
+
+# cub3d [![mamaurai's 42 cub3d Score](https://badge42.vercel.app/api/v2/cl1l4qz93000609l4yixitcl4/project/2515274)](https://github.com/JaeSeoKim/badge42)
 
 **cub3d** is a project from the **42** Common Core, The project aims to recreate the graphic engine used in Wolfenstein 3D. If you want to learn more about Recasting you can easily find resources and videos who explains "What recasting is ?"
 
